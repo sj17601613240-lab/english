@@ -1409,7 +1409,7 @@
   {
     "term": "same result using",
     "cn": "用……得到相同结果",
-    "meaning": "比较两种写法或实现时，说明换用另一种方法仍得到相同结果。",
+    "meaning": "比较两种写法或实现时，说明换用另一种方法仍得到相同结果。常见搭配是 get the same result using ...。",
     "example": "You can get the same result using a lookup table.",
     "category": "英语"
   }
