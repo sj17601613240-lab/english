@@ -1,0 +1,1416 @@
+[
+  {
+    "term": "++",
+    "cn": "自增运算符",
+    "meaning": "使整数变量加一",
+    "example": "i++",
+    "category": "C++"
+  },
+  {
+    "term": "-o",
+    "cn": "指定输出文件的编译选项",
+    "meaning": "后面写程序名或路径",
+    "example": "-o image_generator",
+    "category": "构建"
+  },
+  {
+    "term": "-std=c++17",
+    "cn": "选择C++17标准",
+    "meaning": "选择编译的语言版本",
+    "example": "-std=c++17",
+    "category": "构建"
+  },
+  {
+    "term": "-Wall",
+    "cn": "启用常用编译警告",
+    "meaning": "W必须大写，不能写成-wall",
+    "example": "g++ -Wall main.cpp",
+    "category": "构建"
+  },
+  {
+    "term": "-Wextra",
+    "cn": "启用额外警告",
+    "meaning": "与-Wall共同帮助检查潜在问题",
+    "example": "g++ -Wextra main.cpp",
+    "category": "构建"
+  },
+  {
+    "term": "./",
+    "cn": "从当前目录执行",
+    "meaning": "./image_generator表示运行当前文件夹里的程序",
+    "example": "./image_generator",
+    "category": "终端"
+  },
+  {
+    "term": "<<",
+    "cn": "流插入运算符",
+    "meaning": "把右侧数据传给左侧流",
+    "example": "image << red;",
+    "category": "C++"
+  },
+  {
+    "term": "\\n",
+    "cn": "换行转义序列",
+    "meaning": "在字符串/字符里表示换行",
+    "example": "\"P3\\n\"",
+    "category": "C++"
+  },
+  {
+    "term": "A-Z",
+    "cn": "按英文字母顺序",
+    "meaning": "词典的排序方式",
+    "example": "A–Z glossary",
+    "category": "英语"
+  },
+  {
+    "term": "algorithm",
+    "cn": "算法",
+    "meaning": "将输入转成输出的计算步骤",
+    "example": "image generation algorithm",
+    "category": "算法"
+  },
+  {
+    "term": "alias",
+    "cn": "别名",
+    "meaning": "Shell 里为命令设置的快捷名称，例如 Ubuntu 的 la 可能是 ls -A。",
+    "example": "type la  # Check what la means.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "almost all",
+    "cn": "几乎全部",
+    "meaning": "ls -A 会列出大多数目录项，包括隐藏项，但不列出 . 和 ..。",
+    "example": "ls -A",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "and",
+    "cn": "和",
+    "meaning": "连接两个并列的对象",
+    "example": "width and height",
+    "category": "英语"
+  },
+  {
+    "term": "argument",
+    "cn": "实参；命令参数",
+    "meaning": "传给函数或命令的值",
+    "example": "g++ main.cpp -o hello",
+    "category": "编程"
+  },
+  {
+    "term": "arithmetic mean",
+    "cn": "算术平均值",
+    "meaning": "多个数求和后除以数量；初版灰度用 (R+G+B)/3。",
+    "example": "const int gray = (red + green + blue) / 3;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "average",
+    "cn": "平均数、平均的",
+    "meaning": "将多个数相加再除以数量；灰度练习里用 RGB 算术平均",
+    "example": "const int gray = (red + green + blue) / 3;",
+    "category": "数学"
+  },
+  {
+    "term": "based on",
+    "cn": "基于；根据",
+    "meaning": "表述颜色值根据坐标确定",
+    "example": "based on pixel coordinates",
+    "category": "英语"
+  },
+  {
+    "term": "binary",
+    "cn": "二进制的",
+    "meaning": "数据以字节形式保存，区别于P3文本像素",
+    "example": "binary PPM P6",
+    "category": "图像"
+  },
+  {
+    "term": "bind mount",
+    "cn": "绑定挂载",
+    "meaning": "把宿主机指定目录映射到 Docker 容器路径，让输出保留在宿主机",
+    "example": "-v \"$PWD/docker-output:/app/output\"",
+    "category": "Docker"
+  },
+  {
+    "term": "blue",
+    "cn": "蓝色",
+    "meaning": "RGB中的B通道",
+    "example": "const int blue = 128;",
+    "category": "图像"
+  },
+  {
+    "term": "body",
+    "cn": "主体；代码块",
+    "meaning": "网页主体或循环/函数的执行体",
+    "example": "loop body",
+    "category": "编程"
+  },
+  {
+    "term": "BT.709",
+    "cn": "高清电视颜色标准 BT.709",
+    "meaning": "其非线性 R′G′B′ 通道对应 luma 系数 0.2126, 0.7152, 0.0722。",
+    "example": "Yprime = 0.2126 * Rprime + 0.7152 * Gprime + 0.0722 * Bprime;",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "BT.709 luma weights",
+    "cn": "BT.709 亮度信号加权系数",
+    "meaning": "红 0.2126、绿 0.7152、蓝 0.0722；这是 Y′ 的系数。",
+    "example": "// Compute grayscale using BT.709 luma weights.",
+    "category": "英文注释"
+  },
+  {
+    "term": "build",
+    "cn": "构建",
+    "meaning": "将源码和依赖组织并生成可执行程序",
+    "example": "cmake --build build",
+    "category": "构建"
+  },
+  {
+    "term": "C++17",
+    "cn": "C++17语言标准",
+    "meaning": "g++选用的语言规则版本",
+    "example": "-std=c++17",
+    "category": "构建"
+  },
+  {
+    "term": "case-sensitive",
+    "cn": "区分大小写",
+    "meaning": "C++ 标识符及 G++ 的某些选项区分大小写，如 -Wall 不等于 -wall。",
+    "example": "g++ -Wall -Wextra gray.cpp",
+    "category": "C++ / 调试"
+  },
+  {
+    "term": "cast",
+    "cn": "类型转换",
+    "meaning": "C++ 中转换一个表达式的类型；static_cast 是显式转换的语法之一。",
+    "example": "static_cast<int>(luma)",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "channel",
+    "cn": "通道",
+    "meaning": "RGB中单独的红、绿、蓝分量",
+    "example": "RGB color channel",
+    "category": "图像"
+  },
+  {
+    "term": "checkerboard",
+    "cn": "棋盘格",
+    "meaning": "下一阶段的小练习：用 if、整数除法和取模生成黑白棋盘纹理。",
+    "example": "checkerboard texture",
+    "category": "图形 / 程序化"
+  },
+  {
+    "term": "column",
+    "cn": "列",
+    "meaning": "图像中纵向排列的像素位置，x指定列索引",
+    "example": "column x=3",
+    "category": "图像"
+  },
+  {
+    "term": "column number",
+    "cn": "列号",
+    "meaning": "G++ 报错 file.cpp:40:22 的末尾数字是列号。",
+    "example": "weighted_gray.cpp:40:22",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "command",
+    "cn": "命令",
+    "meaning": "在VS Code终端输入的操作指令",
+    "example": "g++ --version",
+    "category": "终端"
+  },
+  {
+    "term": "command-line option",
+    "cn": "命令行选项",
+    "meaning": "命令后用于改变行为的参数，例如 -std=c++17、-Wall。",
+    "example": "g++ -std=c++17 -Wall weighted_gray.cpp",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "compile",
+    "cn": "编译（动词）",
+    "meaning": "将C++源代码翻译成目标代码，通常接着链接",
+    "example": "compile main.cpp",
+    "category": "构建"
+  },
+  {
+    "term": "compile-time error",
+    "cn": "编译时错误",
+    "meaning": "编译过程中发生的错误；如变量在当前作用域未声明。",
+    "example": "error: gray was not declared in this scope",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "compiler",
+    "cn": "编译器",
+    "meaning": "执行编译的工具，例如G++",
+    "example": "G++ compiler",
+    "category": "构建"
+  },
+  {
+    "term": "compute",
+    "cn": "计算",
+    "meaning": "用算法求出结果，比 calculate 更常见于源码注释",
+    "example": "// Compute the average RGB value.",
+    "category": "算法"
+  },
+  {
+    "term": "condition",
+    "cn": "条件",
+    "meaning": "控制for循环是否继续的判断",
+    "example": "i < 5",
+    "category": "C++"
+  },
+  {
+    "term": "console",
+    "cn": "控制台",
+    "meaning": "在这里指 VS Code 终端窗口，std::cout 将文字写向标准输出。",
+    "example": "std::cout << \"image size:\";",
+    "category": "C++ / I-O"
+  },
+  {
+    "term": "const",
+    "cn": "常量限定符",
+    "meaning": "此变量初始化后不能再赋值",
+    "example": "const int width = 256;",
+    "category": "C++"
+  },
+  {
+    "term": "constant",
+    "cn": "常量；不可修改的值",
+    "meaning": "当前项目的固定尺寸或颜色分量",
+    "example": "const int blue = 128;",
+    "category": "C++"
+  },
+  {
+    "term": "contrast",
+    "cn": "对比度",
+    "meaning": "图像中亮部和暗部的差异程度",
+    "example": "brightness and contrast",
+    "category": "图像"
+  },
+  {
+    "term": "conversion",
+    "cn": "转换（名词）",
+    "meaning": "包括 float/double 到 int 的类型转换。",
+    "example": "type conversion",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "convert",
+    "cn": "转换",
+    "meaning": "把数据由一种形式或类型变成另一种。",
+    "example": "// Convert the floating-point value to an integer.",
+    "category": "英文注释"
+  },
+  {
+    "term": "coordinate",
+    "cn": "坐标（单数）",
+    "meaning": "标识图像上的一个位置分量",
+    "example": "x coordinate",
+    "category": "图像"
+  },
+  {
+    "term": "coordinates",
+    "cn": "坐标（复数）",
+    "meaning": "由x,y共同指定像素位置",
+    "example": "(x,y)",
+    "category": "图像"
+  },
+  {
+    "term": "create",
+    "cn": "创建",
+    "meaning": "创建文件、对象或目录",
+    "example": "create output.ppm",
+    "category": "英语"
+  },
+  {
+    "term": "created",
+    "cn": "被创建的",
+    "meaning": "create的过去分词",
+    "example": "will be created",
+    "category": "英语"
+  },
+  {
+    "term": "current",
+    "cn": "当前的",
+    "meaning": "正在处理的这一行",
+    "example": "current row",
+    "category": "英语"
+  },
+  {
+    "term": "current scope",
+    "cn": "当前作用域",
+    "meaning": "声明可见的代码范围。",
+    "example": "not declared in this scope",
+    "category": "C++ / 变量"
+  },
+  {
+    "term": "data",
+    "cn": "数据",
+    "meaning": "程序处理和保存的数字、文本等",
+    "example": "image data",
+    "category": "编程"
+  },
+  {
+    "term": "declare",
+    "cn": "声明",
+    "meaning": "让编译器在当前作用域知道某个名字及其类型。",
+    "example": "const int gray = 132;",
+    "category": "C++ / 变量"
+  },
+  {
+    "term": "declared",
+    "cn": "已声明的",
+    "meaning": "报错 not declared 表示这个位置找不到变量的声明。",
+    "example": "error: gray was not declared in this scope",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "define",
+    "cn": "定义",
+    "meaning": "声明或确立变量、函数及其值",
+    "example": "define image width",
+    "category": "C++"
+  },
+  {
+    "term": "definition",
+    "cn": "定义",
+    "meaning": "建立变量或函数的定义；本实验 const int gray = ... 声明并定义变量。",
+    "example": "const int gray = static_cast<int>(luma);",
+    "category": "C++ / 变量"
+  },
+  {
+    "term": "directory",
+    "cn": "目录；文件夹",
+    "meaning": "包含文件的路径单位",
+    "example": "working directory",
+    "category": "终端"
+  },
+  {
+    "term": "Docker",
+    "cn": "容器工具平台",
+    "meaning": "构建镜像、运行隔离的应用程序",
+    "example": "docker run",
+    "category": "Docker"
+  },
+  {
+    "term": "Dockerfile",
+    "cn": "Docker镜像构建说明文件",
+    "meaning": "记录基础镜像、构建和运行步骤",
+    "example": "Dockerfile",
+    "category": "Docker"
+  },
+  {
+    "term": "double",
+    "cn": "双精度浮点数",
+    "meaning": "常见实现为 64 位，约 15～16 位十进制有效精度。",
+    "example": "const double luma = 0.7152;",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "each",
+    "cn": "每一个",
+    "meaning": "强调循环逐个处理每行或每个像素",
+    "example": "each pixel",
+    "category": "英语"
+  },
+  {
+    "term": "empty string",
+    "cn": "空字符串",
+    "meaning": "双引号内部没有字符；不会输出空格",
+    "example": "\"\"",
+    "category": "C++"
+  },
+  {
+    "term": "entry",
+    "cn": "入口",
+    "meaning": "entry point短语的一部分",
+    "example": "program entry",
+    "category": "英语"
+  },
+  {
+    "term": "entry point",
+    "cn": "入口点",
+    "meaning": "程序进入主要执行逻辑的起点",
+    "example": "main() entry point",
+    "category": "C++"
+  },
+  {
+    "term": "entrypoint",
+    "cn": "入口程序",
+    "meaning": "Docker 容器启动时首先执行的进程",
+    "example": "--entrypoint /bin/sh",
+    "category": "Docker"
+  },
+  {
+    "term": "error",
+    "cn": "错误",
+    "meaning": "编译或运行时出现的问题",
+    "example": "error: expected ';'",
+    "category": "调试"
+  },
+  {
+    "term": "executable",
+    "cn": "可执行程序",
+    "meaning": "G++生成的可以运行的文件",
+    "example": "image_generator",
+    "category": "构建"
+  },
+  {
+    "term": "execute",
+    "cn": "执行（动词）",
+    "meaning": "运行可执行程序或指令",
+    "example": "execute ./image_generator",
+    "category": "终端"
+  },
+  {
+    "term": "execution",
+    "cn": "执行；运行过程",
+    "meaning": "程序运行的过程",
+    "example": "successful execution",
+    "category": "英语"
+  },
+  {
+    "term": "exit code",
+    "cn": "退出码",
+    "meaning": "进程结束后返回的状态；0 通常表示成功",
+    "example": "echo \"$?\"",
+    "category": "Linux"
+  },
+  {
+    "term": "explicit conversion",
+    "cn": "显式类型转换",
+    "meaning": "程序员明确指定目标类型，而非由编译器隐式决定。",
+    "example": "static_cast<int>(luma)",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "extra",
+    "cn": "额外的",
+    "meaning": "比一般警告更多的检查",
+    "example": "-Wextra",
+    "category": "英语"
+  },
+  {
+    "term": "file",
+    "cn": "文件",
+    "meaning": "在磁盘上保存内容的对象",
+    "example": "output.ppm",
+    "category": "终端"
+  },
+  {
+    "term": "file size",
+    "cn": "文件大小",
+    "meaning": "ls -lh 可用更易读的单位显示文件大小。",
+    "example": "ls -lh weighted_gray.ppm",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "file stream",
+    "cn": "文件流",
+    "meaning": "用于向文件读写数据的C++流抽象",
+    "example": "std::ofstream image(...)",
+    "category": "C++"
+  },
+  {
+    "term": "file stream variable",
+    "cn": "文件流变量",
+    "meaning": "如 image，变量类型是 std::ofstream，用于写入 output.ppm",
+    "example": "std::ofstream image(\"output.ppm\");",
+    "category": "C++"
+  },
+  {
+    "term": "float",
+    "cn": "单精度浮点数",
+    "meaning": "常见实现为 32 位，约 6～7 位十进制有效精度。",
+    "example": "const float weight = 0.7152f;",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "floating-point",
+    "cn": "浮点的；浮点数",
+    "meaning": "用于表示包括小数在内的一定范围的近似数值。",
+    "example": "double luma = 132.872;",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "for",
+    "cn": "for循环关键字",
+    "meaning": "在初始化、条件与递增控制下重复执行代码",
+    "example": "for (int x=0; x<4; x++)",
+    "category": "C++"
+  },
+  {
+    "term": "format",
+    "cn": "格式",
+    "meaning": "文件组织数据所遵循的规范",
+    "example": "PPM image format",
+    "category": "图像"
+  },
+  {
+    "term": "fstream",
+    "cn": "文件流头文件",
+    "meaning": "声明ifstream、ofstream等文件流类",
+    "example": "#include <fstream>",
+    "category": "C++"
+  },
+  {
+    "term": "function",
+    "cn": "函数",
+    "meaning": "具有名称、可调用的代码单元",
+    "example": "int main()",
+    "category": "C++"
+  },
+  {
+    "term": "g++",
+    "cn": "GNU C++编译器命令",
+    "meaning": "编译并链接C++源文件",
+    "example": "g++ main.cpp -o image_generator",
+    "category": "构建"
+  },
+  {
+    "term": "gamma",
+    "cn": "伽马",
+    "meaning": "用于描述非线性编码或显示响应的概念；需与色彩空间区分",
+    "example": "gamma correction",
+    "category": "图像"
+  },
+  {
+    "term": "git",
+    "cn": "版本控制工具",
+    "meaning": "管理源码历史及下载开源仓库",
+    "example": "git --version",
+    "category": "工具"
+  },
+  {
+    "term": "gray",
+    "cn": "灰色、灰度值",
+    "meaning": "可用一个标量表示的灰度强度",
+    "example": "const int gray = (red + green + blue) / 3;",
+    "category": "图像"
+  },
+  {
+    "term": "grayscale",
+    "cn": "灰度图；灰度的",
+    "meaning": "当 RGB 三个通道数值相同时形成的无彩色色相图像。",
+    "example": "image << gray << \" \" << gray << \" \" << gray;",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "green",
+    "cn": "绿色",
+    "meaning": "RGB中的G通道",
+    "example": "const int green = y;",
+    "category": "图像"
+  },
+  {
+    "term": "head",
+    "cn": "头部；文件头",
+    "meaning": "PPM前几行记录格式、尺寸和最大值",
+    "example": "P3 / 256 256 / 255",
+    "category": "图像"
+  },
+  {
+    "term": "height",
+    "cn": "高度",
+    "meaning": "图像纵向的像素数量",
+    "example": "const int height = 256;",
+    "category": "图像"
+  },
+  {
+    "term": "human-readable",
+    "cn": "便于人类阅读的",
+    "meaning": "ls -h 把文件大小显示成 K、M、G 等易读单位。",
+    "example": "ls -lh gray.ppm",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "image",
+    "cn": "图像；变量名",
+    "meaning": "既可指图像，也可以是本程序的ofstream变量",
+    "example": "std::ofstream image(\"output.ppm\");",
+    "category": "C++"
+  },
+  {
+    "term": "image_generator",
+    "cn": "可执行程序名",
+    "meaning": "由-o指定的Linux可执行文件",
+    "example": "./image_generator",
+    "category": "构建"
+  },
+  {
+    "term": "in",
+    "cn": "在……中；以……为单位",
+    "meaning": "in pixels为以像素为单位",
+    "example": "in pixels",
+    "category": "英语"
+  },
+  {
+    "term": "include",
+    "cn": "包含；引入",
+    "meaning": "在代码里通过预处理指令引入头文件",
+    "example": "#include <iostream>",
+    "category": "C++"
+  },
+  {
+    "term": "increment",
+    "cn": "递增",
+    "meaning": "循环变量每轮加一",
+    "example": "i++",
+    "category": "C++"
+  },
+  {
+    "term": "indicate",
+    "cn": "表示；指示",
+    "meaning": "说明某个标记的含义",
+    "example": "indicate a file format",
+    "category": "英语"
+  },
+  {
+    "term": "indicates",
+    "cn": "表示；指示（单数主语）",
+    "meaning": "P3标识纯文本PPM格式",
+    "example": "P3 indicates ...",
+    "category": "英语"
+  },
+  {
+    "term": "initialization",
+    "cn": "初始化",
+    "meaning": "创建变量时设定初始值",
+    "example": "int i = 0",
+    "category": "C++"
+  },
+  {
+    "term": "input",
+    "cn": "输入",
+    "meaning": "进入程序或流的数据",
+    "example": "file input",
+    "category": "编程"
+  },
+  {
+    "term": "insertion",
+    "cn": "插入",
+    "meaning": "stream insertion operator 中的 insertion 指向输出流写入数据",
+    "example": "std::cout << width;",
+    "category": "C++"
+  },
+  {
+    "term": "int",
+    "cn": "整数类型",
+    "meaning": "声明整数变量或函数返回类型",
+    "example": "int width = 256;",
+    "category": "C++"
+  },
+  {
+    "term": "integer",
+    "cn": "整数",
+    "meaning": "不带小数部分的数值类型",
+    "example": "integer variable",
+    "category": "C++"
+  },
+  {
+    "term": "integer conversion",
+    "cn": "整数类型转换",
+    "meaning": "把浮点数转为整数；C++ 的 static_cast<int> 向零截断。",
+    "example": "const int gray = static_cast<int>(luma);",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "integer division",
+    "cn": "整数除法",
+    "meaning": "两个 int 相除时结果会截断，不保留小数。",
+    "example": "7 / 3  // 2",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "introspection",
+    "cn": "内省；查看自身信息",
+    "meaning": "Shell 的 type 命令可以查看 la 是别名、函数还是程序。",
+    "example": "type la",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "iostream",
+    "cn": "标准输入输出流头文件",
+    "meaning": "为std::cout等提供声明",
+    "example": "#include <iostream>",
+    "category": "C++"
+  },
+  {
+    "term": "left shift",
+    "cn": "按位左移",
+    "meaning": "整数运算中的 << 与输出流的 << 意思不同",
+    "example": "int n = 3 << 1; // 6",
+    "category": "C++"
+  },
+  {
+    "term": "line number",
+    "cn": "行号",
+    "meaning": "G++ 报错中的 file.cpp:40:22 前一数字是行号。",
+    "example": "weighted_gray.cpp:40:22",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "linear RGB",
+    "cn": "线性 RGB",
+    "meaning": "颜色数值与线性光强关系的表示，未来学习成像与合成时使用",
+    "example": "linear RGB vs sRGB",
+    "category": "图像"
+  },
+  {
+    "term": "Linux",
+    "cn": "Linux操作系统内核/系统环境",
+    "meaning": "Ubuntu虚拟机运行的平台",
+    "example": "Linux executable",
+    "category": "环境"
+  },
+  {
+    "term": "list",
+    "cn": "列出",
+    "meaning": "ls 是 list 的缩写，用于查看目录内容或文件信息。",
+    "example": "ls -lh gray.ppm",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "long listing",
+    "cn": "详细列表格式",
+    "meaning": "ls -l 显示权限、大小、修改时间等信息。",
+    "example": "ls -l",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "loop",
+    "cn": "循环",
+    "meaning": "重复执行同一块代码",
+    "example": "for loop",
+    "category": "C++"
+  },
+  {
+    "term": "ls",
+    "cn": "列出文件信息的命令",
+    "meaning": "Linux 标准命令；Ubuntu 的 la 往往是其别名。",
+    "example": "ls -lh weighted_gray.ppm",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "luma",
+    "cn": "视频非线性亮度信号",
+    "meaning": "BT.709 加权 R′G′B′ 的 Y′；区别于 linear-light luminance。",
+    "example": "const double luma = 0.2126 * red + 0.7152 * green + 0.0722 * blue;",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "luminance",
+    "cn": "线性光亮度",
+    "meaning": "严格指线性光中的亮度量；练习代码曾把 BT.709 luma 变量命名为 luminance，后续应区别。",
+    "example": "// Luma is not the same as linear luminance.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "main",
+    "cn": "主函数名",
+    "meaning": "当前控制台程序的入口函数",
+    "example": "int main()",
+    "category": "C++"
+  },
+  {
+    "term": "maximum",
+    "cn": "最大的；最大值",
+    "meaning": "PPM头部的颜色样本最大值",
+    "example": "maximum value = 255",
+    "category": "英语"
+  },
+  {
+    "term": "mkdir",
+    "cn": "创建目录命令",
+    "meaning": "在Ubuntu中建立项目目录",
+    "example": "mkdir -p ~/projects",
+    "category": "终端"
+  },
+  {
+    "term": "modulo",
+    "cn": "取模；求余",
+    "meaning": "C++ 的 % 运算符用于取得整数除法的余数。",
+    "example": "int remainder = x % 2;",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "mount",
+    "cn": "挂载",
+    "meaning": "使容器内部路径指向可访问的宿主机路径或卷",
+    "example": "--mount type=bind,source=...,target=...",
+    "category": "Docker"
+  },
+  {
+    "term": "name",
+    "cn": "名称",
+    "meaning": "用来称呼变量、文件或函数的标识",
+    "example": "variable name",
+    "category": "英语"
+  },
+  {
+    "term": "nested loop",
+    "cn": "嵌套循环",
+    "meaning": "一个循环写在另一个循环内部；外层行、内层当前行的像素",
+    "example": "for (int y=0;y<height;y++) { for (int x=0;x<width;x++) {} }",
+    "category": "C++"
+  },
+  {
+    "term": "nginx",
+    "cn": "网页服务器软件",
+    "meaning": "先前Docker示例曾讨论，不是当前C++图像算法",
+    "example": "nginx:alpine",
+    "category": "Docker"
+  },
+  {
+    "term": "nl",
+    "cn": "给文本显示行号的命令",
+    "meaning": "nl -ba 可以给所有行（包括空行）编号，用于核对保存到磁盘的源码。",
+    "example": "nl -ba weighted_gray.cpp",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "not declared in this scope",
+    "cn": "在当前作用域内未声明",
+    "meaning": "G++ 报错，表示此行使用了一个在当前位置不可见的名字。",
+    "example": "error: gray was not declared in this scope",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "not used",
+    "cn": "没有被使用",
+    "meaning": "unused variable 的通俗说法。",
+    "example": "The variable gray is not used.",
+    "category": "英语 / 报错"
+  },
+  {
+    "term": "ofstream",
+    "cn": "输出文件流类型",
+    "meaning": "向文件写入文本或字节数据",
+    "example": "std::ofstream",
+    "category": "C++"
+  },
+  {
+    "term": "operator",
+    "cn": "运算符",
+    "meaning": "C++ 中的 +、<、<<、= 等符号按上下文执行运算",
+    "example": "std::cout << \"Hello\";",
+    "category": "C++"
+  },
+  {
+    "term": "output",
+    "cn": "输出",
+    "meaning": "写到终端、文件或构建结果中的内容",
+    "example": "output.ppm",
+    "category": "编程"
+  },
+  {
+    "term": "output file",
+    "cn": "输出文件",
+    "meaning": "程序生成的目标文件，例如 weighted_gray.ppm。",
+    "example": "std::ofstream image(\"weighted_gray.ppm\");",
+    "category": "C++ / I-O"
+  },
+  {
+    "term": "output stream",
+    "cn": "输出流",
+    "meaning": "数据写出的抽象接口；std::cout 和 std::ofstream 都支持流插入操作。",
+    "example": "image << gray;",
+    "category": "C++ / I-O"
+  },
+  {
+    "term": "output.ppm",
+    "cn": "PPM图像文件名",
+    "meaning": "程序写入的纯文本图像文件",
+    "example": "std::ofstream image(\"output.ppm\");",
+    "category": "图像"
+  },
+  {
+    "term": "P3",
+    "cn": "PPM纯文本格式标记",
+    "meaning": "文件第一行应写P3",
+    "example": "image << \"P3\\n\";",
+    "category": "图像"
+  },
+  {
+    "term": "P6",
+    "cn": "PPM二进制格式标记",
+    "meaning": "与P3的文本像素组织方式不同",
+    "example": "binary PPM P6",
+    "category": "图像"
+  },
+  {
+    "term": "pixel",
+    "cn": "像素（单数）",
+    "meaning": "图像网格中的一个采样位置",
+    "example": "one pixel",
+    "category": "图像"
+  },
+  {
+    "term": "pixel coordinate",
+    "cn": "像素坐标",
+    "meaning": "用 (x,y) 标识二维图像里的一个像素位置",
+    "example": "(x, y) = (10, 20)",
+    "category": "图像"
+  },
+  {
+    "term": "pixels",
+    "cn": "像素（复数）",
+    "meaning": "图像宽高所用单位、多个像素",
+    "example": "256 pixels",
+    "category": "图像"
+  },
+  {
+    "term": "plain",
+    "cn": "朴素的；不加修饰的",
+    "meaning": "描述文本没有富文本格式",
+    "example": "plain text",
+    "category": "英语"
+  },
+  {
+    "term": "plain text",
+    "cn": "纯文本",
+    "meaning": "可以用编辑器直接阅读的字符数据",
+    "example": "P3 pixel numbers",
+    "category": "图像"
+  },
+  {
+    "term": "plain-text",
+    "cn": "纯文本的（形容词）",
+    "meaning": "修饰文件或格式",
+    "example": "plain-text PPM",
+    "category": "英语"
+  },
+  {
+    "term": "PNG",
+    "cn": "常见压缩图像格式",
+    "meaning": "与本实验选择的简单PPM不同",
+    "example": "PNG image",
+    "category": "图像"
+  },
+  {
+    "term": "point",
+    "cn": "点",
+    "meaning": "一个坐标位置；entry point中的“点”",
+    "example": "pixel point (x,y)",
+    "category": "图像"
+  },
+  {
+    "term": "PPM",
+    "cn": "Portable Pixmap图像格式",
+    "meaning": "本项目用它保存RGB像素值",
+    "example": "output.ppm",
+    "category": "图像"
+  },
+  {
+    "term": "precision",
+    "cn": "精度",
+    "meaning": "浮点数可以表示多少有效数字；float 与 double 的主要区别之一。",
+    "example": "float precision vs double precision",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "print",
+    "cn": "输出显示；打印",
+    "meaning": "程序将文字显示到终端",
+    "example": "print image size",
+    "category": "英语"
+  },
+  {
+    "term": "procedural texture",
+    "cn": "程序化纹理",
+    "meaning": "通过数学公式或程序生成纹理，而不是只读取图像。",
+    "example": "procedural checkerboard",
+    "category": "图形 / Shader"
+  },
+  {
+    "term": "program",
+    "cn": "程序",
+    "meaning": "按步骤执行的指令集合",
+    "example": "C++ program",
+    "category": "编程"
+  },
+  {
+    "term": "project",
+    "cn": "项目",
+    "meaning": "一组相互关联的源码与文件",
+    "example": "docker-lab-001 project",
+    "category": "工具"
+  },
+  {
+    "term": "pwd",
+    "cn": "显示当前目录命令",
+    "meaning": "Print Working Directory的缩写",
+    "example": "pwd",
+    "category": "终端"
+  },
+  {
+    "term": "red",
+    "cn": "红色",
+    "meaning": "RGB中的R通道",
+    "example": "const int red = x;",
+    "category": "图像"
+  },
+  {
+    "term": "redefinition",
+    "cn": "重复定义",
+    "meaning": "同一作用域再定义同名变量时可能报错。",
+    "example": "error: redefinition of gray",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "remainder",
+    "cn": "余数",
+    "meaning": "整数除法剩下的部分；常用于重复图案。",
+    "example": "7 % 3  // 1",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "repeat",
+    "cn": "重复",
+    "meaning": "连续运行同一循环体",
+    "example": "repeat five times",
+    "category": "英语"
+  },
+  {
+    "term": "return",
+    "cn": "返回",
+    "meaning": "从函数返回值并结束执行",
+    "example": "return 0;",
+    "category": "C++"
+  },
+  {
+    "term": "RGB",
+    "cn": "红绿蓝颜色通道",
+    "meaning": "由Red、Green、Blue三个样本构成颜色",
+    "example": "255 0 0",
+    "category": "图像"
+  },
+  {
+    "term": "round",
+    "cn": "四舍五入（通常）",
+    "meaning": "数学舍入；与 static_cast<int> 向零截断不同。",
+    "example": "std::round(132.872)  // 133",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "row",
+    "cn": "行",
+    "meaning": "图像水平方向的一排像素，y指定行索引",
+    "example": "current row y=2",
+    "category": "图像"
+  },
+  {
+    "term": "run",
+    "cn": "运行",
+    "meaning": "启动已编译好的可执行程序",
+    "example": "./image_generator",
+    "category": "终端"
+  },
+  {
+    "term": "runtime",
+    "cn": "运行时",
+    "meaning": "编译成功后程序实际执行的阶段。",
+    "example": "./weighted_gray_generator",
+    "category": "C++ / 执行"
+  },
+  {
+    "term": "save",
+    "cn": "保存",
+    "meaning": "将编辑内容写入磁盘",
+    "example": "Ctrl+S",
+    "category": "英语"
+  },
+  {
+    "term": "scope",
+    "cn": "作用域",
+    "meaning": "名字能被代码访问的范围；for 内部定义的 x 通常不在循环外可见。",
+    "example": "for (int x = 0; x < width; ++x) { /* scope */ }",
+    "category": "C++ / 变量"
+  },
+  {
+    "term": "sed",
+    "cn": "流编辑器；文本筛选工具",
+    "meaning": "sed -n 35,48p 可查看文件第 35～48 行。",
+    "example": "sed -n '35,48p' weighted_gray.cpp",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "separator",
+    "cn": "分隔符",
+    "meaning": "PPM 数字之间必须通过空格等空白字符隔开",
+    "example": "image << red << \" \" << green << \" \" << blue;",
+    "category": "文件格式"
+  },
+  {
+    "term": "size",
+    "cn": "尺寸；大小",
+    "meaning": "图像的宽度和高度",
+    "example": "Image size: 256 x 256",
+    "category": "英语"
+  },
+  {
+    "term": "source",
+    "cn": "源代码；来源",
+    "meaning": "编译器读入的代码文件",
+    "example": "main.cpp source file",
+    "category": "构建"
+  },
+  {
+    "term": "source file",
+    "cn": "源文件",
+    "meaning": "编译器读取的 .cpp 文件。",
+    "example": "weighted_gray.cpp",
+    "category": "C++ / 构建"
+  },
+  {
+    "term": "source path",
+    "cn": "源路径",
+    "meaning": "绑定挂载中的宿主机文件或目录位置",
+    "example": "source=\"$PWD/docker-output\"",
+    "category": "Docker"
+  },
+  {
+    "term": "space",
+    "cn": "空格、空间",
+    "meaning": "\" \" 是一个空格字符，不同于空字符串 \"\"",
+    "example": "image << width << \" \" << height;",
+    "category": "C++"
+  },
+  {
+    "term": "standard",
+    "cn": "标准的",
+    "meaning": "约定好的标准输入输出",
+    "example": "standard output",
+    "category": "英语"
+  },
+  {
+    "term": "static_cast",
+    "cn": "C++ 显式转换运算符",
+    "meaning": "固定语法 static_cast<目标类型>(表达式)；例如转成 int 时截断小数（在可表示范围内）。",
+    "example": "const int gray = static_cast<int>(luma);",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "std",
+    "cn": "C++标准库命名空间",
+    "meaning": "std::cout、std::ofstream中的std",
+    "example": "std::cout",
+    "category": "C++"
+  },
+  {
+    "term": "stream",
+    "cn": "流",
+    "meaning": "按照顺序处理的数据读写抽象",
+    "example": "output file stream",
+    "category": "C++"
+  },
+  {
+    "term": "stream insertion operator",
+    "cn": "流插入运算符",
+    "meaning": "对输出流使用 << 时把右侧数据顺序写入左侧流对象",
+    "example": "image << red << \" \" << green;",
+    "category": "C++"
+  },
+  {
+    "term": "successful",
+    "cn": "成功的",
+    "meaning": "用于描述正常程序执行",
+    "example": "successful execution",
+    "category": "英语"
+  },
+  {
+    "term": "target",
+    "cn": "目标、目标路径",
+    "meaning": "容器中挂载所对应的位置",
+    "example": "target=/app/output",
+    "category": "Docker"
+  },
+  {
+    "term": "terminal",
+    "cn": "终端",
+    "meaning": "VS Code底部输入命令和看输出的窗口",
+    "example": "VS Code terminal",
+    "category": "终端"
+  },
+  {
+    "term": "text",
+    "cn": "文本",
+    "meaning": "可读的字符信息",
+    "example": "text file",
+    "category": "英语"
+  },
+  {
+    "term": "the",
+    "cn": "这个；该（定冠词）",
+    "meaning": "指代上下文中确定的对象",
+    "example": "the image",
+    "category": "英语"
+  },
+  {
+    "term": "through",
+    "cn": "穿过；遍历",
+    "meaning": "loop through指逐个访问",
+    "example": "loop through each row",
+    "category": "英语"
+  },
+  {
+    "term": "times",
+    "cn": "次数",
+    "meaning": "表示重复发生多少次",
+    "example": "five times",
+    "category": "英语"
+  },
+  {
+    "term": "truncation",
+    "cn": "截断",
+    "meaning": "将可表示范围内的浮点数转整数时舍弃小数部分、向零截断；不是四舍五入。",
+    "example": "static_cast<int>(132.872)  // 132",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "type",
+    "cn": "类型",
+    "meaning": "规定数据或对象的种类",
+    "example": "int type / stream type",
+    "category": "C++"
+  },
+  {
+    "term": "type command",
+    "cn": "查看命令类型",
+    "meaning": "Shell 中 type la 可判断 la 是否为 alias。",
+    "example": "type la",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "Ubuntu",
+    "cn": "Linux发行版",
+    "meaning": "你的VMware虚拟机系统",
+    "example": "Ubuntu 24.04",
+    "category": "环境"
+  },
+  {
+    "term": "unrecognized",
+    "cn": "无法识别的",
+    "meaning": "报错 unrecognized command-line option 表示编译器不认识某个选项。",
+    "example": "g++: error: unrecognized command-line option",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "unused",
+    "cn": "未使用的",
+    "meaning": "被声明却没有用到的变量会触发对应编译警告。",
+    "example": "warning: unused variable gray",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "unused variable",
+    "cn": "未使用的变量",
+    "meaning": "定义了 gray 但输出时仍使用 luminance，就会出现此警告。",
+    "example": "warning: unused variable 'gray'",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "value",
+    "cn": "值",
+    "meaning": "变量或像素通道里存放的数",
+    "example": "color value",
+    "category": "编程"
+  },
+  {
+    "term": "variable",
+    "cn": "变量",
+    "meaning": "具有名字和类型的数据对象",
+    "example": "int width = 256;",
+    "category": "C++"
+  },
+  {
+    "term": "warning",
+    "cn": "警告",
+    "meaning": "编译器指出潜在问题但不一定停止构建",
+    "example": "-Wall -Wextra",
+    "category": "调试"
+  },
+  {
+    "term": "was not declared",
+    "cn": "尚未声明",
+    "meaning": "编译器提示此名字在使用位置未声明或不可见。",
+    "example": "gray was not declared in this scope",
+    "category": "G++ / 调试"
+  },
+  {
+    "term": "weight",
+    "cn": "权重",
+    "meaning": "输入在加权求和中占的比例；绿色系数 0.7152 最大。",
+    "example": "const float greenWeight = 0.7152f;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "weighted",
+    "cn": "加权的",
+    "meaning": "不同输入使用不同的权重系数。",
+    "example": "weighted grayscale",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "weighted grayscale",
+    "cn": "加权灰度",
+    "meaning": "按不同权重合并 RGB：BT.709 Y′=0.2126R′+0.7152G′+0.0722B′。",
+    "example": "const double luma = 0.2126 * red + 0.7152 * green + 0.0722 * blue;",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "width",
+    "cn": "宽度",
+    "meaning": "图像横向的像素数量",
+    "example": "const int width = 256;",
+    "category": "图像"
+  },
+  {
+    "term": "will",
+    "cn": "将会",
+    "meaning": "表达将来动作",
+    "example": "will be created",
+    "category": "英语"
+  },
+  {
+    "term": "write",
+    "cn": "写入",
+    "meaning": "将数据发送到文件流",
+    "example": "image << \"P3\\n\";",
+    "category": "英语"
+  },
+  {
+    "term": "write to file",
+    "cn": "写入文件",
+    "meaning": "ofstream 输出流负责保存像素，而 cout 是写向标准输出。",
+    "example": "image << gray << \" \" << gray << \" \" << gray << \"\\n\";",
+    "category": "C++ / I-O"
+  },
+  {
+    "term": "x",
+    "cn": "横向像素索引",
+    "meaning": "列位置，从0到width-1",
+    "example": "for (int x=0; x<width; x++)",
+    "category": "图像"
+  },
+  {
+    "term": "y",
+    "cn": "纵向像素索引",
+    "meaning": "行位置，从0到height-1",
+    "example": "for (int y=0; y<height; y++)",
+    "category": "图像"
+  },
+  {
+    "term": "same result using",
+    "cn": "用……得到相同结果",
+    "meaning": "比较两种写法或实现时，说明换用另一种方法仍得到相同结果。",
+    "example": "You can get the same result using a lookup table.",
+    "category": "英语"
+  }
+]
