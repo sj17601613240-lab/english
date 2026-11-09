@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://dkvjcxingdnbkshmzzyr.supabase.co; base-uri 'none'; form-action 'self';">
+  <meta name="description" content="C++、图形学和图像视频英文学习词典，支持中文搜索、朗读、收藏和账号同步。">
+  <title>CG-CPP 英文学习词典</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./supabase-2.119.0.js"></script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap heading">
+      <div>
+        <p class="eyebrow">CG-CPP / ENGLISH GLOSSARY</p>
+        <h1>英文学习词典</h1>
+        <p class="lede">C++、图形学、图像视频与编译调试术语</p>
+      </div>
+      <div class="account">
+        <span id="profile">正在连接…</span>
+        <button id="sign-in" type="button" disabled>登录 / 注册</button>
+        <button id="sign-out" type="button" hidden>退出</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <noscript>请启用 JavaScript 以搜索、收藏和同步词条。</noscript>
+    <section class="controls" aria-label="词条检索">
+      <div class="search-row">
+        <label class="field search">
+          <span>搜索英文、中文或代码</span>
+          <input id="search" type="search" placeholder="例如 variable、加权灰度、-Wall">
+        </label>
+        <label class="field">
+          <span>分类</span>
+          <select id="category"><option value="">全部分类</option></select>
+        </label>
+        <label class="field">
+          <span>范围</span>
+          <select id="filter">
+            <option value="all">全部词条</option>
+            <option value="favorite">仅收藏</option>
+            <option value="personal">个人词条与笔记</option>
+          </select>
+        </label>
+        <button id="reset" type="button">清除筛选</button>
+      </div>
+      <nav id="alphabet" aria-label="按字母浏览"></nav>
+    </section>
+
+    <section class="results" aria-label="词条">
+      <div class="result-bar">
+        <p id="count" role="status">正在加载公共词库…</p>
+        <div class="actions">
+          <button id="sync" type="button" hidden>同步</button>
+          <button id="add" type="button" class="primary" disabled>＋ 添加词条</button>
+        </div>
+      </div>
+      <p id="sync-status" class="small-status" role="status">正在读取保存状态…</p>
+      <p id="message" class="message" role="status" hidden></p>
+      <div id="cards" class="cards"></div>
+      <button id="more" class="more" type="button" hidden>显示更多</button>
+    </section>
+
+    <footer>
+      <details>
+        <summary>数据备份与旧词典迁移</summary>
+        <p>请在原来的设备、Chrome 配置和文件路径打开旧词典，点击「导出 JSON 备份」。保留下载的文件，在这里登录后导入。也可以导入旧词典导出的更新版 HTML。</p>
+        <p>导入会先下载当前个人数据备份，再合并缺少的内容。遇到不同版本会保留现有内容并提示冲突。</p>
+        <div class="actions">
+          <button id="export" type="button" disabled>导出 JSON 备份</button>
+          <label class="file-button" for="import-file">选择 JSON / 旧 HTML
+            <input id="import-file" type="file" accept=".json,.html,application/json,text/html" disabled>
+          </label>
+          <button id="merge-guest" type="button" hidden>合并本机访客数据</button>
+        </div>
+      </details>
+      <p>公共词条由词库维护者发布。访客的词条、收藏与笔记保存在当前浏览器。登录后可将个人数据保存到账号。</p>
+    </footer>
+  </main>
+
+  <dialog id="editor" aria-labelledby="editor-title">
+    <form id="word-form">
+      <h2 id="editor-title">添加词条</h2>
+      <div id="word-fields">
+        <label class="field">英文词条 <input name="term" maxlength="200" required></label>
+        <label class="field">中文释义 <input name="cn" maxlength="1000" required></label>
+        <label class="field">学习说明 <textarea name="meaning" maxlength="6000" rows="2"></textarea></label>
+        <label class="field">英文或代码例句 <textarea name="example" maxlength="6000" rows="2"></textarea></label>
+        <label class="field">分类 <input name="category" maxlength="100" placeholder="个人笔记"></label>
+      </div>
+      <label class="field">私人笔记 <textarea name="note" maxlength="12000" rows="2"></textarea></label>
+      <p id="editor-status" class="form-status" role="status"></p>
+      <div class="dialog-actions">
+        <button id="refresh-edit" type="button" hidden>读取云端最新数据</button>
+        <button id="cancel-edit" type="button">取消</button>
+        <button type="submit" class="primary">保存</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-text">
+    <h2 id="confirm-title">确认操作</h2>
+    <p id="confirm-text"></p>
+    <div class="dialog-actions">
+      <button id="cancel-confirm" type="button" autofocus>取消</button>
+      <button id="accept-confirm" type="button" class="primary">确认</button>
+    </div>
+  </dialog>
+
+  <dialog id="auth-dialog" aria-labelledby="auth-title">
+    <form id="auth-form">
+      <h2 id="auth-title">邮箱登录</h2>
+      <label id="email-field" class="field">邮箱
+        <input name="email" type="email" autocomplete="username" maxlength="254" required>
+      </label>
+      <label id="password-field" class="field">密码
+        <input name="password" type="password" autocomplete="current-password" maxlength="72" required>
+      </label>
+      <p id="auth-status" class="form-status" role="status"></p>
+      <div class="dialog-actions">
+        <button id="cancel-auth" type="button">关闭</button>
+        <button id="auth-submit" type="submit" class="primary">登录</button>
+      </div>
+      <div id="auth-options" class="actions auth-options">
+        <button id="auth-login" type="button">返回登录</button>
+        <button id="auth-register" type="button">注册账号</button>
+        <button id="auth-recover" type="button">忘记密码</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
