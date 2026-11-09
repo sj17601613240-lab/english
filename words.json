@@ -1412,5 +1412,4471 @@
     "meaning": "比较两种写法或实现时，说明换用另一种方法仍得到相同结果。常见搭配是 get the same result using ...。",
     "example": "You can get the same result using a lookup table.",
     "category": "英语"
+  },
+  {
+    "term": "get the same result",
+    "cn": "得到相同的结果",
+    "meaning": "get（得到）+ the same result（相同结果）；用于比较算法或代码运行结果。",
+    "example": "We get the same result using float and double in this example.",
+    "category": "英语 / 词组"
+  },
+  {
+    "term": "result",
+    "cn": "结果",
+    "meaning": "名词，指计算、实验或操作后得到的数值或效果。常见搭配 calculation result（计算结果）、compile result（编译结果）。",
+    "example": "// Convert the result to an integer pixel value.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "same",
+    "cn": "相同的；同样的",
+    "meaning": "形容词，描述两个或多个东西没有差异。常见搭配 the same value（相同数值）、the same result（相同结果）。",
+    "example": "// Write the same gray value to all three color channels.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "same result",
+    "cn": "相同的结果",
+    "meaning": "same（相同的）+ result（结果）；可用于比较两段代码或者两种算法是否得到相同输出。",
+    "example": "Both programs produce the same result.",
+    "category": "英语 / 词组"
+  },
+  {
+    "term": "the same",
+    "cn": "同一个；相同的",
+    "meaning": "常见词组：the same + 名词，表示同一个或相同的事物。",
+    "example": "Write the same gray value to the red, green, and blue channels.",
+    "category": "英语 / 词组"
+  },
+  {
+    "term": "use",
+    "cn": "使用；用途",
+    "meaning": "动词：使用方法、变量或工具；也可以作名词，表示用途。",
+    "example": "// Use the gray value when writing the image.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "used",
+    "cn": "使用过的；被使用的",
+    "meaning": "use 的过去式与过去分词。在 used variable（已被使用的变量）或 is used（被使用）等表达中经常出现。",
+    "example": "The variable gray is used in the output statement.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "using",
+    "cn": "使用；通过使用；采用……方式",
+    "meaning": "use 的 -ing 形式；在 using + 工具或方法 中，表示“通过使用某种方法”。例如 using BT.709 luma weights 表示采用 BT.709 亮度权重。",
+    "example": "// Compute grayscale using BT.709 luma weights.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "even",
+    "cn": "偶数的",
+    "meaning": "在棋盘格算法中表示可被 2 整除的整数。",
+    "example": "Make even-numbered blocks black.",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "odd",
+    "cn": "奇数的",
+    "meaning": "在棋盘格算法中表示不能被 2 整除的整数。",
+    "example": "An odd sum produces a white block.",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "even-numbered",
+    "cn": "偶数编号的",
+    "meaning": "even 和 numbered 组合而成。",
+    "example": "Make even-numbered blocks black.",
+    "category": "英语 / 图像"
+  },
+  {
+    "term": "block",
+    "cn": "块；格子",
+    "meaning": "棋盘格中由相邻像素组成的区域。",
+    "example": "const int blockX = x / 16;",
+    "category": "图像"
+  },
+  {
+    "term": "index",
+    "cn": "索引；编号",
+    "meaning": "指一个格子或元素的位置编号，通常从 0 开始。",
+    "example": "const int blockX = x / 16; // Block index.",
+    "category": "C++"
+  },
+  {
+    "term": "indices",
+    "cn": "索引（复数）",
+    "meaning": "index 的一种复数形式。",
+    "example": "Calculate the horizontal and vertical block indices.",
+    "category": "英语 / C++"
+  },
+  {
+    "term": "default",
+    "cn": "默认的",
+    "meaning": "未满足其他条件时采用的初始值。",
+    "example": "Set the default pixel color to white.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "first",
+    "cn": "第一；最前面的",
+    "meaning": "first column 指第一列，first row 指第一行。",
+    "example": "Make the first 32 columns gray.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "horizontal",
+    "cn": "水平的",
+    "meaning": "沿左右方向。",
+    "example": "Calculate the horizontal block index.",
+    "category": "图形学"
+  },
+  {
+    "term": "vertical",
+    "cn": "垂直的",
+    "meaning": "沿上下方向。",
+    "example": "Calculate the vertical block index.",
+    "category": "图形学"
+  },
+  {
+    "term": "spatial frequency",
+    "cn": "空间频率",
+    "meaning": "图像亮暗或颜色在单位空间内重复变化的频繁程度。",
+    "example": "Smaller checkerboard blocks have a higher spatial frequency.",
+    "category": "图形学"
+  },
+  {
+    "term": "frequency",
+    "cn": "频率",
+    "meaning": "某种变化重复出现的次数或密度。",
+    "example": "Increasing the frequency creates more stripes.",
+    "category": "图形学"
+  },
+  {
+    "term": "period",
+    "cn": "周期",
+    "meaning": "一个重复图案完成一次循环的空间长度或时间。",
+    "example": "The stripe pattern repeats every 32 pixels.",
+    "category": "图形学"
+  },
+  {
+    "term": "stripe",
+    "cn": "条纹",
+    "meaning": "一条长形色带。",
+    "example": "Draw a vertical stripe on the left side.",
+    "category": "图像"
+  },
+  {
+    "term": "stripes",
+    "cn": "条纹（复数）",
+    "meaning": "stripe 的复数形式。",
+    "example": "Generate alternating black and white stripes.",
+    "category": "图像"
+  },
+  {
+    "term": "assignment",
+    "cn": "赋值",
+    "meaning": "将右侧数值赋予左侧可修改变量。",
+    "example": "color = 128; // Assignment.",
+    "category": "C++"
+  },
+  {
+    "term": "equal",
+    "cn": "相等的",
+    "meaning": "equal to 表示等于；== 是相等比较运算符。",
+    "example": "Check whether x is equal to zero.",
+    "category": "英语 / C++"
+  },
+  {
+    "term": "compare",
+    "cn": "比较",
+    "meaning": "对照两个数值或结果。",
+    "example": "Compare the two grayscale images.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "logical AND",
+    "cn": "逻辑与",
+    "meaning": "C++ 中使用 &&，两个条件都必须成立。",
+    "example": "if (x < 32 && y < 32) { color = 128; }",
+    "category": "C++"
+  },
+  {
+    "term": "pixel coordinates",
+    "cn": "像素坐标",
+    "meaning": "像素在图像中的水平 x 与垂直 y 位置。",
+    "example": "Define RGB values based on pixel coordinates.",
+    "category": "图像"
+  },
+  {
+    "term": "square",
+    "cn": "正方形",
+    "meaning": "四条边相等、四个角为直角的图形。",
+    "example": "Draw a 32 by 32 pixel square.",
+    "category": "图像"
+  },
+  {
+    "term": "black",
+    "cn": "黑色；黑色的",
+    "meaning": "在当前 8 位 PPM 中，三个 RGB 通道为 0 表示黑色。",
+    "example": "color = 0; // Black.",
+    "category": "英语 / 色彩"
+  },
+  {
+    "term": "white",
+    "cn": "白色；白色的",
+    "meaning": "在当前 8 位 PPM 中，三个 RGB 通道为 255 表示白色。",
+    "example": "color = 255; // White.",
+    "category": "英语 / 色彩"
+  },
+  {
+    "term": "pattern",
+    "cn": "图案；模式",
+    "meaning": "依某种规律排列的图像或结构。",
+    "example": "Generate a checkerboard pattern.",
+    "category": "图像"
+  },
+  {
+    "term": "procedural pattern generation",
+    "cn": "程序化图案生成",
+    "meaning": "借助坐标和数学公式以程序生成纹理与图案。",
+    "example": "Use integer division and modulo for procedural pattern generation.",
+    "category": "图形学"
+  },
+  {
+    "term": "truncate",
+    "cn": "截断；舍去",
+    "meaning": "将可表示的浮点数显式转成 int 时向零舍去小数部分。",
+    "example": "static_cast<int>(132.872) // 132",
+    "category": "C++"
+  },
+  {
+    "term": "if",
+    "cn": "如果；条件判断",
+    "meaning": "C++ 中 if 条件为真时执行对应代码块。",
+    "example": "if (x < 32) { color = 128; }",
+    "category": "C++"
+  },
+  {
+    "term": "a",
+    "cn": "一个；不定冠词",
+    "meaning": "一个；不定冠词；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "a gray square",
+    "category": "英语基础"
+  },
+  {
+    "term": "an",
+    "cn": "一个；用于元音音素开头的词前",
+    "meaning": "一个；用于元音音素开头的词前；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "an integer pixel value",
+    "category": "英语基础"
+  },
+  {
+    "term": "all",
+    "cn": "全部；所有",
+    "meaning": "全部；所有；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "all three color channels",
+    "category": "英语基础"
+  },
+  {
+    "term": "at",
+    "cn": "在；位于",
+    "meaning": "在；位于；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Look at the pixel coordinates.",
+    "category": "英语基础"
+  },
+  {
+    "term": "are",
+    "cn": "是；be 动词复数现在式",
+    "meaning": "是；be 动词复数现在式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The values are equal.",
+    "category": "英语基础"
+  },
+  {
+    "term": "as",
+    "cn": "作为；按照",
+    "meaning": "作为；按照；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Write the image as plain text.",
+    "category": "英语基础"
+  },
+  {
+    "term": "be",
+    "cn": "是；成为",
+    "meaning": "是；成为；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The output should be an integer.",
+    "category": "英语基础"
+  },
+  {
+    "term": "before",
+    "cn": "在……之前",
+    "meaning": "在……之前；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Save the source code before compiling.",
+    "category": "英语基础"
+  },
+  {
+    "term": "after",
+    "cn": "在……之后",
+    "meaning": "在……之后；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check the image after running the program.",
+    "category": "英语基础"
+  },
+  {
+    "term": "by",
+    "cn": "通过；由",
+    "meaning": "通过；由；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The pixels are processed by the loop.",
+    "category": "英语基础"
+  },
+  {
+    "term": "both",
+    "cn": "两者都",
+    "meaning": "两者都；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Both programs produce the same result.",
+    "category": "英语基础"
+  },
+  {
+    "term": "but",
+    "cn": "但是",
+    "meaning": "但是；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The code compiles, but there is a warning.",
+    "category": "英语基础"
+  },
+  {
+    "term": "can",
+    "cn": "可以；能够",
+    "meaning": "可以；能够；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "You can get the same result using float.",
+    "category": "英语基础"
+  },
+  {
+    "term": "cannot",
+    "cn": "不能",
+    "meaning": "不能；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A const variable cannot be reassigned.",
+    "category": "英语基础"
+  },
+  {
+    "term": "could",
+    "cn": "可以；可能（can 的过去式）",
+    "meaning": "可以；可能（can 的过去式）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The image could be brighter.",
+    "category": "英语基础"
+  },
+  {
+    "term": "does",
+    "cn": "做；do 的第三人称单数",
+    "meaning": "做；do 的第三人称单数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "What does this line do?",
+    "category": "英语基础"
+  },
+  {
+    "term": "do",
+    "cn": "做；执行",
+    "meaning": "做；执行；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Do not skip the error message.",
+    "category": "英语基础"
+  },
+  {
+    "term": "done",
+    "cn": "完成的；do 的过去分词",
+    "meaning": "完成的；do 的过去分词；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The compilation is done.",
+    "category": "英语基础"
+  },
+  {
+    "term": "during",
+    "cn": "在……期间",
+    "meaning": "在……期间；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The loop runs during image generation.",
+    "category": "英语基础"
+  },
+  {
+    "term": "else",
+    "cn": "否则；其他",
+    "meaning": "否则；其他；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use else for the other case.",
+    "category": "英语基础"
+  },
+  {
+    "term": "every",
+    "cn": "每一个",
+    "meaning": "每一个；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check every pixel.",
+    "category": "英语基础"
+  },
+  {
+    "term": "false",
+    "cn": "假；布尔值假",
+    "meaning": "假；布尔值假；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The condition is false when y is one.",
+    "category": "C++"
+  },
+  {
+    "term": "from",
+    "cn": "来自；从……",
+    "meaning": "来自；从……；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Read the source file from the directory.",
+    "category": "英语基础"
+  },
+  {
+    "term": "get",
+    "cn": "获得；得到",
+    "meaning": "获得；得到；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Get the same result using a different method.",
+    "category": "英语基础"
+  },
+  {
+    "term": "gets",
+    "cn": "得到；get 的第三人称单数",
+    "meaning": "得到；get 的第三人称单数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The variable gets a new value.",
+    "category": "英语基础"
+  },
+  {
+    "term": "got",
+    "cn": "得到；get 的过去式",
+    "meaning": "得到；get 的过去式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "We got the correct output.",
+    "category": "英语基础"
+  },
+  {
+    "term": "have",
+    "cn": "有；已经",
+    "meaning": "有；已经；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "We have the correct result.",
+    "category": "英语基础"
+  },
+  {
+    "term": "has",
+    "cn": "有；have 的第三人称单数",
+    "meaning": "有；have 的第三人称单数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The image has 256 rows.",
+    "category": "英语基础"
+  },
+  {
+    "term": "into",
+    "cn": "进入；转入",
+    "meaning": "进入；转入；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Convert the image into grayscale.",
+    "category": "英语基础"
+  },
+  {
+    "term": "is",
+    "cn": "是；be 动词第三人称单数",
+    "meaning": "是；be 动词第三人称单数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The pixel is in the first row.",
+    "category": "英语基础"
+  },
+  {
+    "term": "it",
+    "cn": "它",
+    "meaning": "它；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Make it black.",
+    "category": "英语基础"
+  },
+  {
+    "term": "its",
+    "cn": "它的",
+    "meaning": "它的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check its value.",
+    "category": "英语基础"
+  },
+  {
+    "term": "keep",
+    "cn": "保持；保留",
+    "meaning": "保持；保留；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Keep the pixel white.\nIf the condition is false, keep the default color.",
+    "category": "英语基础"
+  },
+  {
+    "term": "keeps",
+    "cn": "持续保持；keep 的第三人称单数",
+    "meaning": "持续保持；keep 的第三人称单数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The loop keeps running.",
+    "category": "英语基础"
+  },
+  {
+    "term": "more",
+    "cn": "更多的",
+    "meaning": "更多的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "More pixels are black.",
+    "category": "英语基础"
+  },
+  {
+    "term": "must",
+    "cn": "必须",
+    "meaning": "必须；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Both conditions must be true.",
+    "category": "英语基础"
+  },
+  {
+    "term": "new",
+    "cn": "新的",
+    "meaning": "新的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Add a new word.",
+    "category": "英语基础"
+  },
+  {
+    "term": "next",
+    "cn": "下一个；接下来的",
+    "meaning": "下一个；接下来的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Move to the next row.",
+    "category": "英语基础"
+  },
+  {
+    "term": "no",
+    "cn": "不；没有",
+    "meaning": "不；没有；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "No compilation errors were reported.",
+    "category": "英语基础"
+  },
+  {
+    "term": "not",
+    "cn": "不；否定",
+    "meaning": "不；否定；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The variable was not declared.",
+    "category": "英语基础"
+  },
+  {
+    "term": "now",
+    "cn": "现在",
+    "meaning": "现在；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Now run the program.",
+    "category": "英语基础"
+  },
+  {
+    "term": "of",
+    "cn": "……的；表示所属关系",
+    "meaning": "……的；表示所属关系；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The height of the image is 256.",
+    "category": "英语基础"
+  },
+  {
+    "term": "on",
+    "cn": "在……上；依据",
+    "meaning": "在……上；依据；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Based on pixel coordinates.",
+    "category": "英语基础"
+  },
+  {
+    "term": "one",
+    "cn": "一；一个",
+    "meaning": "一；一个；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The first row is one pixel high.",
+    "category": "英语基础"
+  },
+  {
+    "term": "only",
+    "cn": "只有；仅仅",
+    "meaning": "只有；仅仅；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Only the first column is gray.",
+    "category": "英语基础"
+  },
+  {
+    "term": "or",
+    "cn": "或；或者",
+    "meaning": "或；或者；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use float or double.",
+    "category": "英语基础"
+  },
+  {
+    "term": "other",
+    "cn": "其他的",
+    "meaning": "其他的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use another file for the other algorithm.",
+    "category": "英语基础"
+  },
+  {
+    "term": "other than",
+    "cn": "除了；不同于",
+    "meaning": "除了；不同于；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use a value other than zero.",
+    "category": "英语基础"
+  },
+  {
+    "term": "out",
+    "cn": "向外；输出",
+    "meaning": "向外；输出；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The data is written out.",
+    "category": "英语基础"
+  },
+  {
+    "term": "over",
+    "cn": "超过；在……上方",
+    "meaning": "超过；在……上方；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Loop over each pixel.",
+    "category": "英语基础"
+  },
+  {
+    "term": "per",
+    "cn": "每；每个",
+    "meaning": "每；每个；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "32 pixels per block.",
+    "category": "英语基础"
+  },
+  {
+    "term": "so",
+    "cn": "所以；因此",
+    "meaning": "所以；因此；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The x value changes, so the color changes.",
+    "category": "英语基础"
+  },
+  {
+    "term": "some",
+    "cn": "一些",
+    "meaning": "一些；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Some pixels are gray.",
+    "category": "英语基础"
+  },
+  {
+    "term": "such as",
+    "cn": "例如",
+    "meaning": "例如；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use a format such as PPM.",
+    "category": "英语基础"
+  },
+  {
+    "term": "than",
+    "cn": "比……",
+    "meaning": "比……；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Green has more weight than blue.",
+    "category": "英语基础"
+  },
+  {
+    "term": "then",
+    "cn": "然后",
+    "meaning": "然后；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Compute the value, then write it.",
+    "category": "英语基础"
+  },
+  {
+    "term": "that",
+    "cn": "那个；表示从句连接",
+    "meaning": "那个；表示从句连接；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The variable that stores the result is gray.",
+    "category": "英语基础"
+  },
+  {
+    "term": "their",
+    "cn": "他们的；它们的",
+    "meaning": "他们的；它们的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Each pixel has its own coordinates.",
+    "category": "英语基础"
+  },
+  {
+    "term": "them",
+    "cn": "他们；它们（宾格）",
+    "meaning": "他们；它们（宾格）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Write them to the image.",
+    "category": "英语基础"
+  },
+  {
+    "term": "these",
+    "cn": "这些",
+    "meaning": "这些；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "These values define the color.",
+    "category": "英语基础"
+  },
+  {
+    "term": "this",
+    "cn": "这个",
+    "meaning": "这个；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "This variable stores the result.",
+    "category": "英语基础"
+  },
+  {
+    "term": "those",
+    "cn": "那些",
+    "meaning": "那些；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Those pixels are white.",
+    "category": "英语基础"
+  },
+  {
+    "term": "three",
+    "cn": "三；三个",
+    "meaning": "三；三个；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "all three color channels",
+    "category": "英语基础"
+  },
+  {
+    "term": "to",
+    "cn": "向；到；用于构成不定式",
+    "meaning": "向；到；用于构成不定式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Write the pixel to the image.",
+    "category": "英语基础"
+  },
+  {
+    "term": "too",
+    "cn": "也；过于",
+    "meaning": "也；过于；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The value is too large.",
+    "category": "英语基础"
+  },
+  {
+    "term": "two",
+    "cn": "二；两个",
+    "meaning": "二；两个；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Compare two values.",
+    "category": "英语基础"
+  },
+  {
+    "term": "up",
+    "cn": "向上；向上方",
+    "meaning": "向上；向上方；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Move up one row.",
+    "category": "英语基础"
+  },
+  {
+    "term": "was",
+    "cn": "是；be 的过去式",
+    "meaning": "是；be 的过去式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The variable was not declared.",
+    "category": "英语基础"
+  },
+  {
+    "term": "were",
+    "cn": "是；be 的过去式复数",
+    "meaning": "是；be 的过去式复数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The files were created.",
+    "category": "英语基础"
+  },
+  {
+    "term": "we",
+    "cn": "我们",
+    "meaning": "我们；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "We get the same result.",
+    "category": "英语基础"
+  },
+  {
+    "term": "when",
+    "cn": "当……时候",
+    "meaning": "当……时候；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use const when a value must not change.",
+    "category": "英语基础"
+  },
+  {
+    "term": "where",
+    "cn": "哪里；在……处",
+    "meaning": "哪里；在……处；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Where is the output file?",
+    "category": "英语基础"
+  },
+  {
+    "term": "whether",
+    "cn": "是否",
+    "meaning": "是否；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check whether the sum is even.",
+    "category": "英语基础"
+  },
+  {
+    "term": "which",
+    "cn": "哪个；哪些",
+    "meaning": "哪个；哪些；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Which variable stores the result?",
+    "category": "英语基础"
+  },
+  {
+    "term": "while",
+    "cn": "当……时；while 循环",
+    "meaning": "当……时；while 循环；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "while (x < width) { x++; }",
+    "category": "C++"
+  },
+  {
+    "term": "with",
+    "cn": "用；与……一起",
+    "meaning": "用；与……一起；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use a loop with two variables.",
+    "category": "英语基础"
+  },
+  {
+    "term": "without",
+    "cn": "没有；不使用",
+    "meaning": "没有；不使用；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Run the program without Docker.",
+    "category": "英语基础"
+  },
+  {
+    "term": "would",
+    "cn": "会；将会（假设语气）",
+    "meaning": "会；将会（假设语气）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The image would be darker.",
+    "category": "英语基础"
+  },
+  {
+    "term": "you",
+    "cn": "你",
+    "meaning": "你；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "You can compare the results.",
+    "category": "英语基础"
+  },
+  {
+    "term": "your",
+    "cn": "你的",
+    "meaning": "你的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check your source code.",
+    "category": "英语基础"
+  },
+  {
+    "term": "zero",
+    "cn": "零",
+    "meaning": "零；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The remainder is zero.",
+    "category": "英语基础"
+  },
+  {
+    "term": "add",
+    "cn": "添加；相加",
+    "meaning": "添加；相加；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Add a new word to the dictionary.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "added",
+    "cn": "已添加的",
+    "meaning": "已添加的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The new word was added.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "adding",
+    "cn": "正在添加；加上",
+    "meaning": "正在添加；加上；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Adding the two indices gives a sum.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "apply",
+    "cn": "应用；施加",
+    "meaning": "应用；施加；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Apply the same gray value to RGB.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "assign",
+    "cn": "赋值；分配",
+    "meaning": "赋值；分配；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Assign 128 to color.\nAssign the result to the gray variable.",
+    "category": "C++"
+  },
+  {
+    "term": "assigned",
+    "cn": "被赋值的",
+    "meaning": "被赋值的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The value assigned to color is 128.",
+    "category": "C++"
+  },
+  {
+    "term": "base",
+    "cn": "基础；底部；作为基底",
+    "meaning": "基础；底部；作为基底；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use the source file as a base.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "calculate",
+    "cn": "计算",
+    "meaning": "计算；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Calculate the horizontal and vertical block indices.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "calculated",
+    "cn": "计算得到的",
+    "meaning": "计算得到的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The calculated luma is 132.872.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "calculates",
+    "cn": "计算；calculate 的第三人称单数",
+    "meaning": "计算；calculate 的第三人称单数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The program calculates grayscale.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "calculating",
+    "cn": "正在计算",
+    "meaning": "正在计算；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Calculating luma requires weights.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "calculation",
+    "cn": "计算；计算过程",
+    "meaning": "计算；计算过程；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The calculation produces a floating-point value.",
+    "category": "英语 / 数学"
+  },
+  {
+    "term": "calculations",
+    "cn": "计算（复数）",
+    "meaning": "计算（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "GPU calculations can run in parallel.",
+    "category": "英语 / 数学"
+  },
+  {
+    "term": "change",
+    "cn": "改变；修改",
+    "meaning": "改变；修改；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Change the block size from 32 to 16.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "changed",
+    "cn": "已修改的",
+    "meaning": "已修改的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The changed code must be recompiled.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "changes",
+    "cn": "修改；变化",
+    "meaning": "修改；变化；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The x coordinate changes by one.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "check",
+    "cn": "检查；核对",
+    "meaning": "检查；核对；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check whether the block index sum is even.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "checked",
+    "cn": "已检查的",
+    "meaning": "已检查的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The output file has been checked.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "checking",
+    "cn": "检查中",
+    "meaning": "检查中；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Checking the compiler output helps debugging.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "comparison",
+    "cn": "比较",
+    "meaning": "比较；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "An equality comparison uses ==.",
+    "category": "C++"
+  },
+  {
+    "term": "compiled",
+    "cn": "编译后的；已编译的",
+    "meaning": "编译后的；已编译的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Run the compiled executable.\nThe source file is compiled into an executable.",
+    "category": "C++"
+  },
+  {
+    "term": "compilation",
+    "cn": "编译过程",
+    "meaning": "编译过程；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "An error stops compilation.",
+    "category": "C++"
+  },
+  {
+    "term": "converted",
+    "cn": "转换后的",
+    "meaning": "转换后的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The converted value is 132.",
+    "category": "C++"
+  },
+  {
+    "term": "converting",
+    "cn": "正在转换",
+    "meaning": "正在转换；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Converting double to int truncates decimals.",
+    "category": "C++"
+  },
+  {
+    "term": "copy",
+    "cn": "复制",
+    "meaning": "复制；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Copy the file to the output folder.\nCopy the file to the output directory.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "correct",
+    "cn": "正确的；纠正",
+    "meaning": "正确的；纠正；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Correct the variable name.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "correction",
+    "cn": "修正；校正",
+    "meaning": "修正；校正；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Apply gamma correction.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "creates",
+    "cn": "创建；生成",
+    "meaning": "创建；生成；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The program creates a PPM file.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "describe",
+    "cn": "描述",
+    "meaning": "描述；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Describe the color of the first row.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "edit",
+    "cn": "编辑；修改",
+    "meaning": "编辑；修改；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Edit the source code in VS Code.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "editing",
+    "cn": "编辑（进行中）",
+    "meaning": "编辑（进行中）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Save after editing the file.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "equality",
+    "cn": "相等；相等关系",
+    "meaning": "相等；相等关系；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use == for equality comparison.",
+    "category": "C++"
+  },
+  {
+    "term": "evaluate",
+    "cn": "求值；计算表达式",
+    "meaning": "求值；计算表达式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Evaluate the condition before running the block.",
+    "category": "C++"
+  },
+  {
+    "term": "executed",
+    "cn": "已执行的",
+    "meaning": "已执行的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The if block is executed when the condition is true.",
+    "category": "C++"
+  },
+  {
+    "term": "explain",
+    "cn": "解释",
+    "meaning": "解释；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Explain what the variable stores.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "explained",
+    "cn": "解释过的",
+    "meaning": "解释过的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The operator is explained below.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "find",
+    "cn": "找到；查找",
+    "meaning": "找到；查找；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Find the source of the error.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "found",
+    "cn": "找到的；find 的过去式",
+    "meaning": "找到的；find 的过去式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The error was found on line 40.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "generate",
+    "cn": "生成",
+    "meaning": "生成；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Generate a checkerboard pattern.",
+    "category": "图像"
+  },
+  {
+    "term": "generated",
+    "cn": "生成的",
+    "meaning": "生成的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Open the generated image.",
+    "category": "图像"
+  },
+  {
+    "term": "generating",
+    "cn": "正在生成",
+    "meaning": "正在生成；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Generating the image uses nested loops.",
+    "category": "图像"
+  },
+  {
+    "term": "generation",
+    "cn": "生成过程",
+    "meaning": "生成过程；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Procedural pattern generation uses math.",
+    "category": "图形学"
+  },
+  {
+    "term": "including",
+    "cn": "包括；包含",
+    "meaning": "包括；包含；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check all rows, including the first row.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "initialize",
+    "cn": "初始化",
+    "meaning": "初始化；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Initialize color to 255.",
+    "category": "C++"
+  },
+  {
+    "term": "initialized",
+    "cn": "已初始化的",
+    "meaning": "已初始化的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The variable is initialized to 255.",
+    "category": "C++"
+  },
+  {
+    "term": "initializing",
+    "cn": "初始化中",
+    "meaning": "初始化中；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Initializing a const variable is required.",
+    "category": "C++"
+  },
+  {
+    "term": "make",
+    "cn": "使……变成；制作",
+    "meaning": "使……变成；制作；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Make even-numbered blocks black.\nMake the first row black.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "modified",
+    "cn": "已经修改的",
+    "meaning": "已经修改的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Recompile the modified source file.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "modify",
+    "cn": "修改",
+    "meaning": "修改；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Modify the value of color.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "need",
+    "cn": "需要",
+    "meaning": "需要；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "You need to compile again.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "needs",
+    "cn": "需要（第三人称）",
+    "meaning": "需要（第三人称）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The program needs a file stream.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "open",
+    "cn": "打开",
+    "meaning": "打开；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Open the output image.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "opened",
+    "cn": "已打开的",
+    "meaning": "已打开的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The file is opened by the image viewer.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "pass",
+    "cn": "通过；传递",
+    "meaning": "通过；传递；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Pass the value to the function.",
+    "category": "C++"
+  },
+  {
+    "term": "position",
+    "cn": "位置",
+    "meaning": "位置；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The pixel position is given by x and y.",
+    "category": "图像"
+  },
+  {
+    "term": "positions",
+    "cn": "位置（复数）",
+    "meaning": "位置（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Pixel positions change inside the loops.",
+    "category": "图像"
+  },
+  {
+    "term": "process",
+    "cn": "处理；过程",
+    "meaning": "处理；过程；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Process the current pixel.",
+    "category": "图像"
+  },
+  {
+    "term": "processing",
+    "cn": "处理过程",
+    "meaning": "处理过程；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Image processing changes pixel values.",
+    "category": "图像"
+  },
+  {
+    "term": "produce",
+    "cn": "生成；产生",
+    "meaning": "生成；产生；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Both programs produce the same result.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "produced",
+    "cn": "生成了；产生了",
+    "meaning": "生成了；产生了；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The program produced a PPM image.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "produces",
+    "cn": "产生；生成",
+    "meaning": "产生；生成；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The calculation produces a gray value.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "read",
+    "cn": "读取；读",
+    "meaning": "读取；读；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Read the source file.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "reading",
+    "cn": "阅读；读取中",
+    "meaning": "阅读；读取中；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Reading the error helps debugging.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "remove",
+    "cn": "删除；移除",
+    "meaning": "删除；移除；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Remove the unused variable.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "removed",
+    "cn": "已经移除的",
+    "meaning": "已经移除的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The error was removed.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "repeats",
+    "cn": "重复（第三人称）",
+    "meaning": "重复（第三人称）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The stripe pattern repeats every 32 pixels.",
+    "category": "图形学"
+  },
+  {
+    "term": "replace",
+    "cn": "替换",
+    "meaning": "替换；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Replace luminance with gray in the output line.",
+    "category": "C++"
+  },
+  {
+    "term": "replaced",
+    "cn": "替换过的",
+    "meaning": "替换过的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The old formula was replaced.",
+    "category": "C++"
+  },
+  {
+    "term": "recompile",
+    "cn": "重新编译",
+    "meaning": "重新编译；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Recompile after editing the source file.",
+    "category": "C++"
+  },
+  {
+    "term": "recompiled",
+    "cn": "重新编译完成的",
+    "meaning": "重新编译完成的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Run the recompiled executable.",
+    "category": "C++"
+  },
+  {
+    "term": "reset",
+    "cn": "重置",
+    "meaning": "重置；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Reset the variable to zero.",
+    "category": "C++"
+  },
+  {
+    "term": "results",
+    "cn": "结果（复数）",
+    "meaning": "结果（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Compare the two results.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "returned",
+    "cn": "返回的",
+    "meaning": "返回的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The function returned zero.",
+    "category": "C++"
+  },
+  {
+    "term": "running",
+    "cn": "正在运行",
+    "meaning": "正在运行；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The program is running.",
+    "category": "C++"
+  },
+  {
+    "term": "saved",
+    "cn": "已经保存的",
+    "meaning": "已经保存的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Open the saved image.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "select",
+    "cn": "选择",
+    "meaning": "选择；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Select the first 32 columns.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "selected",
+    "cn": "选中的",
+    "meaning": "选中的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The selected pixels turn gray.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "set",
+    "cn": "设置；赋值为",
+    "meaning": "设置；赋值为；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Set the default color to white.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "shows",
+    "cn": "显示（第三人称）",
+    "meaning": "显示（第三人称）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The image shows a checkerboard.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "show",
+    "cn": "显示",
+    "meaning": "显示；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Show the output in the terminal.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "store",
+    "cn": "存储；保存",
+    "meaning": "存储；保存；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Store the conversion result in gray.",
+    "category": "C++"
+  },
+  {
+    "term": "stored",
+    "cn": "存储过的",
+    "meaning": "存储过的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The stored value is an integer.",
+    "category": "C++"
+  },
+  {
+    "term": "stores",
+    "cn": "存储（第三人称）",
+    "meaning": "存储（第三人称）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The gray variable stores the integer result.",
+    "category": "C++"
+  },
+  {
+    "term": "sum",
+    "cn": "总和；求和结果",
+    "meaning": "总和；求和结果；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check whether the block index sum is even.",
+    "category": "数学"
+  },
+  {
+    "term": "sums",
+    "cn": "和（复数）；求和",
+    "meaning": "和（复数）；求和；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The program sums two indices.",
+    "category": "数学"
+  },
+  {
+    "term": "truncates",
+    "cn": "截断；去掉小数部分",
+    "meaning": "截断；去掉小数部分；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Converting to int truncates the fractional part.\nAn integer conversion truncates the decimal part.",
+    "category": "C++"
+  },
+  {
+    "term": "update",
+    "cn": "更新",
+    "meaning": "更新；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Update the public word list.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "updated",
+    "cn": "已更新的",
+    "meaning": "已更新的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The updated dictionary has more words.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "updates",
+    "cn": "更新（复数）",
+    "meaning": "更新（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Updates appear after deployment.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "validate",
+    "cn": "验证",
+    "meaning": "验证；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Validate the output file before deploying.",
+    "category": "软件工程"
+  },
+  {
+    "term": "validated",
+    "cn": "已验证的",
+    "meaning": "已验证的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The tests validated the code.",
+    "category": "软件工程"
+  },
+  {
+    "term": "verify",
+    "cn": "核验；检查",
+    "meaning": "核验；检查；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Verify the generated file.",
+    "category": "软件工程"
+  },
+  {
+    "term": "verified",
+    "cn": "核验过的",
+    "meaning": "核验过的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The output has been verified.",
+    "category": "软件工程"
+  },
+  {
+    "term": "view",
+    "cn": "查看；视图",
+    "meaning": "查看；视图；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "View the output image.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "viewer",
+    "cn": "查看器",
+    "meaning": "查看器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Open the PPM file in an image viewer.",
+    "category": "图像"
+  },
+  {
+    "term": "warnings",
+    "cn": "警告（复数）",
+    "meaning": "警告（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Fix the warnings before proceeding.",
+    "category": "编译器报错"
+  },
+  {
+    "term": "weights",
+    "cn": "权重（复数）",
+    "meaning": "权重（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Compute grayscale using BT.709 luma weights.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "works",
+    "cn": "可以正常工作",
+    "meaning": "可以正常工作；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The output file works in the image viewer.",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "written",
+    "cn": "写入的；write 的过去分词",
+    "meaning": "写入的；write 的过去分词；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The value is written to the file.",
+    "category": "C++"
+  },
+  {
+    "term": "algorithms",
+    "cn": "算法（复数）",
+    "meaning": "算法（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Image algorithms process pixels.",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "alternating",
+    "cn": "交替出现的",
+    "meaning": "交替出现的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Generate alternating black and white stripes.",
+    "category": "图形学"
+  },
+  {
+    "term": "blocks",
+    "cn": "块；格子（复数）",
+    "meaning": "块；格子（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Make even-numbered blocks black.",
+    "category": "图形学"
+  },
+  {
+    "term": "bottom",
+    "cn": "底部；最下方",
+    "meaning": "底部；最下方；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The bottom row has a larger y coordinate.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "brightness",
+    "cn": "亮度调节；亮度",
+    "meaning": "亮度调节；亮度；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Adjust image brightness.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "byte",
+    "cn": "字节",
+    "meaning": "字节；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "An int commonly uses four bytes.",
+    "category": "C++"
+  },
+  {
+    "term": "bytes",
+    "cn": "字节（复数）",
+    "meaning": "字节（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A double commonly uses eight bytes.",
+    "category": "C++"
+  },
+  {
+    "term": "channels",
+    "cn": "通道（复数）",
+    "meaning": "通道（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Write the same value to all three color channels.\nThe gray value is written to all three channels.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "checkered",
+    "cn": "棋盘状的",
+    "meaning": "棋盘状的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A checkerboard has a checkered pattern.",
+    "category": "图形学"
+  },
+  {
+    "term": "color",
+    "cn": "颜色；色彩",
+    "meaning": "颜色；色彩；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Set the default color to white.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "colors",
+    "cn": "颜色（复数）",
+    "meaning": "颜色（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Black and white are two colors.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "columns",
+    "cn": "列（复数）",
+    "meaning": "列（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Make the first 32 columns gray.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "corner",
+    "cn": "角；角落",
+    "meaning": "角；角落；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The top-left corner is black.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "darker",
+    "cn": "更暗的",
+    "meaning": "更暗的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The top-left corner looks darker.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "decimal",
+    "cn": "小数；十进制的",
+    "meaning": "小数；十进制的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The value 132.872 contains a decimal part.",
+    "category": "数学"
+  },
+  {
+    "term": "decimals",
+    "cn": "小数（复数）",
+    "meaning": "小数（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Converting to int truncates decimals.",
+    "category": "数学"
+  },
+  {
+    "term": "difference",
+    "cn": "差异；差值",
+    "meaning": "差异；差值；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Compare the difference between images.",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "direction",
+    "cn": "方向",
+    "meaning": "方向；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The image gradient changes direction.",
+    "category": "图形学"
+  },
+  {
+    "term": "directions",
+    "cn": "方向（复数）",
+    "meaning": "方向（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The x and y directions are perpendicular.",
+    "category": "图形学"
+  },
+  {
+    "term": "down",
+    "cn": "向下",
+    "meaning": "向下；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "y increases down the image.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "draw",
+    "cn": "绘制；画",
+    "meaning": "绘制；画；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Draw a vertical stripe.",
+    "category": "图像"
+  },
+  {
+    "term": "drawing",
+    "cn": "绘制；图画",
+    "meaning": "绘制；图画；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Drawing pixels can form a pattern.",
+    "category": "图像"
+  },
+  {
+    "term": "example",
+    "cn": "例子；示例",
+    "meaning": "例子；示例；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "For example, 7 % 2 equals 1.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "examples",
+    "cn": "示例（复数）",
+    "meaning": "示例（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "These examples show integer division.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "fractional",
+    "cn": "小数部分的；分数的",
+    "meaning": "小数部分的；分数的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Truncate the fractional part.",
+    "category": "数学"
+  },
+  {
+    "term": "higher",
+    "cn": "更高的",
+    "meaning": "更高的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Smaller blocks have a higher spatial frequency.",
+    "category": "英语 / 数学"
+  },
+  {
+    "term": "left",
+    "cn": "左边；左侧",
+    "meaning": "左边；左侧；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The first column is on the left.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "line",
+    "cn": "一行；一条线",
+    "meaning": "一行；一条线；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The first vertical line is black.",
+    "category": "图像"
+  },
+  {
+    "term": "lines",
+    "cn": "多行；线条（复数）",
+    "meaning": "多行；线条（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Read the compiler error lines.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "little",
+    "cn": "一点；少量",
+    "meaning": "一点；少量；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The stripe is a little darker.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "lower",
+    "cn": "更低；较低",
+    "meaning": "更低；较低；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Blue has a lower weight.",
+    "category": "英语 / 数学"
+  },
+  {
+    "term": "middle",
+    "cn": "中间",
+    "meaning": "中间；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "x = 128 is near the middle of a 256-pixel image.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "number",
+    "cn": "数字；编号",
+    "meaning": "数字；编号；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "An even number leaves a remainder of zero.",
+    "category": "数学"
+  },
+  {
+    "term": "numbered",
+    "cn": "带编号的",
+    "meaning": "带编号的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Make even-numbered blocks black.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "numbers",
+    "cn": "数字（复数）",
+    "meaning": "数字（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The pixel values are numbers.",
+    "category": "数学"
+  },
+  {
+    "term": "part",
+    "cn": "部分",
+    "meaning": "部分；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The fractional part is truncated.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "parts",
+    "cn": "部分（复数）",
+    "meaning": "部分（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The program has two main parts.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "patterns",
+    "cn": "图案（复数）",
+    "meaning": "图案（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Procedural patterns use math.",
+    "category": "图形学"
+  },
+  {
+    "term": "periodic",
+    "cn": "周期性的",
+    "meaning": "周期性的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A checkerboard is a periodic pattern.",
+    "category": "图形学"
+  },
+  {
+    "term": "procedural",
+    "cn": "程序化的",
+    "meaning": "程序化的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Generate a procedural texture.",
+    "category": "图形学"
+  },
+  {
+    "term": "range",
+    "cn": "范围",
+    "meaning": "范围；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "RGB channels are usually in the range 0 to 255 here.",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "right",
+    "cn": "右边；右侧",
+    "meaning": "右边；右侧；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "x increases to the right.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "rows",
+    "cn": "行（复数）",
+    "meaning": "行（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Loop through all rows.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "screen",
+    "cn": "屏幕；银幕",
+    "meaning": "屏幕；银幕；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Show the image on the screen.",
+    "category": "图像 / 影视"
+  },
+  {
+    "term": "second",
+    "cn": "第二；秒",
+    "meaning": "第二；秒；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The second row has y = 1.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "smaller",
+    "cn": "更小的",
+    "meaning": "更小的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Smaller blocks have a higher spatial frequency.",
+    "category": "图形学"
+  },
+  {
+    "term": "third",
+    "cn": "第三",
+    "meaning": "第三；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The third block has index 2.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "top",
+    "cn": "顶部；最上方",
+    "meaning": "顶部；最上方；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The top row has y = 0.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "top-left",
+    "cn": "左上角的",
+    "meaning": "左上角的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The top-left square is black.",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "true",
+    "cn": "真的；布尔值 true",
+    "meaning": "真的；布尔值 true；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The if condition is true when x < 32.",
+    "category": "C++"
+  },
+  {
+    "term": "values",
+    "cn": "数值（复数）",
+    "meaning": "数值（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Define the RGB values based on pixel coordinates.",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "assigning",
+    "cn": "正在赋值",
+    "meaning": "正在赋值；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Assigning a new value changes color.",
+    "category": "C++"
+  },
+  {
+    "term": "brace",
+    "cn": "大括号；花括号",
+    "meaning": "大括号；花括号；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use braces around the if body.",
+    "category": "C++"
+  },
+  {
+    "term": "braces",
+    "cn": "大括号（复数）",
+    "meaning": "大括号（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The code block is surrounded by braces.",
+    "category": "C++"
+  },
+  {
+    "term": "bracket",
+    "cn": "括号；方括号",
+    "meaning": "括号；方括号；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check the bracket in the expression.",
+    "category": "C++"
+  },
+  {
+    "term": "brackets",
+    "cn": "括号（复数）",
+    "meaning": "括号（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The brackets mark a range.",
+    "category": "C++"
+  },
+  {
+    "term": "boolean",
+    "cn": "布尔类型；真假值",
+    "meaning": "布尔类型；真假值；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The comparison returns a boolean result.",
+    "category": "C++"
+  },
+  {
+    "term": "conditional",
+    "cn": "条件的；条件语句",
+    "meaning": "条件的；条件语句；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use a conditional statement for coloring.",
+    "category": "C++"
+  },
+  {
+    "term": "constructor",
+    "cn": "构造函数",
+    "meaning": "构造函数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "An ofstream constructor opens a file.",
+    "category": "C++"
+  },
+  {
+    "term": "declaration",
+    "cn": "声明",
+    "meaning": "声明；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A variable declaration introduces a name.",
+    "category": "C++"
+  },
+  {
+    "term": "defined",
+    "cn": "已定义的",
+    "meaning": "已定义的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The variable is defined before use.",
+    "category": "C++"
+  },
+  {
+    "term": "divided",
+    "cn": "被除以；分开的",
+    "meaning": "被除以；分开的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "100 divided by 32 gives 3 in integer division.",
+    "category": "数学"
+  },
+  {
+    "term": "divide",
+    "cn": "除；划分",
+    "meaning": "除；划分；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Divide x by 32.",
+    "category": "数学"
+  },
+  {
+    "term": "division",
+    "cn": "除法",
+    "meaning": "除法；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Integer division truncates fractional parts.",
+    "category": "数学"
+  },
+  {
+    "term": "expression",
+    "cn": "表达式",
+    "meaning": "表达式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Evaluate the expression x < 32.",
+    "category": "C++"
+  },
+  {
+    "term": "expressions",
+    "cn": "表达式（复数）",
+    "meaning": "表达式（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "C++ expressions return values.",
+    "category": "C++"
+  },
+  {
+    "term": "floating",
+    "cn": "浮动的；浮点语境",
+    "meaning": "浮动的；浮点语境；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Floating-point variables store fractions.",
+    "category": "C++"
+  },
+  {
+    "term": "greater",
+    "cn": "更大的",
+    "meaning": "更大的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A greater x value is farther right.",
+    "category": "数学"
+  },
+  {
+    "term": "invalid",
+    "cn": "无效的；不合法的",
+    "meaning": "无效的；不合法的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A value of 500 is invalid for this PPM channel.",
+    "category": "C++"
+  },
+  {
+    "term": "logical",
+    "cn": "逻辑的",
+    "meaning": "逻辑的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "&& is the logical AND operator.",
+    "category": "C++"
+  },
+  {
+    "term": "operators",
+    "cn": "运算符（复数）",
+    "meaning": "运算符（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "C++ has arithmetic and comparison operators.",
+    "category": "C++"
+  },
+  {
+    "term": "programs",
+    "cn": "程序（复数）",
+    "meaning": "程序（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Both programs produce the same result.",
+    "category": "C++"
+  },
+  {
+    "term": "semicolon",
+    "cn": "分号",
+    "meaning": "分号；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "End the statement with a semicolon.",
+    "category": "C++"
+  },
+  {
+    "term": "statement",
+    "cn": "语句",
+    "meaning": "语句；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The if statement selects pixels.\nIf the condition is true, execute the statement.",
+    "category": "C++"
+  },
+  {
+    "term": "statements",
+    "cn": "语句（复数）",
+    "meaning": "语句（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The code has two output statements.",
+    "category": "C++"
+  },
+  {
+    "term": "truncated",
+    "cn": "已截断的",
+    "meaning": "已截断的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The decimal fraction is truncated.",
+    "category": "C++"
+  },
+  {
+    "term": "types",
+    "cn": "类型（复数）",
+    "meaning": "类型（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Float and double are floating-point types.",
+    "category": "C++"
+  },
+  {
+    "term": "undeclared",
+    "cn": "未声明的",
+    "meaning": "未声明的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The variable gray is undeclared here.",
+    "category": "编译器报错"
+  },
+  {
+    "term": "almost",
+    "cn": "几乎",
+    "meaning": "几乎；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The -A option shows almost all files.",
+    "category": "Linux"
+  },
+  {
+    "term": "append",
+    "cn": "追加；附加",
+    "meaning": "追加；附加；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Append a newline to the PPM file.",
+    "category": "C++"
+  },
+  {
+    "term": "arguments",
+    "cn": "参数（复数）",
+    "meaning": "参数（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Pass arguments to the command.",
+    "category": "Linux"
+  },
+  {
+    "term": "bash",
+    "cn": "Bash 命令解释器",
+    "meaning": "Bash 命令解释器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The terminal uses Bash.",
+    "category": "Linux"
+  },
+  {
+    "term": "command-line",
+    "cn": "命令行的",
+    "meaning": "命令行的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "unrecognized command-line option",
+    "category": "Linux"
+  },
+  {
+    "term": "contents",
+    "cn": "内容",
+    "meaning": "内容；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "List directory contents with ls.\nUse the alias to list directory contents.",
+    "category": "Linux"
+  },
+  {
+    "term": "detail",
+    "cn": "详细信息",
+    "meaning": "详细信息；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Show file details with ls -l.",
+    "category": "Linux"
+  },
+  {
+    "term": "details",
+    "cn": "详细信息（复数）",
+    "meaning": "详细信息（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check the file details.",
+    "category": "Linux"
+  },
+  {
+    "term": "display",
+    "cn": "显示",
+    "meaning": "显示；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Display the file size.",
+    "category": "Linux"
+  },
+  {
+    "term": "displayed",
+    "cn": "已显示的",
+    "meaning": "已显示的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The displayed size is human-readable.",
+    "category": "Linux"
+  },
+  {
+    "term": "files",
+    "cn": "文件（复数）",
+    "meaning": "文件（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "List files in the directory.",
+    "category": "Linux"
+  },
+  {
+    "term": "folder",
+    "cn": "文件夹",
+    "meaning": "文件夹；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Open the project folder.",
+    "category": "Linux"
+  },
+  {
+    "term": "folders",
+    "cn": "文件夹（复数）",
+    "meaning": "文件夹（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "List files and folders.",
+    "category": "Linux"
+  },
+  {
+    "term": "listing",
+    "cn": "列出的内容；列表",
+    "meaning": "列出的内容；列表；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Long listing displays file details.",
+    "category": "Linux"
+  },
+  {
+    "term": "long",
+    "cn": "长的；详细的",
+    "meaning": "长的；详细的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Long listing mode uses -l.",
+    "category": "Linux"
+  },
+  {
+    "term": "option",
+    "cn": "选项",
+    "meaning": "选项；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check the -std=c++17 command-line option.",
+    "category": "Linux"
+  },
+  {
+    "term": "options",
+    "cn": "选项（复数）",
+    "meaning": "选项（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Command-line options modify program behavior.",
+    "category": "Linux"
+  },
+  {
+    "term": "owner",
+    "cn": "所有者",
+    "meaning": "所有者；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The file owner is wang.",
+    "category": "Linux"
+  },
+  {
+    "term": "ownership",
+    "cn": "所有权",
+    "meaning": "所有权；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check file ownership.",
+    "category": "Linux"
+  },
+  {
+    "term": "permission",
+    "cn": "权限",
+    "meaning": "权限；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The file permission controls access.",
+    "category": "Linux"
+  },
+  {
+    "term": "permissions",
+    "cn": "权限（复数）",
+    "meaning": "权限（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "View file permissions with ls -l.",
+    "category": "Linux"
+  },
+  {
+    "term": "prefix",
+    "cn": "前缀",
+    "meaning": "前缀；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The shell prompt has a prefix.",
+    "category": "Linux"
+  },
+  {
+    "term": "prompt",
+    "cn": "提示符；提示信息",
+    "meaning": "提示符；提示信息；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The terminal prompt shows the directory.",
+    "category": "Linux"
+  },
+  {
+    "term": "shell",
+    "cn": "Shell 命令解释器",
+    "meaning": "Shell 命令解释器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Bash is a shell.",
+    "category": "Linux"
+  },
+  {
+    "term": "status",
+    "cn": "状态",
+    "meaning": "状态；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check the compilation status.",
+    "category": "Linux"
+  },
+  {
+    "term": "unknown",
+    "cn": "未知的",
+    "meaning": "未知的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The command is unknown.",
+    "category": "Linux"
+  },
+  {
+    "term": "account",
+    "cn": "账户",
+    "meaning": "账户；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Sign in to your dictionary account.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "auth",
+    "cn": "身份认证，authentication 的缩写",
+    "meaning": "身份认证，authentication 的缩写；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Supabase Auth handles login.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "authentication",
+    "cn": "身份认证",
+    "meaning": "身份认证；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use authentication before saving personal words.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "authorization",
+    "cn": "授权",
+    "meaning": "授权；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "GitHub authorization allows access to repositories.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "backup",
+    "cn": "备份",
+    "meaning": "备份；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Export a JSON backup.\nExport a JSON backup before importing.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "browser",
+    "cn": "浏览器",
+    "meaning": "浏览器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Open the dictionary in Chrome.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "branch",
+    "cn": "分支",
+    "meaning": "分支；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Merge the changes into main.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "cloud",
+    "cn": "云端；云服务",
+    "meaning": "云端；云服务；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Save personal words to the cloud.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "commit",
+    "cn": "提交；Git 提交",
+    "meaning": "提交；Git 提交；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Commit the updated words.json file.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "connector",
+    "cn": "连接器",
+    "meaning": "连接器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The GitHub connector needs write permission.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "database",
+    "cn": "数据库",
+    "meaning": "数据库；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Supabase stores personal entries in a database.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "deploy",
+    "cn": "部署",
+    "meaning": "部署；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Deploy the site with GitHub Pages.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "deployed",
+    "cn": "已部署的",
+    "meaning": "已部署的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The dictionary is deployed online.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "deployment",
+    "cn": "部署过程；部署版本",
+    "meaning": "部署过程；部署版本；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Check the deployment status.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "dictionary",
+    "cn": "词典",
+    "meaning": "词典；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Add a new word to the dictionary.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "email",
+    "cn": "电子邮箱",
+    "meaning": "电子邮箱；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Confirm your email address.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "export",
+    "cn": "导出",
+    "meaning": "导出；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Export a JSON backup.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "import",
+    "cn": "导入",
+    "meaning": "导入；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Import your old vocabulary backup.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "importing",
+    "cn": "正在导入",
+    "meaning": "正在导入；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Backup data before importing.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "login",
+    "cn": "登录",
+    "meaning": "登录；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Login is required for cloud sync.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "logout",
+    "cn": "退出登录",
+    "meaning": "退出登录；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Logout after using a public device.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "merge",
+    "cn": "合并",
+    "meaning": "合并；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Merge the new vocabulary into words.json.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "online",
+    "cn": "在线的",
+    "meaning": "在线的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Open the online dictionary.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "offline",
+    "cn": "离线的",
+    "meaning": "离线的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The old HTML works offline.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "password",
+    "cn": "密码",
+    "meaning": "密码；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Keep your password private.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "personal",
+    "cn": "个人的",
+    "meaning": "个人的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Personal notes sync after login.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "private",
+    "cn": "私有的；私人",
+    "meaning": "私有的；私人；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Private notes should not be public.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "public",
+    "cn": "公共的",
+    "meaning": "公共的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The public dictionary is readable by visitors.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "publish",
+    "cn": "发布",
+    "meaning": "发布；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Publish the new word list.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "published",
+    "cn": "已发布的",
+    "meaning": "已发布的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The new version is published.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "refresh",
+    "cn": "刷新",
+    "meaning": "刷新；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Refresh Chrome after deployment.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "repository",
+    "cn": "代码仓库",
+    "meaning": "代码仓库；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Update the GitHub repository.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "restore",
+    "cn": "恢复",
+    "meaning": "恢复；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Restore vocabulary from JSON backup.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "review",
+    "cn": "审查；复习",
+    "meaning": "审查；复习；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Review the updated words.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "security",
+    "cn": "安全；安全性",
+    "meaning": "安全；安全性；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "RLS is important for database security.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "sign in",
+    "cn": "登录",
+    "meaning": "登录；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Sign in to save personal vocabulary.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "sign up",
+    "cn": "注册账号",
+    "meaning": "注册账号；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Sign up with your email.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "source code",
+    "cn": "源代码",
+    "meaning": "源代码；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Review the source code before compiling.",
+    "category": "C++"
+  },
+  {
+    "term": "sync",
+    "cn": "同步",
+    "meaning": "同步；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Sync personal notes between devices.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "test",
+    "cn": "测试",
+    "meaning": "测试；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Test the login workflow.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "tests",
+    "cn": "测试（复数）",
+    "meaning": "测试（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The tests passed.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "version",
+    "cn": "版本",
+    "meaning": "版本；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Publish a new version.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "vocabulary",
+    "cn": "词汇；词汇表",
+    "meaning": "词汇；词汇表；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Review your C++ vocabulary.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "website",
+    "cn": "网站",
+    "meaning": "网站；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The dictionary website is online.",
+    "category": "网站 / 云端"
+  },
+  {
+    "term": "word",
+    "cn": "单词",
+    "meaning": "单词；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Add a new word.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "words",
+    "cn": "单词（复数）",
+    "meaning": "单词（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Search for English words.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "alpha",
+    "cn": "透明度；Alpha 通道",
+    "meaning": "透明度；Alpha 通道；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Alpha compositing uses transparency.",
+    "category": "图像 / 影视"
+  },
+  {
+    "term": "anti-aliasing",
+    "cn": "抗锯齿",
+    "meaning": "抗锯齿；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Anti-aliasing smooths pixel edges.",
+    "category": "图形学"
+  },
+  {
+    "term": "bilinear",
+    "cn": "双线性（插值）",
+    "meaning": "双线性（插值）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Bilinear interpolation uses four pixels.",
+    "category": "图像算法"
+  },
+  {
+    "term": "blur",
+    "cn": "模糊",
+    "meaning": "模糊；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Apply blur to the image.",
+    "category": "图像算法"
+  },
+  {
+    "term": "codec",
+    "cn": "编解码器",
+    "meaning": "编解码器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A video codec compresses video.",
+    "category": "视频"
+  },
+  {
+    "term": "compositing",
+    "cn": "合成",
+    "meaning": "合成；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Alpha compositing combines layers.",
+    "category": "影视 / 合成"
+  },
+  {
+    "term": "CUDA",
+    "cn": "NVIDIA GPU 并行计算技术",
+    "meaning": "NVIDIA GPU 并行计算技术；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use CUDA for pixel processing on a GPU.",
+    "category": "CUDA"
+  },
+  {
+    "term": "CPU",
+    "cn": "中央处理器",
+    "meaning": "中央处理器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Compare the CPU and GPU implementations.",
+    "category": "计算机"
+  },
+  {
+    "term": "GPU",
+    "cn": "图形处理器",
+    "meaning": "图形处理器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The GPU processes pixels in parallel.",
+    "category": "CUDA"
+  },
+  {
+    "term": "decode",
+    "cn": "解码",
+    "meaning": "解码；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Decode a video frame.",
+    "category": "视频"
+  },
+  {
+    "term": "decoder",
+    "cn": "解码器",
+    "meaning": "解码器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A decoder reads compressed video.",
+    "category": "视频"
+  },
+  {
+    "term": "despill",
+    "cn": "去溢色；去绿色溢出",
+    "meaning": "去溢色；去绿色溢出；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Despill removes green color contamination.",
+    "category": "影视 / 抠像"
+  },
+  {
+    "term": "depth",
+    "cn": "深度",
+    "meaning": "深度；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A depth buffer stores distances.",
+    "category": "游戏 / 渲染"
+  },
+  {
+    "term": "distortion",
+    "cn": "畸变",
+    "meaning": "畸变；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Lens distortion changes image coordinates.",
+    "category": "影视 / 镜头"
+  },
+  {
+    "term": "encode",
+    "cn": "编码",
+    "meaning": "编码；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Encode a sequence of frames.",
+    "category": "视频"
+  },
+  {
+    "term": "encoder",
+    "cn": "编码器",
+    "meaning": "编码器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "An encoder compresses video.",
+    "category": "视频"
+  },
+  {
+    "term": "edge",
+    "cn": "边缘",
+    "meaning": "边缘；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Edge detection finds sharp changes.",
+    "category": "图像算法"
+  },
+  {
+    "term": "edges",
+    "cn": "边缘（复数）",
+    "meaning": "边缘（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Blur can soften edges.",
+    "category": "图像算法"
+  },
+  {
+    "term": "frame",
+    "cn": "视频帧",
+    "meaning": "视频帧；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Read the next video frame.",
+    "category": "视频"
+  },
+  {
+    "term": "frames",
+    "cn": "视频帧（复数）",
+    "meaning": "视频帧（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The video has 120 frames.",
+    "category": "视频"
+  },
+  {
+    "term": "framerate",
+    "cn": "帧率",
+    "meaning": "帧率；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Set the video framerate to 24.",
+    "category": "视频"
+  },
+  {
+    "term": "FPS",
+    "cn": "每秒帧数",
+    "meaning": "每秒帧数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "24 FPS means 24 frames per second.",
+    "category": "视频"
+  },
+  {
+    "term": "Gaussian",
+    "cn": "高斯；高斯分布的",
+    "meaning": "高斯；高斯分布的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A Gaussian function generates smooth falloff.",
+    "category": "图形学"
+  },
+  {
+    "term": "gradient",
+    "cn": "渐变；梯度",
+    "meaning": "渐变；梯度；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The image shows a color gradient.",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "interpolation",
+    "cn": "插值",
+    "meaning": "插值；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Interpolation estimates values between samples.",
+    "category": "图像算法"
+  },
+  {
+    "term": "Lambert",
+    "cn": "兰伯特漫反射模型",
+    "meaning": "兰伯特漫反射模型；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Lambert shading depends on light and surface angle.",
+    "category": "Shader"
+  },
+  {
+    "term": "lens",
+    "cn": "镜头；透镜",
+    "meaning": "镜头；透镜；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Lens distortion is common in VFX.",
+    "category": "影视 / 镜头"
+  },
+  {
+    "term": "lighting",
+    "cn": "光照",
+    "meaning": "光照；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Lighting affects surface color.",
+    "category": "游戏 / 渲染"
+  },
+  {
+    "term": "linear",
+    "cn": "线性的",
+    "meaning": "线性的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Linear RGB is used for light calculations.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "linear light",
+    "cn": "线性光",
+    "meaning": "线性光；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Luminance uses linear light values.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "matrix",
+    "cn": "矩阵",
+    "meaning": "矩阵；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A projection matrix maps 3D points to 2D.",
+    "category": "图形学"
+  },
+  {
+    "term": "motion",
+    "cn": "运动",
+    "meaning": "运动；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Motion estimation tracks movement between frames.",
+    "category": "视频"
+  },
+  {
+    "term": "normal",
+    "cn": "法线；正常的",
+    "meaning": "法线；正常的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A surface normal is used for lighting.",
+    "category": "游戏 / 渲染"
+  },
+  {
+    "term": "noise",
+    "cn": "噪声",
+    "meaning": "噪声；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Procedural noise creates texture detail.",
+    "category": "Shader"
+  },
+  {
+    "term": "nonlinear",
+    "cn": "非线性的",
+    "meaning": "非线性的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Luma weights apply to nonlinear encoded RGB.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "perspective",
+    "cn": "透视",
+    "meaning": "透视；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Perspective projection maps depth onto the image.",
+    "category": "图形学"
+  },
+  {
+    "term": "projection",
+    "cn": "投影",
+    "meaning": "投影；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The projection matrix transforms coordinates.",
+    "category": "图形学"
+  },
+  {
+    "term": "rasterization",
+    "cn": "光栅化",
+    "meaning": "光栅化；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Triangle rasterization fills pixels.",
+    "category": "图形学"
+  },
+  {
+    "term": "render",
+    "cn": "渲染",
+    "meaning": "渲染；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Render the scene from a camera.",
+    "category": "游戏 / 渲染"
+  },
+  {
+    "term": "rendering",
+    "cn": "渲染过程",
+    "meaning": "渲染过程；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Rendering produces an image.",
+    "category": "游戏 / 渲染"
+  },
+  {
+    "term": "resize",
+    "cn": "调整尺寸；缩放图像",
+    "meaning": "调整尺寸；缩放图像；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Resize an image with interpolation.",
+    "category": "图像算法"
+  },
+  {
+    "term": "sampling",
+    "cn": "采样",
+    "meaning": "采样；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Image sampling chooses pixel values.",
+    "category": "图像算法"
+  },
+  {
+    "term": "shader",
+    "cn": "着色器程序",
+    "meaning": "着色器程序；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A shader runs on the GPU.",
+    "category": "Shader"
+  },
+  {
+    "term": "shading",
+    "cn": "着色；明暗计算",
+    "meaning": "着色；明暗计算；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Lambert shading uses the surface normal.",
+    "category": "Shader"
+  },
+  {
+    "term": "SDF",
+    "cn": "有符号距离场",
+    "meaning": "有符号距离场；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "An SDF stores distance to a shape boundary.",
+    "category": "图形学"
+  },
+  {
+    "term": "texture",
+    "cn": "纹理",
+    "meaning": "纹理；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A checkerboard is a procedural texture.",
+    "category": "Shader"
+  },
+  {
+    "term": "textures",
+    "cn": "纹理（复数）",
+    "meaning": "纹理（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Textures store surface appearance.",
+    "category": "Shader"
+  },
+  {
+    "term": "triangle",
+    "cn": "三角形",
+    "meaning": "三角形；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Rasterize a triangle into pixels.",
+    "category": "游戏 / 渲染"
+  },
+  {
+    "term": "UV",
+    "cn": "纹理坐标 UV",
+    "meaning": "纹理坐标 UV；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "UV coordinates map textures onto surfaces.",
+    "category": "Shader"
+  },
+  {
+    "term": "vector",
+    "cn": "向量",
+    "meaning": "向量；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A vector can represent a direction.",
+    "category": "图形学"
+  },
+  {
+    "term": "video",
+    "cn": "视频",
+    "meaning": "视频；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Decode video with FFmpeg.",
+    "category": "视频"
+  },
+  {
+    "term": "volume",
+    "cn": "体积；体积渲染",
+    "meaning": "体积；体积渲染；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Volume rendering integrates light through space.",
+    "category": "图形学"
+  },
+  {
+    "term": "YUV",
+    "cn": "视频常用亮度色度信号表示",
+    "meaning": "视频常用亮度色度信号表示；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Convert RGB to YUV for video processing.",
+    "category": "视频"
+  },
+  {
+    "term": "3DGS",
+    "cn": "三维高斯泼溅",
+    "meaning": "三维高斯泼溅；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "3DGS renders scenes using Gaussian splats.",
+    "category": "3DGS / 未来课程"
+  },
+  {
+    "term": "AI",
+    "cn": "人工智能",
+    "meaning": "人工智能；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "AI is used in graphics workflows.",
+    "category": "行业术语"
+  },
+  {
+    "term": "Arnold",
+    "cn": "Arnold 渲染器（产品名）",
+    "meaning": "Arnold 渲染器（产品名）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Arnold is used to render scenes in Maya.",
+    "category": "行业软件"
+  },
+  {
+    "term": "Bresenham",
+    "cn": "布雷森汉姆直线算法",
+    "meaning": "布雷森汉姆直线算法；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Bresenham's algorithm draws discrete lines.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "Box Blur",
+    "cn": "方框模糊；盒式模糊",
+    "meaning": "方框模糊；盒式模糊；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Box Blur averages neighbor pixels.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "CMake",
+    "cn": "跨平台构建配置工具",
+    "meaning": "跨平台构建配置工具；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "CMake generates project build files.",
+    "category": "构建工具"
+  },
+  {
+    "term": "C++",
+    "cn": "C++ 编程语言",
+    "meaning": "C++ 编程语言；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "C++ is used for graphics programming.",
+    "category": "C++"
+  },
+  {
+    "term": "CG",
+    "cn": "计算机图形学；计算机生成影像",
+    "meaning": "计算机图形学；计算机生成影像；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "CG includes 2D and 3D graphics.",
+    "category": "行业术语"
+  },
+  {
+    "term": "Chrome",
+    "cn": "谷歌 Chrome 浏览器",
+    "meaning": "谷歌 Chrome 浏览器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Open the dictionary in Chrome.",
+    "category": "网站 / 工具"
+  },
+  {
+    "term": "Codex",
+    "cn": "Codex 代码开发工具",
+    "meaning": "Codex 代码开发工具；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Codex can update the online dictionary.",
+    "category": "开发工具"
+  },
+  {
+    "term": "FFmpeg",
+    "cn": "开源多媒体处理工具",
+    "meaning": "开源多媒体处理工具；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "FFmpeg decodes and encodes video.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "GitHub",
+    "cn": "GitHub 代码托管服务",
+    "meaning": "GitHub 代码托管服务；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The dictionary source is stored on GitHub.",
+    "category": "网站 / 工具"
+  },
+  {
+    "term": "GitHub Pages",
+    "cn": "GitHub 静态网页托管",
+    "meaning": "GitHub 静态网页托管；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "GitHub Pages hosts the dictionary website.",
+    "category": "网站 / 工具"
+  },
+  {
+    "term": "GLSL",
+    "cn": "图形着色器语言 GLSL",
+    "meaning": "图形着色器语言 GLSL；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "GLSL can implement a checkerboard shader.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "Google Drive",
+    "cn": "谷歌云端硬盘",
+    "meaning": "谷歌云端硬盘；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Store a backup in Google Drive.",
+    "category": "网站 / 工具"
+  },
+  {
+    "term": "HDR",
+    "cn": "高动态范围",
+    "meaning": "高动态范围；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "HDR images can store values above one.",
+    "category": "图像 / 未来课程"
+  },
+  {
+    "term": "HLSL",
+    "cn": "高阶着色器语言 HLSL",
+    "meaning": "高阶着色器语言 HLSL；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "HLSL is commonly used for game shaders.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "HTML",
+    "cn": "超文本标记语言；网页文件格式",
+    "meaning": "超文本标记语言；网页文件格式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The original dictionary used one HTML file.",
+    "category": "网站 / 工具"
+  },
+  {
+    "term": "Houdini",
+    "cn": "Houdini 程序化三维软件",
+    "meaning": "Houdini 程序化三维软件；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Houdini visualizes 3D geometry.",
+    "category": "行业软件"
+  },
+  {
+    "term": "JSON",
+    "cn": "JSON 数据交换格式",
+    "meaning": "JSON 数据交换格式；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The vocabulary is stored in words.json.",
+    "category": "网站 / 工具"
+  },
+  {
+    "term": "Jacobian",
+    "cn": "雅可比矩阵",
+    "meaning": "雅可比矩阵；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A Jacobian describes a local derivative mapping.",
+    "category": "数学 / 未来课程"
+  },
+  {
+    "term": "Keyer",
+    "cn": "抠像器；键控工具",
+    "meaning": "抠像器；键控工具；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A keyer creates a matte from a green screen.",
+    "category": "影视 / 未来课程"
+  },
+  {
+    "term": "LibTorch",
+    "cn": "PyTorch 的 C++ 库",
+    "meaning": "PyTorch 的 C++ 库；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "LibTorch enables tensors in C++.",
+    "category": "C++ / 未来课程"
+  },
+  {
+    "term": "LTS",
+    "cn": "长期支持版本",
+    "meaning": "长期支持版本；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Ubuntu 24.04 LTS is a long-term support release.",
+    "category": "系统 / 工具"
+  },
+  {
+    "term": "Maya",
+    "cn": "Maya 三维软件",
+    "meaning": "Maya 三维软件；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Maya is used for CG animation.",
+    "category": "行业软件"
+  },
+  {
+    "term": "Miniconda",
+    "cn": "精简 Conda 环境管理工具",
+    "meaning": "精简 Conda 环境管理工具；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Miniconda manages Python environments.",
+    "category": "开发工具"
+  },
+  {
+    "term": "NUKE",
+    "cn": "NUKE 影视合成软件",
+    "meaning": "NUKE 影视合成软件；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "NUKE is used for visual effects compositing.",
+    "category": "行业软件"
+  },
+  {
+    "term": "NVDEC",
+    "cn": "英伟达硬件视频解码能力",
+    "meaning": "英伟达硬件视频解码能力；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "NVDEC can decode video frames on supported GPUs.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "NVENC",
+    "cn": "英伟达硬件视频编码能力",
+    "meaning": "英伟达硬件视频编码能力；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "NVENC can encode video frames on supported GPUs.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "OpenEXR",
+    "cn": "高动态范围图像文件格式及库",
+    "meaning": "高动态范围图像文件格式及库；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "OpenEXR stores floating-point image data.",
+    "category": "图像 / 未来课程"
+  },
+  {
+    "term": "PTS",
+    "cn": "显示时间戳",
+    "meaning": "显示时间戳；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "PTS indicates when a video frame should be presented.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "DTS",
+    "cn": "解码时间戳",
+    "meaning": "解码时间戳；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "DTS indicates decode order timing.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "RTX",
+    "cn": "英伟达 RTX 显卡系列名",
+    "meaning": "英伟达 RTX 显卡系列名；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The RTX workstation can run CUDA.",
+    "category": "硬件"
+  },
+  {
+    "term": "Sobel",
+    "cn": "Sobel 边缘检测算子",
+    "meaning": "Sobel 边缘检测算子；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The Sobel operator estimates image gradients.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "Supabase",
+    "cn": "开源后端服务平台",
+    "meaning": "开源后端服务平台；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Supabase stores personal dictionary entries.",
+    "category": "网站 / 工具"
+  },
+  {
+    "term": "VFX",
+    "cn": "视觉特效",
+    "meaning": "视觉特效；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "VFX compositing combines multiple image layers.",
+    "category": "行业术语"
+  },
+  {
+    "term": "VM",
+    "cn": "虚拟机",
+    "meaning": "虚拟机；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The Ubuntu learning environment is a VM.",
+    "category": "系统 / 工具"
+  },
+  {
+    "term": "VMware",
+    "cn": "虚拟机软件品牌",
+    "meaning": "虚拟机软件品牌；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Ubuntu runs inside VMware.",
+    "category": "系统 / 工具"
+  },
+  {
+    "term": "VS Code",
+    "cn": "Visual Studio Code 编辑器",
+    "meaning": "Visual Studio Code 编辑器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Write C++ in VS Code.",
+    "category": "开发工具"
+  },
+  {
+    "term": "Windows",
+    "cn": "微软 Windows 操作系统",
+    "meaning": "微软 Windows 操作系统；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Windows runs the RTX workstation.",
+    "category": "系统 / 工具"
+  },
+  {
+    "term": "Z-buffer",
+    "cn": "深度缓冲区",
+    "meaning": "深度缓冲区；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The Z-buffer resolves occlusion.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "alpha compositing",
+    "cn": "Alpha 透明度合成",
+    "meaning": "Alpha 透明度合成；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Alpha compositing combines foreground and background.",
+    "category": "影视 / 未来课程"
+  },
+  {
+    "term": "angle",
+    "cn": "角度",
+    "meaning": "角度；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The angle changes the light intensity.",
+    "category": "数学 / 未来课程"
+  },
+  {
+    "term": "array",
+    "cn": "数组",
+    "meaning": "数组；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Store pixels in an array.",
+    "category": "C++ / 未来课程"
+  },
+  {
+    "term": "arrays",
+    "cn": "数组（复数）",
+    "meaning": "数组（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Arrays store multiple values.",
+    "category": "C++ / 未来课程"
+  },
+  {
+    "term": "bit",
+    "cn": "比特；二进制位",
+    "meaning": "比特；二进制位；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "An eight-bit channel stores 256 possible values.",
+    "category": "计算机 / 未来课程"
+  },
+  {
+    "term": "boundary",
+    "cn": "边界",
+    "meaning": "边界；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Clamp pixel values at the boundary.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "buffer",
+    "cn": "缓冲区",
+    "meaning": "缓冲区；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A frame buffer stores pixels.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "camera",
+    "cn": "相机；摄像机",
+    "meaning": "相机；摄像机；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The camera projects 3D points onto a screen.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "cell",
+    "cn": "单元格；网格小格",
+    "meaning": "单元格；网格小格；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Each checkerboard cell contains 16 by 16 pixels.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "cellX",
+    "cn": "横向格子坐标的变量名",
+    "meaning": "横向格子坐标的变量名；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "cellX = x / tileSize;",
+    "category": "C++ / 未来课程"
+  },
+  {
+    "term": "cellY",
+    "cn": "纵向格子坐标的变量名",
+    "meaning": "纵向格子坐标的变量名；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "cellY = y / tileSize;",
+    "category": "C++ / 未来课程"
+  },
+  {
+    "term": "checker",
+    "cn": "检查器；棋盘格图案变量",
+    "meaning": "检查器；棋盘格图案变量；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "checker = (cellX + cellY) % 2;",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "clamp",
+    "cn": "钳制；限制在一定范围",
+    "meaning": "钳制；限制在一定范围；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Clamp the color value between 0 and 255.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "clip",
+    "cn": "裁剪",
+    "meaning": "裁剪；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Clip the image to the target region.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "compressed",
+    "cn": "压缩的",
+    "meaning": "压缩的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Compressed video uses fewer bytes.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "compression",
+    "cn": "压缩",
+    "meaning": "压缩；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Video compression reduces file size.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "crop",
+    "cn": "裁剪图像",
+    "meaning": "裁剪图像；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Crop the image to a rectangle.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "cross product",
+    "cn": "向量叉积",
+    "meaning": "向量叉积；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The cross product is perpendicular to two vectors.",
+    "category": "数学 / 未来课程"
+  },
+  {
+    "term": "derivative",
+    "cn": "导数；导函数",
+    "meaning": "导数；导函数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A derivative describes a rate of change.",
+    "category": "数学 / 未来课程"
+  },
+  {
+    "term": "device",
+    "cn": "设备；CUDA 设备内存",
+    "meaning": "设备；CUDA 设备内存；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Copy the pixels to device memory.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "dot",
+    "cn": "点积；点号",
+    "meaning": "点积；点号；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The dot product measures alignment.",
+    "category": "数学 / Shader"
+  },
+  {
+    "term": "dot product",
+    "cn": "点积",
+    "meaning": "点积；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Lambert shading uses the dot product.",
+    "category": "数学 / 未来课程"
+  },
+  {
+    "term": "downsample",
+    "cn": "下采样",
+    "meaning": "下采样；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Downsample an image to half size.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "erode",
+    "cn": "腐蚀；收缩边缘",
+    "meaning": "腐蚀；收缩边缘；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Erode the matte by one pixel.",
+    "category": "影视 / 未来课程"
+  },
+  {
+    "term": "feather",
+    "cn": "羽化；柔化边缘",
+    "meaning": "羽化；柔化边缘；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Feather the edge of the mask.",
+    "category": "影视 / 未来课程"
+  },
+  {
+    "term": "fragment",
+    "cn": "片元；碎片",
+    "meaning": "片元；碎片；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A fragment shader computes pixel-like outputs.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "fragment shader",
+    "cn": "片元着色器",
+    "meaning": "片元着色器；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A fragment shader receives interpolated inputs.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "fBm",
+    "cn": "分形布朗运动噪声",
+    "meaning": "分形布朗运动噪声；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "fBm combines multiple noise octaves.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "focal length",
+    "cn": "焦距",
+    "meaning": "焦距；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Focal length affects perspective.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "fractal",
+    "cn": "分形的",
+    "meaning": "分形的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Fractal noise contains multiple scales.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "fract",
+    "cn": "取小数部分的 Shader 函数",
+    "meaning": "取小数部分的 Shader 函数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "fract(2.25) returns 0.25 in GLSL.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "frame index",
+    "cn": "帧序号",
+    "meaning": "帧序号；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The frame index starts at zero.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "frame rate",
+    "cn": "帧率",
+    "meaning": "帧率；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The frame rate controls playback timing.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "geometry",
+    "cn": "几何；几何体",
+    "meaning": "几何；几何体；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Geometry defines the scene's shapes.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "grid",
+    "cn": "网格；CUDA 线程网格",
+    "meaning": "网格；CUDA 线程网格；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A CUDA grid contains many thread blocks.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "hash",
+    "cn": "哈希函数；散列值",
+    "meaning": "哈希函数；散列值；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A hash function can generate pseudo-random values.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "host",
+    "cn": "主机；CPU 主机内存",
+    "meaning": "主机；CPU 主机内存；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Host memory is allocated on the CPU side.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "image encoding",
+    "cn": "图像编码",
+    "meaning": "图像编码；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Image encoding stores pixels in a format.",
+    "category": "图像 / 未来课程"
+  },
+  {
+    "term": "kernel",
+    "cn": "核函数；CUDA 内核",
+    "meaning": "核函数；CUDA 内核；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A CUDA kernel processes pixels in parallel.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "lerp",
+    "cn": "线性插值",
+    "meaning": "线性插值；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Lerp blends between two values.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "light",
+    "cn": "光；光线",
+    "meaning": "光；光线；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Light changes the visible color of surfaces.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "localStorage",
+    "cn": "浏览器本地存储",
+    "meaning": "浏览器本地存储；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "localStorage stores browser-specific data.",
+    "category": "网站 / 工具"
+  },
+  {
+    "term": "loss",
+    "cn": "损失函数；损失值",
+    "meaning": "损失函数；损失值；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The loss measures the difference between images.",
+    "category": "3DGS / 未来课程"
+  },
+  {
+    "term": "mask",
+    "cn": "蒙版；遮罩",
+    "meaning": "蒙版；遮罩；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A mask selects the image region to edit.",
+    "category": "影视 / 未来课程"
+  },
+  {
+    "term": "matte",
+    "cn": "遮罩；抠像通道",
+    "meaning": "遮罩；抠像通道；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A keyer produces a matte.",
+    "category": "影视 / 未来课程"
+  },
+  {
+    "term": "memory",
+    "cn": "内存",
+    "meaning": "内存；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "GPU memory stores image data.",
+    "category": "计算机 / 未来课程"
+  },
+  {
+    "term": "mod",
+    "cn": "取模；Shader 中的求余函数",
+    "meaning": "取模；Shader 中的求余函数；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "mod(5.0, 2.0) yields 1.0 in GLSL.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "neighbor",
+    "cn": "相邻元素；邻近像素",
+    "meaning": "相邻元素；邻近像素；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A blur kernel reads neighbor pixels.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "neighbors",
+    "cn": "相邻像素（复数）",
+    "meaning": "相邻像素（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Blur averages neighboring pixels.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "nvcc",
+    "cn": "NVIDIA CUDA 编译器驱动命令",
+    "meaning": "NVIDIA CUDA 编译器驱动命令；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "nvcc compiles CUDA source files.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "packet",
+    "cn": "编码数据包；压缩包",
+    "meaning": "编码数据包；压缩包；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A decoder reads video packets.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "parallel",
+    "cn": "并行的",
+    "meaning": "并行的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "CUDA threads can run in parallel.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "pow",
+    "cn": "幂函数；求乘方",
+    "meaning": "幂函数；求乘方；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "std::pow(2.0, 3.0) returns 8.0.",
+    "category": "数学 / 未来课程"
+  },
+  {
+    "term": "ray",
+    "cn": "光线；射线",
+    "meaning": "光线；射线；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A ray travels through the scene.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "raymarch",
+    "cn": "光线步进；沿射线迭代采样",
+    "meaning": "光线步进；沿射线迭代采样；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Raymarch an SDF scene.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "reflect",
+    "cn": "反射；反映",
+    "meaning": "反射；反映；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Reflect a ray around a normal.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "reflection",
+    "cn": "反射",
+    "meaning": "反射；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Reflection depends on surface normals.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "render target",
+    "cn": "渲染目标",
+    "meaning": "渲染目标；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A render target stores the output pixels.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "sample",
+    "cn": "采样；样本",
+    "meaning": "采样；样本；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Sample the input image at UV coordinates.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "samples",
+    "cn": "采样值；样本（复数）",
+    "meaning": "采样值；样本（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Interpolation combines nearby samples.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "scale",
+    "cn": "缩放；尺度",
+    "meaning": "缩放；尺度；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Scale the image by two.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "scene",
+    "cn": "场景",
+    "meaning": "场景；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Render the scene from a camera.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "sharpen",
+    "cn": "锐化",
+    "meaning": "锐化；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Sharpen the edges without creating halos.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "shift",
+    "cn": "偏移；平移",
+    "meaning": "偏移；平移；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Shift the image 10 pixels right.",
+    "category": "图像算法 / 未来课程"
+  },
+  {
+    "term": "soft matte",
+    "cn": "柔和边缘的遮罩",
+    "meaning": "柔和边缘的遮罩；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A soft matte has gradual edges.",
+    "category": "影视 / 未来课程"
+  },
+  {
+    "term": "splat",
+    "cn": "泼溅；点投射图元",
+    "meaning": "泼溅；点投射图元；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Draw a Gaussian splat.",
+    "category": "3DGS / 未来课程"
+  },
+  {
+    "term": "splatting",
+    "cn": "高斯泼溅；泼溅式渲染",
+    "meaning": "高斯泼溅；泼溅式渲染；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "3D Gaussian Splatting renders 3D Gaussians.",
+    "category": "3DGS / 未来课程"
+  },
+  {
+    "term": "sRGB",
+    "cn": "标准 RGB 色彩空间 sRGB",
+    "meaning": "标准 RGB 色彩空间 sRGB；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "sRGB pixel values use a nonlinear transfer function.",
+    "category": "图像 / 色彩"
+  },
+  {
+    "term": "step",
+    "cn": "阶跃函数；步骤",
+    "meaning": "阶跃函数；步骤；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use step in a shader to create stripes.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "streams",
+    "cn": "CUDA 流（复数）",
+    "meaning": "CUDA 流（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Multiple streams can overlap transfers.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "surface",
+    "cn": "表面",
+    "meaning": "表面；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A normal is perpendicular to a surface.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "texel",
+    "cn": "纹理像素",
+    "meaning": "纹理像素；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A texel is one sample in a texture.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "thread",
+    "cn": "线程",
+    "meaning": "线程；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Each CUDA thread handles one pixel.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "threads",
+    "cn": "线程（复数）",
+    "meaning": "线程（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "GPU threads process many pixels.",
+    "category": "CUDA / 未来课程"
+  },
+  {
+    "term": "tile",
+    "cn": "瓦片；格子",
+    "meaning": "瓦片；格子；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A tile is a block of pixels.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "tileSize",
+    "cn": "每个棋盘格的边长（变量名）",
+    "meaning": "每个棋盘格的边长（变量名）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "const int tileSize = 16;",
+    "category": "C++ / 未来课程"
+  },
+  {
+    "term": "timestamp",
+    "cn": "时间戳",
+    "meaning": "时间戳；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A timestamp marks a frame time.",
+    "category": "视频 / 未来课程"
+  },
+  {
+    "term": "transform",
+    "cn": "变换；转换",
+    "meaning": "变换；转换；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Transform 3D points using a matrix.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "transparency",
+    "cn": "透明度；透明性",
+    "meaning": "透明度；透明性；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Alpha controls transparency.",
+    "category": "影视 / 未来课程"
+  },
+  {
+    "term": "varying",
+    "cn": "插值传递的 Shader 输入（GLSL 术语）",
+    "meaning": "插值传递的 Shader 输入（GLSL 术语）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A varying value changes across a triangle.",
+    "category": "Shader / 未来课程"
+  },
+  {
+    "term": "vertex",
+    "cn": "顶点",
+    "meaning": "顶点；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A triangle has three vertices.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "vertices",
+    "cn": "顶点（复数）",
+    "meaning": "顶点（复数）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Three vertices define a triangle.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "viewport",
+    "cn": "视口",
+    "meaning": "视口；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The viewport defines the visible area.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "workstation",
+    "cn": "工作站",
+    "meaning": "工作站；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The workstation has an RTX GPU.",
+    "category": "硬件"
+  },
+  {
+    "term": "human",
+    "cn": "人；人类",
+    "meaning": "人；人类；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Human-readable output is easy for a human to understand.",
+    "category": "英语基础"
+  },
+  {
+    "term": "readable",
+    "cn": "可读的；易于阅读的",
+    "meaning": "可读的；易于阅读的；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "The file size is human-readable.\nList files in a human-readable format.",
+    "category": "英语基础"
+  },
+  {
+    "term": "anti",
+    "cn": "抗；反；反对（常用前缀）",
+    "meaning": "抗；反；反对（常用前缀）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Anti-aliasing reduces jagged edges.",
+    "category": "英语词根"
+  },
+  {
+    "term": "aliasing",
+    "cn": "混叠；走样",
+    "meaning": "混叠；走样；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Aliasing appears when sampling high-frequency patterns.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "z",
+    "cn": "Z 轴；字母 Z；深度坐标",
+    "meaning": "Z 轴；字母 Z；深度坐标；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "A Z-buffer stores depth values.",
+    "category": "图形学 / 未来课程"
+  },
+  {
+    "term": "horizeontal",
+    "cn": "拼写错误；正确是 horizontal（水平的）",
+    "meaning": "拼写错误；正确是 horizontal（水平的）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Correct spelling: horizontal, not horizeontal.",
+    "category": "拼写纠错"
+  },
+  {
+    "term": "graay",
+    "cn": "拼写错误；正确是 gray（灰色；灰度）",
+    "meaning": "拼写错误；正确是 gray（灰色；灰度）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Correct spelling: gray, not graay.",
+    "category": "拼写纠错"
+  },
+  {
+    "term": "blu",
+    "cn": "拼写错误；正确是 blue（蓝色）",
+    "meaning": "拼写错误；正确是 blue（蓝色）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Use blue, not blu, as the variable name.",
+    "category": "拼写纠错"
+  },
+  {
+    "term": "pixl",
+    "cn": "拼写错误；正确是 pixel（像素）",
+    "meaning": "拼写错误；正确是 pixel（像素）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Correct spelling: pixel, not pixl.",
+    "category": "拼写纠错"
+  },
+  {
+    "term": "colo",
+    "cn": "拼写错误；正确是 color（颜色）",
+    "meaning": "拼写错误；正确是 color（颜色）；结合当前 CG-CPP 学习过程理解其用法。",
+    "example": "Correct spelling: color, not colo.",
+    "category": "拼写纠错"
+  },
+  {
+    "term": "Calculate the horizontal and vertical block indices.",
+    "cn": "计算水平和垂直方向的格子索引。",
+    "meaning": "完整英文注释或短语：计算水平和垂直方向的格子索引。 可整句搜索，也可拆词查询。",
+    "example": "Calculate the horizontal and vertical block indices.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Compute grayscale using BT.709 luma weights.",
+    "cn": "采用 BT.709 非线性亮度信号的通道权重计算灰度。",
+    "meaning": "完整英文注释或短语：采用 BT.709 非线性亮度信号的通道权重计算灰度。 可整句搜索，也可拆词查询。",
+    "example": "Compute grayscale using BT.709 luma weights.\nCompute the weighted luma value.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Compute the average value of the RGB channels.",
+    "cn": "计算 RGB 三个通道数值的算术平均。",
+    "meaning": "完整英文注释或短语：计算 RGB 三个通道数值的算术平均。 可整句搜索，也可拆词查询。",
+    "example": "Compute the average value of the RGB channels.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Define the RGB values based on pixel coordinates.",
+    "cn": "根据像素坐标定义 RGB 数值。",
+    "meaning": "完整英文注释或短语：根据像素坐标定义 RGB 数值。 可整句搜索，也可拆词查询。",
+    "example": "Define the RGB values based on pixel coordinates.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Write the same gray value to all three color channels.",
+    "cn": "向三个颜色通道写入相同的灰度值。",
+    "meaning": "完整英文注释或短语：向三个颜色通道写入相同的灰度值。 可整句搜索，也可拆词查询。",
+    "example": "Write the same gray value to all three color channels.\nWrite the gray value to the image.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Convert the result to an integer pixel value.",
+    "cn": "将计算结果转换成整数像素值。",
+    "meaning": "完整英文注释或短语：将计算结果转换成整数像素值。 可整句搜索，也可拆词查询。",
+    "example": "Convert the result to an integer pixel value.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Set the default pixel color to white.",
+    "cn": "将像素默认颜色设置为白色。",
+    "meaning": "完整英文注释或短语：将像素默认颜色设置为白色。 可整句搜索，也可拆词查询。",
+    "example": "Set the default pixel color to white.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Set the pixel to black if it is in the first row.",
+    "cn": "如果像素在第一行，就将其设为黑色。",
+    "meaning": "完整英文注释或短语：如果像素在第一行，就将其设为黑色。 可整句搜索，也可拆词查询。",
+    "example": "Set the pixel to black if it is in the first row.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Make the first column black.",
+    "cn": "将第一列设为黑色。",
+    "meaning": "完整英文注释或短语：将第一列设为黑色。 可整句搜索，也可拆词查询。",
+    "example": "Make the first column black.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Make the first 32 columns gray.",
+    "cn": "将最左边 32 列设为灰色。",
+    "meaning": "完整英文注释或短语：将最左边 32 列设为灰色。 可整句搜索，也可拆词查询。",
+    "example": "Make the first 32 columns gray.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Check whether the block index sum is even.",
+    "cn": "检查两个格子索引之和是否为偶数。",
+    "meaning": "完整英文注释或短语：检查两个格子索引之和是否为偶数。 可整句搜索，也可拆词查询。",
+    "example": "Check whether the block index sum is even.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Make even-numbered blocks black.",
+    "cn": "将偶数编号的格子设为黑色。",
+    "meaning": "完整英文注释或短语：将偶数编号的格子设为黑色。 可整句搜索，也可拆词查询。",
+    "example": "Make even-numbered blocks black.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "P3 indicates the plain-text PPM image format.",
+    "cn": "P3 表示使用纯文本形式的 PPM 图像格式。",
+    "meaning": "完整英文注释或短语：P3 表示使用纯文本形式的 PPM 图像格式。 可整句搜索，也可拆词查询。",
+    "example": "P3 indicates the plain-text PPM image format.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Loop through each pixel in the row.",
+    "cn": "遍历这一行中的每个像素。",
+    "meaning": "完整英文注释或短语：遍历这一行中的每个像素。 可整句搜索，也可拆词查询。",
+    "example": "Loop through each pixel in the row.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Loop through each row of the image.",
+    "cn": "遍历图像中的每一行。",
+    "meaning": "完整英文注释或短语：遍历图像中的每一行。 可整句搜索，也可拆词查询。",
+    "example": "Loop through each row of the image.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Write the image width and height.",
+    "cn": "写入图像的宽度与高度。",
+    "meaning": "完整英文注释或短语：写入图像的宽度与高度。 可整句搜索，也可拆词查询。",
+    "example": "Write the image width and height.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Set the maximum value for each RGB color channel.",
+    "cn": "设置每个 RGB 颜色通道允许的最大值。",
+    "meaning": "完整英文注释或短语：设置每个 RGB 颜色通道允许的最大值。 可整句搜索，也可拆词查询。",
+    "example": "Set the maximum value for each RGB color channel.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Print the image size to the terminal.",
+    "cn": "将图像尺寸打印到终端。",
+    "meaning": "完整英文注释或短语：将图像尺寸打印到终端。 可整句搜索，也可拆词查询。",
+    "example": "Print the image size to the terminal.\nImage size: 256 x 256.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Convert the floating-point value to an integer.",
+    "cn": "把浮点数值转换为整数。",
+    "meaning": "完整英文注释或短语：把浮点数值转换为整数。 可整句搜索，也可拆词查询。",
+    "example": "Convert the floating-point value to an integer.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Calculate the remainder.",
+    "cn": "计算余数。",
+    "meaning": "完整英文注释或短语：计算余数。 可整句搜索，也可拆词查询。",
+    "example": "Calculate the remainder.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "Generate a checkerboard pattern.",
+    "cn": "生成棋盘格图案。",
+    "meaning": "完整英文注释或短语：生成棋盘格图案。 可整句搜索，也可拆词查询。",
+    "example": "Generate a checkerboard pattern.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "was not declared in this scope",
+    "cn": "在当前作用域中未声明该变量。",
+    "meaning": "完整英文注释或短语：在当前作用域中未声明该变量。 可整句搜索，也可拆词查询。",
+    "example": "was not declared in this scope\nGray is not declared in this scope.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "unrecognized command-line option",
+    "cn": "无法识别的命令行选项。",
+    "meaning": "完整英文注释或短语：无法识别的命令行选项。 可整句搜索，也可拆词查询。",
+    "example": "unrecognized command-line option\nUnrecognized command-line option.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "even-numbered blocks",
+    "cn": "偶数编号的格子。",
+    "meaning": "完整英文注释或短语：偶数编号的格子。 可整句搜索，也可拆词查询。",
+    "example": "even-numbered blocks",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "horizontal block index",
+    "cn": "水平格子索引。",
+    "meaning": "完整英文注释或短语：水平格子索引。 可整句搜索，也可拆词查询。",
+    "example": "horizontal block index",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "vertical block index",
+    "cn": "垂直格子索引。",
+    "meaning": "完整英文注释或短语：垂直格子索引。 可整句搜索，也可拆词查询。",
+    "example": "vertical block index",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "floating-point value",
+    "cn": "浮点数值。",
+    "meaning": "完整英文注释或短语：浮点数值。 可整句搜索，也可拆词查询。",
+    "example": "floating-point value",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "integer pixel value",
+    "cn": "整数像素值。",
+    "meaning": "完整英文注释或短语：整数像素值。 可整句搜索，也可拆词查询。",
+    "example": "integer pixel value",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "default pixel color",
+    "cn": "默认像素颜色。",
+    "meaning": "完整英文注释或短语：默认像素颜色。 可整句搜索，也可拆词查询。",
+    "example": "default pixel color\nThe default pixel color is white.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "in the first row",
+    "cn": "位于第一行。",
+    "meaning": "完整英文注释或短语：位于第一行。 可整句搜索，也可拆词查询。",
+    "example": "in the first row\nIf the pixel is in the first row, make it black.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "in the current row",
+    "cn": "位于当前行。",
+    "meaning": "完整英文注释或短语：位于当前行。 可整句搜索，也可拆词查询。",
+    "example": "in the current row\nLoop through each pixel in the current row.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "all three color channels",
+    "cn": "全部三个颜色通道。",
+    "meaning": "完整英文注释或短语：全部三个颜色通道。 可整句搜索，也可拆词查询。",
+    "example": "all three color channels",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "based on pixel coordinates",
+    "cn": "根据像素坐标。",
+    "meaning": "完整英文注释或短语：根据像素坐标。 可整句搜索，也可拆词查询。",
+    "example": "based on pixel coordinates",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "compute the average",
+    "cn": "计算平均值。",
+    "meaning": "完整英文注释或短语：计算平均值。 可整句搜索，也可拆词查询。",
+    "example": "compute the average",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "get the same result using",
+    "cn": "采用另一种方法得到相同结果。",
+    "meaning": "完整英文注释或短语：采用另一种方法得到相同结果。 可整句搜索，也可拆词查询。",
+    "example": "get the same result using",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "a new word",
+    "cn": "一个新单词。",
+    "meaning": "完整英文注释或短语：一个新单词。 可整句搜索，也可拆词查询。",
+    "example": "a new word",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "English comments",
+    "cn": "英文注释。",
+    "meaning": "完整英文注释或短语：英文注释。 可整句搜索，也可拆词查询。",
+    "example": "English comments",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "current directory",
+    "cn": "当前目录。",
+    "meaning": "完整英文注释或短语：当前目录。 可整句搜索，也可拆词查询。",
+    "example": "current directory\nRun the executable from the current directory.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "pixel position",
+    "cn": "像素位置。",
+    "meaning": "完整英文注释或短语：像素位置。 可整句搜索，也可拆词查询。",
+    "example": "pixel position\nSet the RGB values based on the pixel position.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "even number",
+    "cn": "偶数。",
+    "meaning": "完整英文注释或短语：偶数。 可整句搜索，也可拆词查询。",
+    "example": "even number",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "odd number",
+    "cn": "奇数。",
+    "meaning": "完整英文注释或短语：奇数。 可整句搜索，也可拆词查询。",
+    "example": "odd number",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "a gray square",
+    "cn": "一个灰色正方形。",
+    "meaning": "完整英文注释或短语：一个灰色正方形。 可整句搜索，也可拆词查询。",
+    "example": "a gray square",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "black and white stripes",
+    "cn": "黑白条纹。",
+    "meaning": "完整英文注释或短语：黑白条纹。 可整句搜索，也可拆词查询。",
+    "example": "black and white stripes",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "checkerboard pattern",
+    "cn": "棋盘格图案。",
+    "meaning": "完整英文注释或短语：棋盘格图案。 可整句搜索，也可拆词查询。",
+    "example": "checkerboard pattern",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "assignment operator",
+    "cn": "赋值运算符。",
+    "meaning": "完整英文注释或短语：赋值运算符。 可整句搜索，也可拆词查询。",
+    "example": "assignment operator",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "equality comparison",
+    "cn": "相等比较。",
+    "meaning": "完整英文注释或短语：相等比较。 可整句搜索，也可拆词查询。",
+    "example": "equality comparison",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "data type",
+    "cn": "数据类型。",
+    "meaning": "完整英文注释或短语：数据类型。 可整句搜索，也可拆词查询。",
+    "example": "data type",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "variable name",
+    "cn": "变量名。",
+    "meaning": "完整英文注释或短语：变量名。 可整句搜索，也可拆词查询。",
+    "example": "variable name",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "standard output",
+    "cn": "标准输出。",
+    "meaning": "完整英文注释或短语：标准输出。 可整句搜索，也可拆词查询。",
+    "example": "standard output",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "RGB channels",
+    "cn": "RGB 三个颜色通道。",
+    "meaning": "完整英文注释或短语：RGB 三个颜色通道。 可整句搜索，也可拆词查询。",
+    "example": "RGB channels",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "plain-text PPM",
+    "cn": "纯文本格式 PPM 图像。",
+    "meaning": "完整英文注释或短语：纯文本格式 PPM 图像。 可整句搜索，也可拆词查询。",
+    "example": "plain-text PPM",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "C++ compiler",
+    "cn": "C++ 编译器。",
+    "meaning": "完整英文注释或短语：C++ 编译器。 可整句搜索，也可拆词查询。",
+    "example": "C++ compiler",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "compile error",
+    "cn": "编译错误。",
+    "meaning": "完整英文注释或短语：编译错误。 可整句搜索，也可拆词查询。",
+    "example": "compile error\nIn function int main.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "compiler warning",
+    "cn": "编译器警告。",
+    "meaning": "完整英文注释或短语：编译器警告。 可整句搜索，也可拆词查询。",
+    "example": "compiler warning\nUnused variable gray.",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "syntax error",
+    "cn": "语法错误。",
+    "meaning": "完整英文注释或短语：语法错误。 可整句搜索，也可拆词查询。",
+    "example": "syntax error",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "program output",
+    "cn": "程序输出结果。",
+    "meaning": "完整英文注释或短语：程序输出结果。 可整句搜索，也可拆词查询。",
+    "example": "program output",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "cloud sync",
+    "cn": "云端同步。",
+    "meaning": "完整英文注释或短语：云端同步。 可整句搜索，也可拆词查询。",
+    "example": "cloud sync",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "public vocabulary",
+    "cn": "公共词库。",
+    "meaning": "完整英文注释或短语：公共词库。 可整句搜索，也可拆词查询。",
+    "example": "public vocabulary",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "personal vocabulary",
+    "cn": "个人词库。",
+    "meaning": "完整英文注释或短语：个人词库。 可整句搜索，也可拆词查询。",
+    "example": "personal vocabulary",
+    "category": "英文注释 / 词组"
+  },
+  {
+    "term": "based",
+    "cn": "基于；依据",
+    "meaning": "在学习注释中出现：基于；依据。",
+    "example": "Define the RGB values based on pixel coordinates.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "between",
+    "cn": "在……之间",
+    "meaning": "在学习注释中出现：在……之间。",
+    "example": "Sync personal notes between devices.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "bt",
+    "cn": "BT 标准缩写",
+    "meaning": "在学习注释中出现：BT 标准缩写。",
+    "example": "Compute grayscale using BT.709 luma weights.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "chinese",
+    "cn": "中文；汉语",
+    "meaning": "在学习注释中出现：中文；汉语。",
+    "example": "Search for words in English or Chinese.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "code",
+    "cn": "代码",
+    "meaning": "在学习注释中出现：代码。",
+    "example": "Open the file in Visual Studio Code.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "compiling",
+    "cn": "编译中；编译行为",
+    "meaning": "在学习注释中出现：编译中；编译行为。",
+    "example": "Save the source code before compiling.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "converts",
+    "cn": "转换（第三人称单数）",
+    "meaning": "在学习注释中出现：转换（第三人称单数）。",
+    "example": "Static cast converts a floating-point value to an integer.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "devices",
+    "cn": "设备（复数）",
+    "meaning": "在学习注释中出现：设备（复数）。",
+    "example": "Sync personal notes between devices.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "english",
+    "cn": "英语；英文",
+    "meaning": "在学习注释中出现：英语；英文。",
+    "example": "Search for words in English or Chinese.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "images",
+    "cn": "图像（复数）",
+    "meaning": "在学习注释中出现：图像（复数）。",
+    "example": "Compare the two grayscale images.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "increasing",
+    "cn": "正在提高；越来越多",
+    "meaning": "在学习注释中出现：正在提高；越来越多。",
+    "example": "Increasing the frequency creates more stripes.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "lookup",
+    "cn": "查找；检索",
+    "meaning": "在学习注释中出现：查找；检索。",
+    "example": "You can get the same result using a lookup table.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "may",
+    "cn": "可能；可以",
+    "meaning": "在学习注释中出现：可能；可以。",
+    "example": "An error stops compilation, but a warning may not.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "notes",
+    "cn": "笔记（复数）",
+    "meaning": "在学习注释中出现：笔记（复数）。",
+    "example": "Sync personal notes between devices.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "page",
+    "cn": "网页；页面",
+    "meaning": "在学习注释中出现：网页；页面。",
+    "example": "Check the deployment status before refreshing the page.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "refreshing",
+    "cn": "刷新中；刷新操作",
+    "meaning": "在学习注释中出现：刷新中；刷新操作。",
+    "example": "Check the deployment status before refreshing the page.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "search",
+    "cn": "搜索；查找",
+    "meaning": "在学习注释中出现：搜索；查找。",
+    "example": "Search for words in English or Chinese.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "side",
+    "cn": "侧边；一侧",
+    "meaning": "在学习注释中出现：侧边；一侧。",
+    "example": "Draw a vertical stripe on the left side.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "sign",
+    "cn": "标记；签名；登录短语的一部分",
+    "meaning": "在学习注释中出现：标记；签名；登录短语的一部分。",
+    "example": "Sign in to save personal vocabulary.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "spatial",
+    "cn": "空间的",
+    "meaning": "在学习注释中出现：空间的。",
+    "example": "Smaller checkerboard blocks have a higher spatial frequency.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "static",
+    "cn": "静态的",
+    "meaning": "在学习注释中出现：静态的。",
+    "example": "Static cast converts a floating-point value to an integer.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "stops",
+    "cn": "停止（第三人称）",
+    "meaning": "在学习注释中出现：停止（第三人称）。",
+    "example": "An error stops compilation, but a warning may not.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "studio",
+    "cn": "工作室；软件名组成部分",
+    "meaning": "在学习注释中出现：工作室；软件名组成部分。",
+    "example": "Open the file in Visual Studio Code.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "table",
+    "cn": "表格；查找表",
+    "meaning": "在学习注释中出现：表格；查找表。",
+    "example": "You can get the same result using a lookup table.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "visual",
+    "cn": "可视的；视觉的",
+    "meaning": "在学习注释中出现：可视的；视觉的。",
+    "example": "Open the file in Visual Studio Code.",
+    "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "writes",
+    "cn": "写入（第三人称单数）",
+    "meaning": "在学习注释中出现：写入（第三人称单数）。",
+    "example": "The program writes RGB values to an output file.",
+    "category": "英文注释 / 逐词"
   }
 ]
