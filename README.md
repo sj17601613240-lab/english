@@ -1,3 +1,34 @@
 # CG-CPP 英文学习词典
 
-C++、图形学、图像视频与编译调试的中英文学习词典。
+[打开词典](https://sj17601613240-lab.github.io/english/) · [GitHub 仓库](https://github.com/sj17601613240-lab/english)
+
+## 日常使用
+
+打开网页即可按英文、中文、代码、分类或字母查询，点击「朗读」使用设备的英文语音。登录后，词条、收藏和私人笔记保存在账号中。打开网页或点击「同步」会读取最新数据。
+
+公共词条的「个人版本」可以保存自己的释义和例句。「查看公共释义」仍能查阅公共版本。删除个人版本会恢复公共显示，并保留收藏和笔记。
+
+### 从旧版迁移
+
+1. 在曾经保存学习数据的设备上，用原来的 Chrome 配置和文件路径打开旧词典，点击「导出 JSON 备份」。保留原文件及导出的备份。
+2. 打开在线词典并登录，展开底部「数据备份与旧词典迁移」，选择备份。也可以选择旧词典「导出更新版 HTML」生成的文件。
+3. 确认后会先下载现有个人数据备份，再合并新内容。查看页面报告中的保留版本或中断提示。重复导入相同记录不会产生重复词条。
+
+新版 JSON 备份包含个人词条、收藏、笔记和个人版本。公共词库随网站发布。访客数据只在当前浏览器保存，登录后可以手动合并。若云端未确认保存，请先点击「同步」核对，再重试。冲突时保留当前表单，可复制草稿后重开核对。
+
+## 更新公共词汇
+
+把英文、中文、学习说明、例句与分类交给 Codex，由维护者更新 `words.json`。在任务分支上运行 `npm run check`，它会检查字段完整性、UTF-8 和英文重复。合并到 `main` 后，GitHub Pages 自动发布。等待部署成功后刷新网页即可。已有词条的英文索引用于关联收藏和私人笔记，编辑同一词条时应保留该索引。
+
+首版完整迁移源 HTML 的 201 条词条和五个原字段，另补充 `same result using`。原有 `weighted grayscale` 保留原代码例句。
+
+## 部署与维护
+
+- GitHub Pages 从 `main` 的根目录发布，启用 HTTPS。前端使用相对资源路径和项目路径 `/english/`。
+- Supabase 项目 `dkvjcxingdnbkshmzzyr`。首次部署在 SQL Editor 运行 `supabase.sql`，然后执行 `verify-rls.sql` 验证。测试夹具在事务结束时回滚。公共词库由 GitHub 发布，Supabase 的 `cgcpp_entries` 表只存用户自己的记录。
+- 在 Supabase 的 Authentication → URL Configuration 中将 Site URL 和允许的 Redirect URL 设为 `https://sj17601613240-lab.github.io/english/`。邮箱提供方使用密码登录与邮箱确认。默认邮件服务只向项目团队地址发送邮件，其他用户可由维护者在控制台创建学习账号，或在需要时配置自己的 SMTP。
+- `config.js` 使用 Supabase 公开客户端密钥。更新项目地址时也更新 `index.html` 的 `connect-src`。仓库和网站仅部署公开配置与公共词库。
+- 本地检查使用 Node.js 24，执行 `npm run check`。用 `python -m http.server 8000 --bind 127.0.0.1` 启动静态预览，在 Chrome 打开 `http://127.0.0.1:8000/`。
+- 前端文件可通过 Git 的 revert 回滚。词库更新不执行数据库迁移。恢复个人数据时用备份导入合并。
+
+浏览器版 Supabase JS SDK 固定为 2.119.0，来自 npm 官方包，许可位于 `LICENSE-supabase`。
