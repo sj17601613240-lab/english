@@ -4,8 +4,6 @@ import {
   searchMatches, termKey, validateCatalog, wordFrom,
 } from './core.js';
 import { cloudStore, guestKey, guestStore } from './store.js';
-import { wordPanelCatalog } from './sentence-core.js';
-import { sentenceCatalog } from './sentences.js';
 
 const el = id => document.getElementById(id);
 const editor = el('editor');
@@ -24,8 +22,8 @@ const client = window.supabase?.createClient(supabaseUrl, publishableKey, {
 });
 
 let catalog = new Map();
-let publicWords = new Map();
-let sentenceRows = [];
+let publicWords = catalog;
+let selectPublicWords = source => source;
 let catalogReady = false;
 let catalogError = '';
 let scope;
@@ -103,6 +101,54 @@ function renderAlphabet() {
     renderAlphabet();
     render();
   }, { pressed: value === letter })));
+}
+
+function startStudyTabs() {
+  const wordView = el('word-view');
+  const sentenceView = el('sentence-view');
+  if (!sentenceView) return;
+
+  const tabs = { words: el('tab-words'), sentences: el('tab-sentences') };
+  function selectTab(name) {
+    wordView.hidden = name !== 'words';
+    sentenceView.hidden = name !== 'sentences';
+    for (const [key, tab] of Object.entries(tabs)) {
+      tab.setAttribute('aria-selected', String(key === name));
+      tab.tabIndex = key === name ? 0 : -1;
+    }
+  }
+
+  for (const [name, tab] of Object.entries(tabs)) {
+    const other = name === 'words' ? 'sentences' : 'words';
+    const targets = { ArrowLeft: other, ArrowRight: other, Home: 'words', End: 'sentences' };
+    tab.addEventListener('click', () => selectTab(name));
+    tab.addEventListener('keydown', event => {
+      if (!Object.hasOwn(targets, event.key)) return;
+      event.preventDefault();
+      const next = targets[event.key];
+      selectTab(next);
+      tabs[next].focus();
+    });
+  }
+
+  function openWordSearch(term) {
+    selectTab('words');
+    el('reset').click();
+    const search = el('search');
+    search.value = term;
+    search.dispatchEvent(new Event('input', { bubbles: true }));
+    search.focus();
+  }
+
+  void import('./sentences.js').then(async ({ loadSentences, wordPanelCatalog }) => {
+    const rows = await loadSentences(openWordSearch);
+    selectPublicWords = source => wordPanelCatalog(source, rows);
+    publicWords = selectPublicWords(catalog);
+    render();
+  }).catch(() => {
+    el('sentence-count').textContent = '句子库加载失败';
+    el('sentence-message').textContent = '请刷新网页后重试。';
+  });
 }
 
 function appendDefinition(parent, word) {
@@ -590,16 +636,12 @@ if (client) {
   chooseScope(null);
   message('登录组件未加载，访客模式可用。请重新加载页面。', true);
 }
-void sentenceCatalog.then(rows => {
-  sentenceRows = rows;
-  publicWords = wordPanelCatalog(catalog, sentenceRows);
-  render();
-});
+startStudyTabs();
 try {
   const response = await fetch(new URL('./words.json', import.meta.url), { cache: 'no-cache' });
   if (!response.ok) throw new Error('Catalog unavailable');
   catalog = validateCatalog(await response.json());
-  publicWords = wordPanelCatalog(catalog, sentenceRows);
+  publicWords = selectPublicWords(catalog);
   catalogReady = true;
 } catch {
   catalogError = '公共词库加载失败，请刷新页面。';

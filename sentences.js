@@ -1,9 +1,9 @@
 import { sentenceMatches, validateSentences } from './sentence-core.js';
+export { wordPanelCatalog } from './sentence-core.js';
 
 const $ = id => document.getElementById(id);
 const pageSize = 18;
 const collator = new Intl.Collator('zh-CN');
-const tabs = { words: $('tab-words'), sentences: $('tab-sentences') };
 let data = [];
 let limit = pageSize;
 
@@ -23,29 +23,6 @@ function button(text, action) {
 
 function status(text) {
   $('sentence-message').textContent = text;
-}
-
-function selectTab(name) {
-  const words = name === 'words';
-  $('word-view').hidden = !words;
-  $('sentence-view').hidden = words;
-  for (const [key, tab] of Object.entries(tabs)) {
-    tab.setAttribute('aria-selected', String(key === name));
-    tab.tabIndex = key === name ? 0 : -1;
-  }
-}
-
-for (const [name, tab] of Object.entries(tabs)) {
-  const other = name === 'words' ? 'sentences' : 'words';
-  const targets = { ArrowLeft: other, ArrowRight: other, Home: 'words', End: 'sentences' };
-  tab.addEventListener('click', () => selectTab(name));
-  tab.addEventListener('keydown', event => {
-    if (!Object.hasOwn(targets, event.key)) return;
-    event.preventDefault();
-    const next = targets[event.key];
-    selectTab(next);
-    tabs[next].focus();
-  });
 }
 
 function speakEnglish(text) {
@@ -72,16 +49,7 @@ async function copyText(text) {
   }
 }
 
-function openWordSearch(term) {
-  selectTab('words');
-  $('reset').click();
-  const search = $('search');
-  search.value = term;
-  search.dispatchEvent(new Event('input', { bubbles: true }));
-  search.focus();
-}
-
-function sentenceCard(record) {
+function sentenceCard(record, openWordSearch) {
   const card = node('article', null, 'sentence-card');
   const tags = node('div', null, 'badges');
   tags.append(node('span', record.lesson, 'badge'), node('span', record.kind, 'badge'));
@@ -114,7 +82,7 @@ function sentenceCard(record) {
   return card;
 }
 
-function render() {
+function render(openWordSearch) {
   if (!data.length) return;
   const query = $('sentence-search').value;
   const lesson = $('sentence-lesson').value;
@@ -122,31 +90,32 @@ function render() {
   const matches = data.filter(row => sentenceMatches(row, query)
     && (!lesson || row.lesson === lesson) && (!kind || row.kind === kind));
   $('sentence-count').textContent = '匹配 ' + matches.length + ' / ' + data.length + ' 句';
-  $('sentence-cards').replaceChildren(...matches.slice(0, limit).map(sentenceCard));
+  $('sentence-cards').replaceChildren(...matches.slice(0, limit).map(row => sentenceCard(row, openWordSearch)));
   if (!matches.length) $('sentence-cards').append(node('p', '没有匹配的句子。可以清除筛选后重试。'));
   $('sentence-more').hidden = matches.length <= limit;
 }
 
-for (const [id, event] of [['sentence-search', 'input'], ['sentence-lesson', 'change'], ['sentence-kind', 'change']]) {
-  $(id).addEventListener(event, () => {
+export async function loadSentences(openWordSearch) {
+  const draw = () => render(openWordSearch);
+  for (const [id, event] of [['sentence-search', 'input'], ['sentence-lesson', 'change'], ['sentence-kind', 'change']]) {
+    $(id).addEventListener(event, () => {
+      limit = pageSize;
+      draw();
+    });
+  }
+  $('sentence-reset').addEventListener('click', () => {
+    $('sentence-search').value = '';
+    $('sentence-lesson').value = '';
+    $('sentence-kind').value = '';
     limit = pageSize;
-    render();
+    draw();
+    $('sentence-search').focus();
   });
-}
-$('sentence-reset').addEventListener('click', () => {
-  $('sentence-search').value = '';
-  $('sentence-lesson').value = '';
-  $('sentence-kind').value = '';
-  limit = pageSize;
-  render();
-  $('sentence-search').focus();
-});
-$('sentence-more').addEventListener('click', () => {
-  limit += pageSize;
-  render();
-});
+  $('sentence-more').addEventListener('click', () => {
+    limit += pageSize;
+    draw();
+  });
 
-async function loadSentences() {
   try {
     const response = await fetch(new URL('./sentences.json', import.meta.url), { cache: 'no-cache' });
     if (!response.ok) throw new Error('Sentence catalog unavailable');
@@ -157,7 +126,7 @@ async function loadSentences() {
     $('sentence-kind').append(...kinds.map(value => new Option(value, value)));
     data = rows;
     status('展开逐词解释后，点击英文单词即可跳转到词库。');
-    render();
+    draw();
     return rows;
   } catch {
     $('sentence-count').textContent = '句子库加载失败';
@@ -165,5 +134,3 @@ async function loadSentences() {
     return [];
   }
 }
-
-export const sentenceCatalog = loadSentences();
