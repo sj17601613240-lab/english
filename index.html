@@ -30,6 +30,11 @@
 
   <main class="wrap">
     <noscript>请启用 JavaScript 以搜索、收藏和同步词条。</noscript>
+    <nav class="study-tabs" aria-label="学习内容切换" role="tablist">
+      <button id="tab-words" role="tab" type="button" aria-selected="true" aria-controls="word-view">单词词库</button>
+      <button id="tab-sentences" role="tab" type="button" aria-selected="false" aria-controls="sentence-view" tabindex="-1">英文注释句子</button>
+    </nav>
+    <section id="word-view" role="tabpanel" aria-labelledby="tab-words">
     <section class="controls" aria-label="词条检索">
       <div class="search-row">
         <label class="field search">
@@ -67,6 +72,32 @@
       <button id="more" class="more" type="button" hidden>显示更多</button>
     </section>
 
+    </section>
+    <section id="sentence-view" role="tabpanel" aria-labelledby="tab-sentences" hidden>
+      <section class="controls" aria-label="句子检索">
+        <div class="sentence-heading">
+          <div>
+            <h2>英文注释 · 逐句学习</h2>
+            <p>完整英文 → 中文翻译 → 逐词解释 → C++ 对照。与单词词库分别检索。</p>
+          </div>
+        </div>
+        <div class="sentence-filters">
+          <label class="field sentence-search-field"><span>搜英文、中文或注释中的单词</span><input id="sentence-search" type="search" placeholder="例如 remainder、horizontal、余数"></label>
+          <label class="field"><span>学习章节</span><select id="sentence-lesson"><option value="">全部章节</option></select></label>
+          <label class="field"><span>句子类型</span><select id="sentence-kind"><option value="">全部类型</option></select></label>
+          <button id="sentence-reset" type="button">清除筛选</button>
+        </div>
+      </section>
+      <section class="results" aria-label="英文句子学习卡片">
+        <div class="result-bar">
+          <p id="sentence-count" role="status">正在加载句子库…</p>
+          <p class="sentence-help">点击「逐词解释」查看每个英文单词的中文意思。</p>
+        </div>
+        <p id="sentence-message" class="small-status" role="status"></p>
+        <div id="sentence-cards" class="sentence-cards"></div>
+        <button id="sentence-more" class="more" type="button" hidden>显示更多句子</button>
+      </section>
+    </section>
     <footer>
       <details>
         <summary>数据备份与旧词典迁移</summary>

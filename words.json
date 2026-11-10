@@ -5878,5 +5878,96 @@
     "meaning": "在学习注释中出现：写入（第三人称单数）。",
     "example": "The program writes RGB values to an output file.",
     "category": "英文注释 / 逐词"
+  },
+  {
+    "term": "branchless",
+    "cn": "无分支的",
+    "meaning": "表示没有显式 if/else 条件分支的表达方式；在 Shader/CUDA 中常见，但不保证一定更快。",
+    "example": "const int color = remainder * 255;",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "immutable",
+    "cn": "不可修改的",
+    "meaning": "普通英语中指不可变；此处与 const 对应的学习概念，C++ 并非用 immutable 作为关键字。",
+    "example": "const int color = remainder * 255;",
+    "category": "英语 / C++"
+  },
+  {
+    "term": "increase",
+    "cn": "提高；增加",
+    "meaning": "来自当前 C++ 图像算法的英文注释或例句；可在句子面板中查看完整用法。",
+    "example": "Increase the spatial frequency by reducing the stripe size.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "initial value",
+    "cn": "初始值",
+    "meaning": "变量刚被初始化时保存的值。",
+    "example": "int color = 255;",
+    "category": "英语 / C++"
+  },
+  {
+    "term": "iteration",
+    "cn": "一次循环迭代",
+    "meaning": "来自当前 C++ 图像算法的英文注释或例句；可在句子面板中查看完整用法。",
+    "example": "The variable is initialized once per iteration.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "lifetime",
+    "cn": "生命周期",
+    "meaning": "变量从创建到销毁的存在时间；循环内的局部变量每次迭代都会有自己的生命周期。",
+    "example": "const int color = remainder * 255;",
+    "category": "C++"
+  },
+  {
+    "term": "local variable",
+    "cn": "局部变量",
+    "meaning": "在代码块或函数内部定义，并按作用域规则访问的变量。",
+    "example": "const int color = remainder * 255;",
+    "category": "C++"
+  },
+  {
+    "term": "mutable",
+    "cn": "可修改的",
+    "meaning": "在普通英语中指可变、可修改；C++ 中也有专用 mutable 关键字，此处先按一般概念理解。",
+    "example": "int color = 255; color = 0;",
+    "category": "英语 / C++"
+  },
+  {
+    "term": "once",
+    "cn": "每次；一次",
+    "meaning": "来自当前 C++ 图像算法的英文注释或例句；可在句子面板中查看完整用法。",
+    "example": "The variable is initialized once per iteration.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "reassign",
+    "cn": "重新赋值",
+    "meaning": "来自当前 C++ 图像算法的英文注释或例句；可在句子面板中查看完整用法。",
+    "example": "Reassign a variable.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "reducing",
+    "cn": "减小（进行时）",
+    "meaning": "来自当前 C++ 图像算法的英文注释或例句；可在句子面板中查看完整用法。",
+    "example": "Increase the spatial frequency by reducing the stripe size.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "vlack",
+    "cn": "拼写错误：应写 black（黑色）",
+    "meaning": "不是标准英文拼写；本次 C++ 课堂注释误写了 vlack，正确是 black。",
+    "example": "// Set the pixel to black if it is in the first row.",
+    "category": "拼写纠错"
+  },
+  {
+    "term": "whther",
+    "cn": "拼写错误：应写 whether（是否）",
+    "meaning": "不是标准英文拼写；正确写法是 whether，常用于 Check whether ...。",
+    "example": "// Check whether the block index sum is even.",
+    "category": "拼写纠错"
   }
 ]

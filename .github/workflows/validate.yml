@@ -19,17 +19,19 @@ jobs:
         with:
           node-version: 24
       - run: npm run check
-      - name: Load the glossary in Chrome on Ubuntu
+      - name: Load both learning panels in Chrome on Ubuntu
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/cgcpp-http.log" 2>&1 &
           server=$!
           trap 'kill "$server"' EXIT
           url=http://127.0.0.1:8765/
           curl --fail --silent --retry 5 --retry-connrefused --output /dev/null "$url"
-          count=$(node -p "require('./words.json').length")
+          counts=$(node validate.mjs --counts)
+          read -r words sentences <<< "$counts"
           google-chrome --version
           google-chrome --headless --disable-dev-shm-usage --window-size=1366,900 \
             --virtual-time-budget=8000 --timeout=15000 --dump-dom "$url" \
             > "$RUNNER_TEMP/cgcpp-dom.html" 2> "$RUNNER_TEMP/cgcpp-chrome.log" \
             || { cat "$RUNNER_TEMP/cgcpp-chrome.log"; exit 1; }
-          grep -F "公共 $count 条" "$RUNNER_TEMP/cgcpp-dom.html"
+          grep -F "公共 $words 条" "$RUNNER_TEMP/cgcpp-dom.html"
+          grep -F "/ $sentences 句" "$RUNNER_TEMP/cgcpp-dom.html"
