@@ -22,6 +22,8 @@ const client = window.supabase?.createClient(supabaseUrl, publishableKey, {
 });
 
 let catalog = new Map();
+let publicWords = catalog;
+let selectPublicWords = source => source;
 let catalogReady = false;
 let catalogError = '';
 let scope;
@@ -80,7 +82,7 @@ el('accept-confirm').addEventListener('click', () => {
 });
 
 function visibleEntries() {
-  const entries = new Map([...catalog].map(([key, base]) => [key, { ...base, key, base }]));
+  const entries = new Map([...publicWords].map(([key, base]) => [key, { ...base, key, base }]));
   for (const record of scope?.rows.values() ?? []) {
     const key = record.term_key;
     const base = catalog.get(key);
@@ -99,6 +101,54 @@ function renderAlphabet() {
     renderAlphabet();
     render();
   }, { pressed: value === letter })));
+}
+
+function startStudyTabs() {
+  const wordView = el('word-view');
+  const sentenceView = el('sentence-view');
+  if (!sentenceView) return;
+
+  const tabs = { words: el('tab-words'), sentences: el('tab-sentences') };
+  function selectTab(name) {
+    wordView.hidden = name !== 'words';
+    sentenceView.hidden = name !== 'sentences';
+    for (const [key, tab] of Object.entries(tabs)) {
+      tab.setAttribute('aria-selected', String(key === name));
+      tab.tabIndex = key === name ? 0 : -1;
+    }
+  }
+
+  for (const [name, tab] of Object.entries(tabs)) {
+    const other = name === 'words' ? 'sentences' : 'words';
+    const targets = { ArrowLeft: other, ArrowRight: other, Home: 'words', End: 'sentences' };
+    tab.addEventListener('click', () => selectTab(name));
+    tab.addEventListener('keydown', event => {
+      if (!Object.hasOwn(targets, event.key)) return;
+      event.preventDefault();
+      const next = targets[event.key];
+      selectTab(next);
+      tabs[next].focus();
+    });
+  }
+
+  function openWordSearch(term) {
+    selectTab('words');
+    el('reset').click();
+    const search = el('search');
+    search.value = term;
+    search.dispatchEvent(new Event('input', { bubbles: true }));
+    search.focus();
+  }
+
+  void import('./sentences.js').then(async ({ loadSentences, wordPanelCatalog }) => {
+    const rows = await loadSentences(openWordSearch);
+    selectPublicWords = source => wordPanelCatalog(source, rows);
+    publicWords = selectPublicWords(catalog);
+    render();
+  }).catch(() => {
+    el('sentence-count').textContent = '句子库加载失败';
+    el('sentence-message').textContent = '请刷新网页后重试。';
+  });
 }
 
 function appendDefinition(parent, word) {
@@ -167,6 +217,7 @@ function cardFor(entry) {
 function render() {
   const all = visibleEntries();
   const query = el('search').value.trim().toLowerCase();
+  const exactKey = termKey(query);
   const category = el('category').value;
   const categories = [...new Set(all.map(row => row.category))].sort(sortChinese.compare);
   el('category').replaceChildren(new Option('全部分类', ''),
@@ -181,11 +232,12 @@ function render() {
       && (!letter || letter === first)
       && (filter !== 'favorite' || entry.record?.favorite)
       && (filter !== 'personal' || entry.record?.word || entry.record?.note);
-  }).sort((a, b) => sortEnglish.compare(a.term, b.term));
+  }).sort((a, b) => Number(b.key === exactKey) - Number(a.key === exactKey)
+    || sortEnglish.compare(a.term, b.term));
 
   const favorites = all.filter(row => row.record?.favorite).length;
   el('count').textContent = catalogError || (catalogReady
-    ? '匹配 ' + shown.length + ' / ' + all.length + ' 条 · 公共 ' + catalog.size + ' 条 · 收藏 ' + favorites + ' 条'
+    ? '匹配 ' + shown.length + ' / ' + all.length + ' 条 · 公共 ' + publicWords.size + ' 条 · 收藏 ' + favorites + ' 条'
     : '正在加载公共词库…');
   el('cards').replaceChildren(...shown.slice(0, limit).map(cardFor));
   if (catalogReady && !shown.length) el('cards').append(node('p', '没有匹配的词条。'));
@@ -584,10 +636,12 @@ if (client) {
   chooseScope(null);
   message('登录组件未加载，访客模式可用。请重新加载页面。', true);
 }
+startStudyTabs();
 try {
   const response = await fetch(new URL('./words.json', import.meta.url), { cache: 'no-cache' });
   if (!response.ok) throw new Error('Catalog unavailable');
   catalog = validateCatalog(await response.json());
+  publicWords = selectPublicWords(catalog);
   catalogReady = true;
 } catch {
   catalogError = '公共词库加载失败，请刷新页面。';

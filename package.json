@@ -1,9 +1,9 @@
 {
   "name": "cgcpp-english-dictionary",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node validate.mjs && node --check app.js && node --check store.js && node --test"
+    "check": "node validate.mjs && node --check app.js && node --check sentences.js && node --check sentence-core.js && node --check store.js && node --test"
   }
 }

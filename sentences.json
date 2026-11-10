@@ -1,0 +1,3367 @@
+[
+  {
+    "english": "Print the image size to the terminal.",
+    "cn": "在终端输出图像尺寸。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Print",
+        "cn": "输出显示；打印"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "size",
+        "cn": "尺寸；大小"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "terminal",
+        "cn": "终端"
+      }
+    ],
+    "code": "std::cout << \"image size:\" << width << \"x\" << height << '\\n';",
+    "note": "",
+    "id": "s-6a0a6bc46bd7e9"
+  },
+  {
+    "english": "Write the image width and height.",
+    "cn": "将图像宽度和高度写入文件。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Write",
+        "cn": "写入"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "width",
+        "cn": "宽度"
+      },
+      {
+        "en": "and",
+        "cn": "和"
+      },
+      {
+        "en": "height",
+        "cn": "高度"
+      }
+    ],
+    "code": "image << width << \" \" << height << \"\\n\";",
+    "note": "",
+    "id": "s-8f0c7ac03e3be5"
+  },
+  {
+    "english": "Set the maximum value for each RGB color channel.",
+    "cn": "为每个 RGB 颜色通道设定最大值。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置；赋值为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "maximum",
+        "cn": "最大的；最大值"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "for",
+        "cn": "for循环关键字"
+      },
+      {
+        "en": "each",
+        "cn": "每一个"
+      },
+      {
+        "en": "RGB",
+        "cn": "红绿蓝颜色通道"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      },
+      {
+        "en": "channel",
+        "cn": "通道"
+      }
+    ],
+    "code": "image << \"255\\n\";",
+    "note": "",
+    "id": "s-ec5637f9a2dec6"
+  },
+  {
+    "english": "Loop through each row of the image.",
+    "cn": "遍历图像中的每一行。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Loop",
+        "cn": "循环"
+      },
+      {
+        "en": "through",
+        "cn": "穿过；遍历"
+      },
+      {
+        "en": "each",
+        "cn": "每一个"
+      },
+      {
+        "en": "row",
+        "cn": "行"
+      },
+      {
+        "en": "of",
+        "cn": "……的；表示所属关系"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      }
+    ],
+    "code": "for (int y = 0; y < height; y++) { /* ... */ }",
+    "note": "",
+    "id": "s-c3d3cf53dcac34"
+  },
+  {
+    "english": "Loop through each pixel in the row.",
+    "cn": "遍历当前行中的每个像素。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Loop",
+        "cn": "循环"
+      },
+      {
+        "en": "through",
+        "cn": "穿过；遍历"
+      },
+      {
+        "en": "each",
+        "cn": "每一个"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "row",
+        "cn": "行"
+      }
+    ],
+    "code": "for (int x = 0; x < width; x++) { /* ... */ }",
+    "note": "",
+    "id": "s-82537349518e29"
+  },
+  {
+    "english": "Loop through each pixel in the current row.",
+    "cn": "遍历当前这一行中的每个像素。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Loop",
+        "cn": "循环"
+      },
+      {
+        "en": "through",
+        "cn": "穿过；遍历"
+      },
+      {
+        "en": "each",
+        "cn": "每一个"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "current",
+        "cn": "当前的"
+      },
+      {
+        "en": "row",
+        "cn": "行"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-252e04d2d9d35f"
+  },
+  {
+    "english": "Define the RGB values based on pixel coordinates.",
+    "cn": "根据像素坐标定义 RGB 数值。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Define",
+        "cn": "定义"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "RGB",
+        "cn": "红绿蓝颜色通道"
+      },
+      {
+        "en": "values",
+        "cn": "数值（复数）"
+      },
+      {
+        "en": "based",
+        "cn": "基于；依据"
+      },
+      {
+        "en": "on",
+        "cn": "在……上；依据"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "coordinates",
+        "cn": "坐标（复数）"
+      }
+    ],
+    "code": "const int red = x;\nconst int green = y;\nconst int blue = 128;",
+    "note": "",
+    "id": "s-47d7d5c2fd4508"
+  },
+  {
+    "english": "Compute the average value of the RGB channels.",
+    "cn": "计算 RGB 通道的平均值。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Compute",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "average",
+        "cn": "平均数、平均的"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "of",
+        "cn": "……的；表示所属关系"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "RGB",
+        "cn": "红绿蓝颜色通道"
+      },
+      {
+        "en": "channels",
+        "cn": "通道（复数）"
+      }
+    ],
+    "code": "const int gray = (red + green + blue) / 3;",
+    "note": "",
+    "id": "s-870ba581fa0850"
+  },
+  {
+    "english": "Compute grayscale using BT.709 luma weights.",
+    "cn": "使用 BT.709 的 luma 权重计算灰度。",
+    "lesson": "A02 · BT.709 加权灰度",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Compute",
+        "cn": "计算"
+      },
+      {
+        "en": "grayscale",
+        "cn": "灰度图；灰度的"
+      },
+      {
+        "en": "using",
+        "cn": "使用；通过使用；采用……方式"
+      },
+      {
+        "en": "BT.709",
+        "cn": "高清电视颜色标准 BT.709"
+      },
+      {
+        "en": "luma",
+        "cn": "视频非线性亮度信号"
+      },
+      {
+        "en": "weights",
+        "cn": "权重（复数）"
+      }
+    ],
+    "code": "const double luma = 0.2126 * red + 0.7152 * green + 0.0722 * blue;",
+    "note": "",
+    "id": "s-705c529d7d9fd7"
+  },
+  {
+    "english": "Compute the weighted luma value.",
+    "cn": "计算加权 luma 数值。",
+    "lesson": "A02 · BT.709 加权灰度",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Compute",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "weighted",
+        "cn": "加权的"
+      },
+      {
+        "en": "luma",
+        "cn": "视频非线性亮度信号"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      }
+    ],
+    "code": "const double luma = 0.2126 * red + 0.7152 * green + 0.0722 * blue;",
+    "note": "",
+    "id": "s-96e7c67cfc78e0"
+  },
+  {
+    "english": "Write the same gray value to all three color channels.",
+    "cn": "将相同的灰度值写入全部三个颜色通道。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Write",
+        "cn": "写入"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "same",
+        "cn": "相同的；同样的"
+      },
+      {
+        "en": "gray",
+        "cn": "灰色、灰度值"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "all",
+        "cn": "全部；所有"
+      },
+      {
+        "en": "three",
+        "cn": "三；三个"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      },
+      {
+        "en": "channels",
+        "cn": "通道（复数）"
+      }
+    ],
+    "code": "image << gray << \" \" << gray << \" \" << gray << \"\\n\";",
+    "note": "",
+    "id": "s-7f5b726546da8d"
+  },
+  {
+    "english": "Convert the result to an integer pixel value.",
+    "cn": "将计算结果转换成整数像素值。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "result",
+        "cn": "结果"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "an",
+        "cn": "一个；用于元音音素开头的词前"
+      },
+      {
+        "en": "integer",
+        "cn": "整数"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      }
+    ],
+    "code": "const int gray = static_cast<int>(luma);",
+    "note": "",
+    "id": "s-10d92ab9944147"
+  },
+  {
+    "english": "Convert the floating-point value to an integer.",
+    "cn": "将浮点数值转换成整数。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "floating-point",
+        "cn": "浮点的；浮点数"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "an",
+        "cn": "一个；用于元音音素开头的词前"
+      },
+      {
+        "en": "integer",
+        "cn": "整数"
+      }
+    ],
+    "code": "const int gray = static_cast<int>(luma);",
+    "note": "",
+    "id": "s-312b8aa4b7ccfa"
+  },
+  {
+    "english": "Write the gray value to the image.",
+    "cn": "将灰度值写入图像。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Write",
+        "cn": "写入"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "gray",
+        "cn": "灰色、灰度值"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      }
+    ],
+    "code": "image << gray << \" \" << gray << \" \" << gray << \"\\n\";",
+    "note": "",
+    "id": "s-d214e0c304555c"
+  },
+  {
+    "english": "Write the pixel to the image.",
+    "cn": "将像素写入图像。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Write",
+        "cn": "写入"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-3599181c63b546"
+  },
+  {
+    "english": "Process the current pixel.",
+    "cn": "处理当前像素。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Process",
+        "cn": "处理；过程"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "current",
+        "cn": "当前的"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-f99b44356285fc"
+  },
+  {
+    "english": "The pixel is in the first row.",
+    "cn": "这个像素位于第一行。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一；最前面的"
+      },
+      {
+        "en": "row",
+        "cn": "行"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-824c8db75661db"
+  },
+  {
+    "english": "Set the pixel to black if it is in the first row.",
+    "cn": "如果像素位于第一行，就将它设置为黑色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置；赋值为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      },
+      {
+        "en": "if",
+        "cn": "如果；条件判断"
+      },
+      {
+        "en": "it",
+        "cn": "它"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一；最前面的"
+      },
+      {
+        "en": "row",
+        "cn": "行"
+      }
+    ],
+    "code": "if (y == 0) { color = 0; }",
+    "note": "",
+    "id": "s-a6aa500fff384d"
+  },
+  {
+    "english": "Set the default pixel color to white.",
+    "cn": "将默认像素颜色设置为白色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置；赋值为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "default",
+        "cn": "默认的"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      }
+    ],
+    "code": "int color = 255;",
+    "note": "",
+    "id": "s-ba8e1c3df0964a"
+  },
+  {
+    "english": "Set the default color to white.",
+    "cn": "将默认颜色设置为白色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置；赋值为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "default",
+        "cn": "默认的"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      }
+    ],
+    "code": "int color = 255;",
+    "note": "",
+    "id": "s-907234b447ce44"
+  },
+  {
+    "english": "Make the first column black.",
+    "cn": "将第一列设置为黑色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Make",
+        "cn": "使……变成；制作"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一；最前面的"
+      },
+      {
+        "en": "column",
+        "cn": "列"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      }
+    ],
+    "code": "if (x == 0) { color = 0; }",
+    "note": "",
+    "id": "s-50a2736fb8469a"
+  },
+  {
+    "english": "Make the first 32 columns gray.",
+    "cn": "将最左侧的 32 列设为灰色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Make",
+        "cn": "使……变成；制作"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一；最前面的"
+      },
+      {
+        "en": "columns",
+        "cn": "列（复数）"
+      },
+      {
+        "en": "gray",
+        "cn": "灰色、灰度值"
+      }
+    ],
+    "code": "if (x < 32) { color = 128; }",
+    "note": "",
+    "id": "s-d47ac11baf5d76"
+  },
+  {
+    "english": "Calculate the horizontal and vertical block indices.",
+    "cn": "计算水平方向和垂直方向的格子索引。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "horizontal",
+        "cn": "水平的"
+      },
+      {
+        "en": "and",
+        "cn": "和"
+      },
+      {
+        "en": "vertical",
+        "cn": "垂直的"
+      },
+      {
+        "en": "block",
+        "cn": "块；格子"
+      },
+      {
+        "en": "indices",
+        "cn": "索引（复数）"
+      }
+    ],
+    "code": "const int blockX = x / 32;\nconst int blockY = y / 32;",
+    "note": "",
+    "id": "s-f1da7248e9d744"
+  },
+  {
+    "english": "Check whether the block index sum is even.",
+    "cn": "检查格子索引之和是否为偶数。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Check",
+        "cn": "检查；核对"
+      },
+      {
+        "en": "whether",
+        "cn": "是否"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "block",
+        "cn": "块；格子"
+      },
+      {
+        "en": "index",
+        "cn": "索引；编号"
+      },
+      {
+        "en": "sum",
+        "cn": "总和；求和结果"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "even",
+        "cn": "偶数的"
+      }
+    ],
+    "code": "const int remainder = (blockX + blockY) % 2;",
+    "note": "",
+    "id": "s-54ac992b1e1265"
+  },
+  {
+    "english": "Calculate the remainder.",
+    "cn": "计算余数。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "remainder",
+        "cn": "余数"
+      }
+    ],
+    "code": "const int remainder = (blockX + blockY) % 2;",
+    "note": "",
+    "id": "s-2ce82024d29263"
+  },
+  {
+    "english": "Make even-numbered blocks black.",
+    "cn": "将偶数编号的格子设为黑色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Make",
+        "cn": "使……变成；制作"
+      },
+      {
+        "en": "even-numbered",
+        "cn": "偶数编号的"
+      },
+      {
+        "en": "blocks",
+        "cn": "块；格子（复数）"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      }
+    ],
+    "code": "if (remainder == 0) { color = 0; }",
+    "note": "",
+    "id": "s-34043ca2de0c7a"
+  },
+  {
+    "english": "Generate a checkerboard pattern.",
+    "cn": "生成一个棋盘格图案。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Generate",
+        "cn": "生成"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "checkerboard",
+        "cn": "棋盘格"
+      },
+      {
+        "en": "pattern",
+        "cn": "图案；模式"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-4db70621a5fae1"
+  },
+  {
+    "english": "Generate alternating black and white stripes.",
+    "cn": "生成黑白交替的条纹。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Generate",
+        "cn": "生成"
+      },
+      {
+        "en": "alternating",
+        "cn": "交替出现的"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      },
+      {
+        "en": "and",
+        "cn": "和"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      },
+      {
+        "en": "stripes",
+        "cn": "条纹（复数）"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-aea76bf6f5f61a"
+  },
+  {
+    "english": "P3 indicates the plain-text PPM image format.",
+    "cn": "P3 表示纯文本 PPM 图像格式。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "P3",
+        "cn": "PPM纯文本格式标记"
+      },
+      {
+        "en": "indicates",
+        "cn": "表示；指示（单数主语）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "plain-text",
+        "cn": "纯文本的（形容词）"
+      },
+      {
+        "en": "PPM",
+        "cn": "Portable Pixmap图像格式"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "format",
+        "cn": "格式"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-764725496e558b"
+  },
+  {
+    "english": "Image size: 256 x 256.",
+    "cn": "图像尺寸为 256 × 256。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "size",
+        "cn": "尺寸；大小"
+      },
+      {
+        "en": "x",
+        "cn": "横向像素索引"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-9a3fc725c80e94"
+  },
+  {
+    "english": "Use integer division and modulo for procedural pattern generation.",
+    "cn": "使用整数除法和取模运算进行程序化图案生成。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Use",
+        "cn": "使用；用途"
+      },
+      {
+        "en": "integer",
+        "cn": "整数"
+      },
+      {
+        "en": "division",
+        "cn": "除法"
+      },
+      {
+        "en": "and",
+        "cn": "和"
+      },
+      {
+        "en": "modulo",
+        "cn": "取模；求余"
+      },
+      {
+        "en": "for",
+        "cn": "for循环关键字"
+      },
+      {
+        "en": "procedural",
+        "cn": "程序化的"
+      },
+      {
+        "en": "pattern",
+        "cn": "图案；模式"
+      },
+      {
+        "en": "generation",
+        "cn": "生成过程"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-ddce2779e3f94c"
+  },
+  {
+    "english": "Smaller checkerboard blocks have a higher spatial frequency.",
+    "cn": "更小的棋盘格具有更高的空间频率。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Smaller",
+        "cn": "更小的"
+      },
+      {
+        "en": "checkerboard",
+        "cn": "棋盘格"
+      },
+      {
+        "en": "blocks",
+        "cn": "块；格子（复数）"
+      },
+      {
+        "en": "have",
+        "cn": "有；已经"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "higher",
+        "cn": "更高的"
+      },
+      {
+        "en": "spatial",
+        "cn": "空间的"
+      },
+      {
+        "en": "frequency",
+        "cn": "频率"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-1d9d2f7b7a0d7e"
+  },
+  {
+    "english": "Increasing the frequency creates more stripes.",
+    "cn": "提高频率会产生更多的条纹。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Increasing",
+        "cn": "正在提高；越来越多"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "frequency",
+        "cn": "频率"
+      },
+      {
+        "en": "creates",
+        "cn": "创建；生成"
+      },
+      {
+        "en": "more",
+        "cn": "更多的"
+      },
+      {
+        "en": "stripes",
+        "cn": "条纹（复数）"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-95cc03b5cc3a4d"
+  },
+  {
+    "english": "The stripe pattern repeats every 32 pixels.",
+    "cn": "条纹图案每隔 32 像素重复一次。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "pattern",
+        "cn": "图案；模式"
+      },
+      {
+        "en": "repeats",
+        "cn": "重复（第三人称）"
+      },
+      {
+        "en": "every",
+        "cn": "每一个"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-4401941cafc428"
+  },
+  {
+    "english": "Both programs produce the same result.",
+    "cn": "两个程序产生相同的结果。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Both",
+        "cn": "两者都"
+      },
+      {
+        "en": "programs",
+        "cn": "程序（复数）"
+      },
+      {
+        "en": "produce",
+        "cn": "生成；产生"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "same",
+        "cn": "相同的；同样的"
+      },
+      {
+        "en": "result",
+        "cn": "结果"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-079d0c4821a422"
+  },
+  {
+    "english": "You can get the same result using a lookup table.",
+    "cn": "使用查找表也可以得到相同的结果。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "You",
+        "cn": "你"
+      },
+      {
+        "en": "can",
+        "cn": "可以；能够"
+      },
+      {
+        "en": "get",
+        "cn": "获得；得到"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "same",
+        "cn": "相同的；同样的"
+      },
+      {
+        "en": "result",
+        "cn": "结果"
+      },
+      {
+        "en": "using",
+        "cn": "使用；通过使用；采用……方式"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "lookup",
+        "cn": "查找；检索"
+      },
+      {
+        "en": "table",
+        "cn": "表格；查找表"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-7f0fefbf80608d"
+  },
+  {
+    "english": "We get the same result using float and double in this example.",
+    "cn": "在这个例子中，使用 float 和 double 得到相同的结果。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "We",
+        "cn": "我们"
+      },
+      {
+        "en": "get",
+        "cn": "获得；得到"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "same",
+        "cn": "相同的；同样的"
+      },
+      {
+        "en": "result",
+        "cn": "结果"
+      },
+      {
+        "en": "using",
+        "cn": "使用；通过使用；采用……方式"
+      },
+      {
+        "en": "float",
+        "cn": "单精度浮点数"
+      },
+      {
+        "en": "and",
+        "cn": "和"
+      },
+      {
+        "en": "double",
+        "cn": "双精度浮点数"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "this",
+        "cn": "这个"
+      },
+      {
+        "en": "example",
+        "cn": "例子；示例"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-c417eb1559212d"
+  },
+  {
+    "english": "Check whether x is equal to zero.",
+    "cn": "检查 x 是否等于零。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Check",
+        "cn": "检查；核对"
+      },
+      {
+        "en": "whether",
+        "cn": "是否"
+      },
+      {
+        "en": "x",
+        "cn": "横向像素索引"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "equal",
+        "cn": "相等的"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "zero",
+        "cn": "零"
+      }
+    ],
+    "code": "if (x == 0) { color = 0; }",
+    "note": "",
+    "id": "s-7385a847a3af53"
+  },
+  {
+    "english": "Compare the two grayscale images.",
+    "cn": "比较两张灰度图像。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Compare",
+        "cn": "比较"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "two",
+        "cn": "二；两个"
+      },
+      {
+        "en": "grayscale",
+        "cn": "灰度图；灰度的"
+      },
+      {
+        "en": "images",
+        "cn": "图像（复数）"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-e29f21856a00d3"
+  },
+  {
+    "english": "Draw a vertical stripe on the left side.",
+    "cn": "在左侧绘制一条竖向条纹。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Draw",
+        "cn": "绘制；画"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "vertical",
+        "cn": "垂直的"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "on",
+        "cn": "在……上；依据"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "left",
+        "cn": "左边；左侧"
+      },
+      {
+        "en": "side",
+        "cn": "侧边；一侧"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-9fb49f5f5a79b2"
+  },
+  {
+    "english": "Make the first row black.",
+    "cn": "将第一行设为黑色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Make",
+        "cn": "使……变成；制作"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一；最前面的"
+      },
+      {
+        "en": "row",
+        "cn": "行"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      }
+    ],
+    "code": "if (y == 0) { color = 0; }",
+    "note": "",
+    "id": "s-3ea12a9ec28993"
+  },
+  {
+    "english": "If the pixel is in the first row, make it black.",
+    "cn": "如果像素位于第一行，就将它设为黑色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "If",
+        "cn": "如果；条件判断"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一；最前面的"
+      },
+      {
+        "en": "row",
+        "cn": "行"
+      },
+      {
+        "en": "make",
+        "cn": "使……变成；制作"
+      },
+      {
+        "en": "it",
+        "cn": "它"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-0e70f1bfc1bc33"
+  },
+  {
+    "english": "Set the RGB values based on the pixel position.",
+    "cn": "根据像素位置设置 RGB 数值。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置；赋值为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "RGB",
+        "cn": "红绿蓝颜色通道"
+      },
+      {
+        "en": "values",
+        "cn": "数值（复数）"
+      },
+      {
+        "en": "based",
+        "cn": "基于；依据"
+      },
+      {
+        "en": "on",
+        "cn": "在……上；依据"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-5771554fcaa057"
+  },
+  {
+    "english": "The gray value is written to all three channels.",
+    "cn": "灰度值被写入全部三个通道。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "gray",
+        "cn": "灰色、灰度值"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "written",
+        "cn": "写入的；write 的过去分词"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "all",
+        "cn": "全部；所有"
+      },
+      {
+        "en": "three",
+        "cn": "三；三个"
+      },
+      {
+        "en": "channels",
+        "cn": "通道（复数）"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-a14efe1cc3b3a2"
+  },
+  {
+    "english": "If the condition is true, execute the statement.",
+    "cn": "如果条件为真，则执行该语句。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "If",
+        "cn": "如果；条件判断"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "condition",
+        "cn": "条件"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "true",
+        "cn": "真的；布尔值 true"
+      },
+      {
+        "en": "execute",
+        "cn": "执行（动词）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "statement",
+        "cn": "语句"
+      }
+    ],
+    "code": "if (condition) { /* ... */ }",
+    "note": "",
+    "id": "s-6a18bd22445409"
+  },
+  {
+    "english": "If the condition is false, keep the default color.",
+    "cn": "如果条件为假，保留默认颜色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "If",
+        "cn": "如果；条件判断"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "condition",
+        "cn": "条件"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "false",
+        "cn": "假；布尔值假"
+      },
+      {
+        "en": "keep",
+        "cn": "保持；保留"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "default",
+        "cn": "默认的"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-99cc27e786429f"
+  },
+  {
+    "english": "The default pixel color is white.",
+    "cn": "默认像素颜色是白色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "default",
+        "cn": "默认的"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-d2ab35d6e45d28"
+  },
+  {
+    "english": "Gray is not declared in this scope.",
+    "cn": "变量 Gray 在当前作用域中未声明。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "编译报错",
+    "words": [
+      {
+        "en": "Gray",
+        "cn": "灰色、灰度值"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "not",
+        "cn": "不；否定"
+      },
+      {
+        "en": "declared",
+        "cn": "已声明的"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "this",
+        "cn": "这个"
+      },
+      {
+        "en": "scope",
+        "cn": "作用域"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-de082e25b5dcf7"
+  },
+  {
+    "english": "Unused variable gray.",
+    "cn": "未使用的变量 gray。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "编译报错",
+    "words": [
+      {
+        "en": "Unused",
+        "cn": "未使用的"
+      },
+      {
+        "en": "variable",
+        "cn": "变量"
+      },
+      {
+        "en": "gray",
+        "cn": "灰色、灰度值"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-839a97184488df"
+  },
+  {
+    "english": "Unrecognized command-line option.",
+    "cn": "无法识别的命令行选项。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "编译报错",
+    "words": [
+      {
+        "en": "Unrecognized",
+        "cn": "无法识别的"
+      },
+      {
+        "en": "command-line",
+        "cn": "命令行的"
+      },
+      {
+        "en": "option",
+        "cn": "选项"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-c808f1255b299a"
+  },
+  {
+    "english": "In function int main.",
+    "cn": "在 int main 函数中。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "编译报错",
+    "words": [
+      {
+        "en": "In",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "function",
+        "cn": "函数"
+      },
+      {
+        "en": "int",
+        "cn": "整数类型"
+      },
+      {
+        "en": "main",
+        "cn": "主函数名"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-aff035ba0469ce"
+  },
+  {
+    "english": "An error stops compilation, but a warning may not.",
+    "cn": "错误会中断编译，但警告未必会。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "An",
+        "cn": "一个；用于元音音素开头的词前"
+      },
+      {
+        "en": "error",
+        "cn": "错误"
+      },
+      {
+        "en": "stops",
+        "cn": "停止（第三人称）"
+      },
+      {
+        "en": "compilation",
+        "cn": "编译过程"
+      },
+      {
+        "en": "but",
+        "cn": "但是"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "warning",
+        "cn": "警告"
+      },
+      {
+        "en": "may",
+        "cn": "可能；可以"
+      },
+      {
+        "en": "not",
+        "cn": "不；否定"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-944feb162d9e5d"
+  },
+  {
+    "english": "Use the alias to list directory contents.",
+    "cn": "使用别名列出目录内容。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Use",
+        "cn": "使用；用途"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "alias",
+        "cn": "别名"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "list",
+        "cn": "列出"
+      },
+      {
+        "en": "directory",
+        "cn": "目录；文件夹"
+      },
+      {
+        "en": "contents",
+        "cn": "内容"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-4bddd3fc3b32d2"
+  },
+  {
+    "english": "List files in a human-readable format.",
+    "cn": "以便于阅读的格式列出文件。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "List",
+        "cn": "列出"
+      },
+      {
+        "en": "files",
+        "cn": "文件（复数）"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "human-readable",
+        "cn": "便于人类阅读的"
+      },
+      {
+        "en": "format",
+        "cn": "格式"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-b7269832000ca2"
+  },
+  {
+    "english": "The source file is compiled into an executable.",
+    "cn": "源文件被编译成可执行程序。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "source",
+        "cn": "源代码；来源"
+      },
+      {
+        "en": "file",
+        "cn": "文件"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "compiled",
+        "cn": "编译后的；已编译的"
+      },
+      {
+        "en": "into",
+        "cn": "进入；转入"
+      },
+      {
+        "en": "an",
+        "cn": "一个；用于元音音素开头的词前"
+      },
+      {
+        "en": "executable",
+        "cn": "可执行程序"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-555b92a2c31a37"
+  },
+  {
+    "english": "The program writes RGB values to an output file.",
+    "cn": "程序把 RGB 数值写入输出文件。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "program",
+        "cn": "程序"
+      },
+      {
+        "en": "writes",
+        "cn": "写入（第三人称单数）"
+      },
+      {
+        "en": "RGB",
+        "cn": "红绿蓝颜色通道"
+      },
+      {
+        "en": "values",
+        "cn": "数值（复数）"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "an",
+        "cn": "一个；用于元音音素开头的词前"
+      },
+      {
+        "en": "output",
+        "cn": "输出"
+      },
+      {
+        "en": "file",
+        "cn": "文件"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-2ec60ac5eac113"
+  },
+  {
+    "english": "Use const when a value must not change.",
+    "cn": "当变量的值不应改变时使用 const。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Use",
+        "cn": "使用；用途"
+      },
+      {
+        "en": "const",
+        "cn": "常量限定符"
+      },
+      {
+        "en": "when",
+        "cn": "当……时候"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "must",
+        "cn": "必须"
+      },
+      {
+        "en": "not",
+        "cn": "不；否定"
+      },
+      {
+        "en": "change",
+        "cn": "改变；修改"
+      }
+    ],
+    "code": "const int color = remainder * 255;",
+    "note": "",
+    "id": "s-ba493b46b0134b"
+  },
+  {
+    "english": "Assign the result to the gray variable.",
+    "cn": "将结果赋给 gray 变量。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Assign",
+        "cn": "赋值；分配"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "result",
+        "cn": "结果"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "gray",
+        "cn": "灰色、灰度值"
+      },
+      {
+        "en": "variable",
+        "cn": "变量"
+      }
+    ],
+    "code": "const int gray = static_cast<int>(luma);",
+    "note": "",
+    "id": "s-609471246ed4aa"
+  },
+  {
+    "english": "Static cast converts a floating-point value to an integer.",
+    "cn": "静态类型转换将浮点数转换为整数。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Static",
+        "cn": "静态的"
+      },
+      {
+        "en": "cast",
+        "cn": "类型转换"
+      },
+      {
+        "en": "converts",
+        "cn": "转换（第三人称单数）"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "floating-point",
+        "cn": "浮点的；浮点数"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "an",
+        "cn": "一个；用于元音音素开头的词前"
+      },
+      {
+        "en": "integer",
+        "cn": "整数"
+      }
+    ],
+    "code": "const int gray = static_cast<int>(luma);",
+    "note": "",
+    "id": "s-440ac6f62ce354"
+  },
+  {
+    "english": "An integer conversion truncates the decimal part.",
+    "cn": "整数类型转换会截去小数部分。",
+    "lesson": "A02 · 灰度与类型转换",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "An",
+        "cn": "一个；用于元音音素开头的词前"
+      },
+      {
+        "en": "integer",
+        "cn": "整数"
+      },
+      {
+        "en": "conversion",
+        "cn": "转换（名词）"
+      },
+      {
+        "en": "truncates",
+        "cn": "截断；去掉小数部分"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "decimal",
+        "cn": "小数；十进制的"
+      },
+      {
+        "en": "part",
+        "cn": "部分"
+      }
+    ],
+    "code": "const int gray = static_cast<int>(132.872);",
+    "note": "",
+    "id": "s-212ff0134bea95"
+  },
+  {
+    "english": "Write the image as plain text.",
+    "cn": "以纯文本形式写入图像。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Write",
+        "cn": "写入"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "as",
+        "cn": "作为；按照"
+      },
+      {
+        "en": "plain",
+        "cn": "朴素的；不加修饰的"
+      },
+      {
+        "en": "text",
+        "cn": "文本"
+      }
+    ],
+    "code": "image << \"P3\\n\";",
+    "note": "",
+    "id": "s-9095953244bcea"
+  },
+  {
+    "english": "Open the file in Visual Studio Code.",
+    "cn": "在 Visual Studio Code 中打开文件。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Open",
+        "cn": "打开"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "file",
+        "cn": "文件"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "Visual",
+        "cn": "可视的；视觉的"
+      },
+      {
+        "en": "Studio",
+        "cn": "工作室；软件名组成部分"
+      },
+      {
+        "en": "Code",
+        "cn": "代码"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-caf6f273f4f78d"
+  },
+  {
+    "english": "Save the source code before compiling.",
+    "cn": "在编译之前保存源代码。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Save",
+        "cn": "保存"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "source",
+        "cn": "源代码；来源"
+      },
+      {
+        "en": "code",
+        "cn": "代码"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "compiling",
+        "cn": "编译中；编译行为"
+      }
+    ],
+    "code": "g++ -std=c++17 -Wall -Wextra stripes.cpp -o stripes_generator",
+    "note": "",
+    "id": "s-708275e34bb85b"
+  },
+  {
+    "english": "Run the executable from the current directory.",
+    "cn": "从当前目录运行可执行文件。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Run",
+        "cn": "运行"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "executable",
+        "cn": "可执行程序"
+      },
+      {
+        "en": "from",
+        "cn": "来自；从……"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "current",
+        "cn": "当前的"
+      },
+      {
+        "en": "directory",
+        "cn": "目录；文件夹"
+      }
+    ],
+    "code": "./stripes_generator",
+    "note": "",
+    "id": "s-84e987b28444e8"
+  },
+  {
+    "english": "Copy the file to the output directory.",
+    "cn": "将文件复制到输出目录。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Copy",
+        "cn": "复制"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "file",
+        "cn": "文件"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "output",
+        "cn": "输出"
+      },
+      {
+        "en": "directory",
+        "cn": "目录；文件夹"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-f2f5ba34a08325"
+  },
+  {
+    "english": "Add a new word to the dictionary.",
+    "cn": "给词典添加一个新单词。",
+    "lesson": "英语 · 学习与词典",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Add",
+        "cn": "添加；相加"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "new",
+        "cn": "新的"
+      },
+      {
+        "en": "word",
+        "cn": "单词"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "dictionary",
+        "cn": "词典"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-e6d240ae2ac475"
+  },
+  {
+    "english": "Search for words in English or Chinese.",
+    "cn": "用英文或中文搜索单词。",
+    "lesson": "英语 · 学习与词典",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Search",
+        "cn": "搜索；查找"
+      },
+      {
+        "en": "for",
+        "cn": "for循环关键字"
+      },
+      {
+        "en": "words",
+        "cn": "单词（复数）"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "English",
+        "cn": "英语；英文"
+      },
+      {
+        "en": "or",
+        "cn": "或；或者"
+      },
+      {
+        "en": "Chinese",
+        "cn": "中文；汉语"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-44f36594086c0b"
+  },
+  {
+    "english": "Export a JSON backup before importing.",
+    "cn": "导入之前导出一份 JSON 备份。",
+    "lesson": "英语 · 学习与词典",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Export",
+        "cn": "导出"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "JSON",
+        "cn": "JSON 数据交换格式"
+      },
+      {
+        "en": "backup",
+        "cn": "备份"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "importing",
+        "cn": "正在导入"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-23d7b403e1975b"
+  },
+  {
+    "english": "Sync personal notes between devices.",
+    "cn": "在设备之间同步个人笔记。",
+    "lesson": "英语 · 学习与词典",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Sync",
+        "cn": "同步"
+      },
+      {
+        "en": "personal",
+        "cn": "个人的"
+      },
+      {
+        "en": "notes",
+        "cn": "笔记（复数）"
+      },
+      {
+        "en": "between",
+        "cn": "在……之间"
+      },
+      {
+        "en": "devices",
+        "cn": "设备（复数）"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-a661ef9aa06021"
+  },
+  {
+    "english": "Sign in to save personal vocabulary.",
+    "cn": "登录以保存个人词汇。",
+    "lesson": "英语 · 学习与词典",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Sign",
+        "cn": "标记；签名；登录短语的一部分"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "to",
+        "cn": "向；到；用于构成不定式"
+      },
+      {
+        "en": "save",
+        "cn": "保存"
+      },
+      {
+        "en": "personal",
+        "cn": "个人的"
+      },
+      {
+        "en": "vocabulary",
+        "cn": "词汇；词汇表"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-146470d2f9e6b7"
+  },
+  {
+    "english": "Check the deployment status before refreshing the page.",
+    "cn": "刷新页面之前检查部署状态。",
+    "lesson": "英语 · 学习与词典",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Check",
+        "cn": "检查；核对"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "deployment",
+        "cn": "部署过程；部署版本"
+      },
+      {
+        "en": "status",
+        "cn": "状态"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "refreshing",
+        "cn": "刷新中；刷新操作"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "page",
+        "cn": "网页；页面"
+      }
+    ],
+    "code": "",
+    "note": "",
+    "id": "s-36fea7c28684f2"
+  },
+  {
+    "english": "Calculate the stripe index.",
+    "cn": "计算条纹索引。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "index",
+        "cn": "索引；编号"
+      }
+    ],
+    "code": "const int stripeIndex = x / 16;",
+    "note": "",
+    "id": "s-a30fab527fc38e"
+  },
+  {
+    "english": "Check whether the stripe index is even.",
+    "cn": "检查条纹索引是否为偶数。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Check",
+        "cn": "检查；核对"
+      },
+      {
+        "en": "whether",
+        "cn": "是否"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "index",
+        "cn": "索引；编号"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "even",
+        "cn": "偶数的"
+      }
+    ],
+    "code": "const int remainder = stripeIndex % 2;",
+    "note": "",
+    "id": "s-c23ce5e361c7c3"
+  },
+  {
+    "english": "Calculate the horizontal stripe index.",
+    "cn": "计算水平条纹的索引。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "horizontal",
+        "cn": "水平的"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "index",
+        "cn": "索引；编号"
+      }
+    ],
+    "code": "const int stripeIndex = y / 16;",
+    "note": "原课出现过此注释；更准确的描述应说明索引来自纵向坐标 y。",
+    "id": "s-02fa15bd25ba29"
+  },
+  {
+    "english": "Calculate the stripe index from the vertical coordinate.",
+    "cn": "根据纵向坐标计算条纹索引。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "index",
+        "cn": "索引；编号"
+      },
+      {
+        "en": "from",
+        "cn": "来自；从……"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "vertical",
+        "cn": "垂直的"
+      },
+      {
+        "en": "coordinate",
+        "cn": "坐标（单数）"
+      }
+    ],
+    "code": "const int stripeIndex = y / 16;",
+    "note": "这句比 horizontal stripe index 更准确地说明了计算所使用的坐标。",
+    "id": "s-735a455eae0f4c"
+  },
+  {
+    "english": "Increase the spatial frequency by reducing the stripe size.",
+    "cn": "通过缩小条纹尺寸提高空间频率。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Increase",
+        "cn": "提高；增加"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "spatial",
+        "cn": "空间的"
+      },
+      {
+        "en": "frequency",
+        "cn": "频率"
+      },
+      {
+        "en": "by",
+        "cn": "通过；由"
+      },
+      {
+        "en": "reducing",
+        "cn": "减小（进行时）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "size",
+        "cn": "尺寸；大小"
+      }
+    ],
+    "code": "const int stripeIndex = y / 8;",
+    "note": "条纹高度为 8 像素，完整黑白周期为 16 像素。",
+    "id": "s-2c9f9fc266df2b"
+  },
+  {
+    "english": "Convert the remainder into a black or white pixel value.",
+    "cn": "将余数转换成黑色或白色的像素数值。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "remainder",
+        "cn": "余数"
+      },
+      {
+        "en": "into",
+        "cn": "进入；转入"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      },
+      {
+        "en": "or",
+        "cn": "或；或者"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      }
+    ],
+    "code": "const int color = remainder * 255;",
+    "note": "利用 remainder 只能为 0 或 1，无需 if 分支。",
+    "id": "s-3324650f9a0a5a"
+  },
+  {
+    "english": "Initialize a variable.",
+    "cn": "初始化一个变量。",
+    "lesson": "C++ · 变量与作用域",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Initialize",
+        "cn": "初始化"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "variable",
+        "cn": "变量"
+      }
+    ],
+    "code": "const int color = remainder * 255;",
+    "note": "初始化时得到最终值；const 变量不能再被重新赋值。",
+    "id": "s-20a7d0b7fcba19"
+  },
+  {
+    "english": "Reassign a variable.",
+    "cn": "给变量重新赋值。",
+    "lesson": "C++ · 变量与作用域",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Reassign",
+        "cn": "重新赋值"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "variable",
+        "cn": "变量"
+      }
+    ],
+    "code": "int color = 255;\ncolor = 0;",
+    "note": "只有可修改的变量才允许再次赋值。",
+    "id": "s-b1585418d7c009"
+  },
+  {
+    "english": "The variable gray is used in the output statement.",
+    "cn": "变量 gray 在输出语句中被使用。",
+    "lesson": "C++ · 编译调试与终端",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "variable",
+        "cn": "变量"
+      },
+      {
+        "en": "gray",
+        "cn": "灰色、灰度值"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "used",
+        "cn": "使用过的；被使用的"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "output",
+        "cn": "输出"
+      },
+      {
+        "en": "statement",
+        "cn": "语句"
+      }
+    ],
+    "code": "image << gray << \" \" << gray << \" \" << gray << \"\\n\";",
+    "note": "如果定义了 gray 却只输出 luminance，就可能得到 unused variable 警告。",
+    "id": "s-ffde92012ece3c"
+  },
+  {
+    "english": "The color is black.",
+    "cn": "颜色是黑色的。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      }
+    ],
+    "code": "const int color = 0;",
+    "note": "0 对应当前 PPM 实验的黑色。",
+    "id": "s-ea91c6c8ce5ce9"
+  },
+  {
+    "english": "Make the pixel black if it is in the first row.",
+    "cn": "如果像素位于第一行，就将其变为黑色。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Make",
+        "cn": "使……变成；制作"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      },
+      {
+        "en": "if",
+        "cn": "如果；条件判断"
+      },
+      {
+        "en": "it",
+        "cn": "它"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "in",
+        "cn": "在……中；以……为单位"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一；最前面的"
+      },
+      {
+        "en": "row",
+        "cn": "行"
+      }
+    ],
+    "code": "if (y == 0) { color = 0; }",
+    "note": "与对话中 Set the pixel to black ... 的注释同义。",
+    "id": "s-373b4a7174bbca"
+  },
+  {
+    "english": "Set the RGB values based on the pixel coordinates.",
+    "cn": "根据像素坐标设置 RGB 数值。",
+    "lesson": "A01 · RGB 与文件输出",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置；赋值为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "RGB",
+        "cn": "红绿蓝颜色通道"
+      },
+      {
+        "en": "values",
+        "cn": "数值（复数）"
+      },
+      {
+        "en": "based",
+        "cn": "基于；依据"
+      },
+      {
+        "en": "on",
+        "cn": "在……上；依据"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "coordinates",
+        "cn": "坐标（复数）"
+      }
+    ],
+    "code": "const int red = x;\nconst int green = y;",
+    "note": "用 x 和 y 控制像素颜色。",
+    "id": "s-90be2154770a61"
+  },
+  {
+    "english": "An odd sum produces a white block.",
+    "cn": "奇数的索引和对应白色格子。",
+    "lesson": "A03 · 棋盘格与坐标",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "An",
+        "cn": "一个；用于元音音素开头的词前"
+      },
+      {
+        "en": "odd",
+        "cn": "奇数的"
+      },
+      {
+        "en": "sum",
+        "cn": "总和；求和结果"
+      },
+      {
+        "en": "produces",
+        "cn": "产生；生成"
+      },
+      {
+        "en": "a",
+        "cn": "一个；不定冠词"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      },
+      {
+        "en": "block",
+        "cn": "块；格子"
+      }
+    ],
+    "code": "const int color = remainder * 255;",
+    "note": "当余数为 1 时，最终颜色为 255。",
+    "id": "s-f038e939e48824"
+  },
+  {
+    "english": "The variable is initialized once per iteration.",
+    "cn": "每次循环迭代都会重新初始化该局部变量。",
+    "lesson": "C++ · 变量与作用域",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "variable",
+        "cn": "变量"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "initialized",
+        "cn": "已初始化的"
+      },
+      {
+        "en": "once",
+        "cn": "每次；一次"
+      },
+      {
+        "en": "per",
+        "cn": "每；每个"
+      },
+      {
+        "en": "iteration",
+        "cn": "一次循环迭代"
+      }
+    ],
+    "code": "const int color = remainder * 255;",
+    "note": "每次循环产生新的局部变量；const 只禁止修改当前那一次的值。",
+    "id": "s-95bcdd9a974bf3"
+  },
+  {
+    "english": "Reassign the color if the condition is true.",
+    "cn": "如果条件成立，就重新给颜色变量赋值。",
+    "lesson": "C++ · 变量与作用域",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Reassign",
+        "cn": "重新赋值"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      },
+      {
+        "en": "if",
+        "cn": "如果；条件判断"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "condition",
+        "cn": "条件"
+      },
+      {
+        "en": "is",
+        "cn": "是；be 动词第三人称单数"
+      },
+      {
+        "en": "true",
+        "cn": "真的；布尔值 true"
+      }
+    ],
+    "code": "if (remainder == 0) { color = 0; }",
+    "note": "对应有分支 if 写法。",
+    "id": "s-bd90c39bb30885"
+  },
+  {
+    "english": "The black and white stripes repeat every 16 pixels.",
+    "cn": "黑白条纹每隔 16 像素完成一个周期。",
+    "lesson": "A04 · 周期条纹与频率",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      },
+      {
+        "en": "and",
+        "cn": "和"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      },
+      {
+        "en": "stripes",
+        "cn": "条纹（复数）"
+      },
+      {
+        "en": "repeat",
+        "cn": "重复"
+      },
+      {
+        "en": "every",
+        "cn": "每一个"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      }
+    ],
+    "code": "const int stripeIndex = y / 8;",
+    "note": "单条条纹 8 像素，黑白完整周期 16 像素。",
+    "id": "s-119d7a0f5bcb40"
+  }
+]
