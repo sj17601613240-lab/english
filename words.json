@@ -5969,5 +5969,383 @@
     "meaning": "不是标准英文拼写；正确写法是 whether，常用于 Check whether ...。",
     "example": "// Check whether the block index sum is even.",
     "category": "拼写纠错"
+  },
+  {
+    "term": "cycle",
+    "cn": "周期、循环",
+    "meaning": "一次完整重复。本课的灰度渐变在 y % 32 的 32 像素周期内变化。",
+    "example": "Find the position in a 32-pixel cycle.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "within",
+    "cn": "在……内部",
+    "meaning": "表示处于范围内部。本课用于说明像素在一个色带内部的位置。",
+    "example": "Calculate the position within a repeating 32-pixel band.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "repeating",
+    "cn": "重复的",
+    "meaning": "repeat 的现在分词或形容词形式，表示图案按周期重复。",
+    "example": "Calculate the position within a repeating 32-pixel band.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "band",
+    "cn": "色带",
+    "meaning": "一段颜色区域。这里每 32 像素为一个重复的灰度色带。",
+    "example": "Calculate the position within a repeating 32-pixel band.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "quotient",
+    "cn": "商",
+    "meaning": "整数除法得到的商。配套说明示例用 y / 32 统计已经完成的 32 像素周期。",
+    "example": "The quotient counts complete cycles.\nconst int cycleIndex = y / 32;\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "dividend",
+    "cn": "被除数",
+    "meaning": "除法中的被除数。在 y / 8 中，y 是被除数。",
+    "example": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "divisor",
+    "cn": "除数",
+    "meaning": "除法中的除数。在 y / 8 中，8 是除数。",
+    "example": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "divisible",
+    "cn": "可以被整除的",
+    "meaning": "能被整除。对于非负坐标，y % 32 为 0 表示 y 可以被 32 整除。",
+    "example": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "sawtooth wave",
+    "cn": "锯齿波",
+    "meaning": "锯齿波。位置从 0 变化到 31 时灰度由 0 升到 255，下个周期又从 0 开始。",
+    "example": "A sawtooth wave resets to black after reaching white.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "triangle wave",
+    "cn": "三角波",
+    "meaning": "三角波。灰度在每个周期内先上升到白色，再下降回黑色。",
+    "example": "A triangle wave rises and then falls.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "wave",
+    "cn": "波",
+    "meaning": "随位置或时间变化的波形。本课用位置生成重复的灰度波形。",
+    "example": "A triangle wave rises and then falls.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "grayscale ramp",
+    "cn": "灰度渐变",
+    "meaning": "灰度渐变。把周期内的位置按比例映射为 0 到 255 的像素值。",
+    "example": "Convert the position into a grayscale value.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "level",
+    "cn": "等级、级别",
+    "meaning": "等级或级别。本课的 level 是 0 到 15 的灰度等级，随后转换为 0 到 255 的颜色值。",
+    "example": "Convert the level into a grayscale value.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "peak",
+    "cn": "峰值",
+    "meaning": "波形的峰值。在该三角波代码中，位置 15 和 16 都对应 level 为 15、灰度为 255。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "valley",
+    "cn": "谷值",
+    "meaning": "波形的谷值。这里周期两端的 level 和灰度都为 0。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "minimum",
+    "cn": "最小值",
+    "meaning": "最小值。本课的最小灰度为 0，对应黑色。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "slope",
+    "cn": "斜率",
+    "meaning": "斜率，描述数值随位置变化的快慢及方向。本课三角波前半段上升、后半段下降。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "continuous",
+    "cn": "连续的",
+    "meaning": "连续的。三角波在周期交界处回到相同的最低灰度；图像本身仍由离散像素采样。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "discontinuity",
+    "cn": "不连续、跳变",
+    "meaning": "不连续或跳变。锯齿波的位置从 31 回到 0 时，灰度从 255 跳回 0。",
+    "example": "A sawtooth wave resets to black after reaching white.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "transition",
+    "cn": "过渡",
+    "meaning": "两个状态之间的过渡。本课通过逐步改变灰度，在黑色和白色之间形成过渡。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "图像 / 数学"
+  },
+  {
+    "term": "decrease",
+    "cn": "减少、降低",
+    "meaning": "减少或降低。三角波后半段的位置越大，level 越低。",
+    "example": "The second half decreases the brightness gradually.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "reverse",
+    "cn": "反转",
+    "meaning": "反转变化方向。本课在后半个周期用 31 - position 让亮度转为下降。",
+    "example": "Reverse the brightness in the second half.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "reversed",
+    "cn": "反转后的",
+    "meaning": "reverse 的过去式或过去分词，也可作形容词表示已经反转的。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "rise",
+    "cn": "上升",
+    "meaning": "上升。描述位置增加时灰度由黑向白变化。",
+    "example": "The grayscale value rises from black to white.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "rises",
+    "cn": "上升（第三人称）",
+    "meaning": "rise 的第三人称单数形式，表示上升。",
+    "example": "The grayscale value rises from black to white.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "rising",
+    "cn": "正在上升的",
+    "meaning": "rise 的现在分词，描述正在上升的数值或阶段。",
+    "example": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "fall",
+    "cn": "下降",
+    "meaning": "下降。描述三角波后半段灰度由白向黑变化。",
+    "example": "A triangle wave rises and then falls.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "falls",
+    "cn": "下降（第三人称）",
+    "meaning": "fall 的第三人称单数形式，表示下降。",
+    "example": "A triangle wave rises and then falls.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "falling",
+    "cn": "正在下降的",
+    "meaning": "fall 的现在分词，描述正在下降的数值或阶段。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "subtract",
+    "cn": "减去",
+    "meaning": "减去。本课的 31 - position 从 31 中减去周期内的位置。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "multiply",
+    "cn": "乘以",
+    "meaning": "乘以。本课把只能为 0 或 1 的 remainder 乘以 255，得到黑色或白色。",
+    "example": "Convert the remainder into a black or white pixel value.\nconst int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "gradually",
+    "cn": "逐渐地",
+    "meaning": "逐渐地，表示变化经过多个步骤完成。三角波后半段的灰度逐步降低。",
+    "example": "The second half decreases the brightness gradually.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "suddenly",
+    "cn": "突然地",
+    "meaning": "突然地。锯齿波达到白色后，在新的周期突然回到黑色。",
+    "example": "A sawtooth wave resets to black after reaching white.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "smoothly",
+    "cn": "平滑地",
+    "meaning": "平滑地。本课用逐级的灰度变化表达平滑过渡，像素值仍是离散整数。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "approximate",
+    "cn": "近似的、估算",
+    "meaning": "近似的或估算。本课用有限个整数灰度样本近似连续的渐变曲线。",
+    "example": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "remaining",
+    "cn": "剩余的",
+    "meaning": "剩余的。取余运算给出除去完整周期之后剩下的周期内位置。",
+    "example": "The remainder gives the position within a cycle.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 动词"
+  },
+  {
+    "term": "half",
+    "cn": "一半",
+    "meaning": "一半。32 像素周期可分为前后两个 16 像素部分。",
+    "example": "Reverse the brightness in the second half.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "first half",
+    "cn": "前半部分",
+    "meaning": "前半部分。在该三角波中是 position 从 0 到 15 的上升阶段。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "second half",
+    "cn": "后半部分",
+    "meaning": "后半部分。在该三角波中是 position 从 16 到 31 的下降阶段。",
+    "example": "Reverse the brightness in the second half.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "complete",
+    "cn": "完整的",
+    "meaning": "完整的。一个完整黑白条纹周期包含一条黑纹和一条白纹。",
+    "example": "The period is twice the stripe size.\nconst int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "whole",
+    "cn": "整个的",
+    "meaning": "整个的，用于描述完整范围或整体。",
+    "example": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "final",
+    "cn": "最终的",
+    "meaning": "最终的。本课把中间的 level 映射为最终写入图像的 color。",
+    "example": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "fixed",
+    "cn": "固定的",
+    "meaning": "固定的。本课的条纹高度 8 和灰度周期 32 是固定参数。",
+    "example": "The stripe size is eight pixels.\nconst int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "twice",
+    "cn": "两倍、两次",
+    "meaning": "两倍或两次。完整黑白条纹周期是单条条纹尺寸的两倍。",
+    "example": "The period is twice the stripe size.\nconst int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "eight",
+    "cn": "八",
+    "meaning": "英文数字八，对应代码中的整数 8。",
+    "example": "The stripe size is eight pixels.\nconst int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "increases",
+    "cn": "提高；增加（第三人称）",
+    "meaning": "increase 的第三人称单数形式，表示提高或增加。",
+    "example": "Reducing the stripe size increases the spatial frequency.\nconst int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "counts",
+    "cn": "计数；表示数量（第三人称）",
+    "meaning": "count 的第三人称单数形式，表示计数或给出数量。",
+    "example": "The quotient counts complete cycles.\nconst int cycleIndex = y / 32;\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "cycles",
+    "cn": "周期；循环（复数）",
+    "meaning": "cycle 的复数形式，表示多个周期或循环。",
+    "example": "The quotient counts complete cycles.\nconst int cycleIndex = y / 32;\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "gives",
+    "cn": "给出；表示（第三人称）",
+    "meaning": "give 的第三人称单数形式，在此表示给出或表示某个结果。",
+    "example": "The remainder gives the position within a cycle.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "sawtooth",
+    "cn": "锯齿状的；锯齿波",
+    "meaning": "锯齿状的。sawtooth wave 指上升后突然复位的锯齿波。",
+    "example": "A sawtooth wave resets to black after reaching white.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "resets",
+    "cn": "重置（第三人称）",
+    "meaning": "reset 的第三人称单数形式，表示重置或回到初始状态。",
+    "example": "A sawtooth wave resets to black after reaching white.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "reaching",
+    "cn": "到达；达到（现在分词）",
+    "meaning": "reach 的现在分词，表示到达或达到。",
+    "example": "A sawtooth wave resets to black after reaching white.\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "decreases",
+    "cn": "降低；减少（第三人称）",
+    "meaning": "decrease 的第三人称单数形式，表示减少或降低。",
+    "example": "The second half decreases the brightness gradually.\nconst int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "local",
+    "cn": "局部的",
+    "meaning": "局部的。循环体内部声明的变量属于该局部作用域。",
+    "example": "Each iteration creates a new local constant variable.\nfor (int y = 0; y < 256; ++y) {\n    const int position = y % 32;\n    const int color = position * 255 / 31;\n}",
+    "category": "C++ / 变量"
   }
 ]

@@ -767,7 +767,7 @@
   {
     "english": "Set the default color to white.",
     "cn": "将默认颜色设置为白色。",
-    "lesson": "A03 · 棋盘格与坐标",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
     "kind": "代码注释",
     "words": [
       {
@@ -2743,7 +2743,7 @@
   {
     "english": "Calculate the stripe index.",
     "cn": "计算条纹索引。",
-    "lesson": "A04 · 周期条纹与频率",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
     "kind": "代码注释",
     "words": [
       {
@@ -2763,14 +2763,14 @@
         "cn": "索引；编号"
       }
     ],
-    "code": "const int stripeIndex = x / 16;",
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
     "note": "",
     "id": "s-a30fab527fc38e"
   },
   {
     "english": "Check whether the stripe index is even.",
     "cn": "检查条纹索引是否为偶数。",
-    "lesson": "A04 · 周期条纹与频率",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
     "kind": "代码注释",
     "words": [
       {
@@ -2802,14 +2802,14 @@
         "cn": "偶数的"
       }
     ],
-    "code": "const int remainder = stripeIndex % 2;",
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
     "note": "",
     "id": "s-c23ce5e361c7c3"
   },
   {
     "english": "Calculate the horizontal stripe index.",
-    "cn": "计算水平条纹的索引。",
-    "lesson": "A04 · 周期条纹与频率",
+    "cn": "计算水平方向的条纹索引。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
     "kind": "代码注释",
     "words": [
       {
@@ -2833,14 +2833,14 @@
         "cn": "索引；编号"
       }
     ],
-    "code": "const int stripeIndex = y / 16;",
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
     "note": "原课出现过此注释；更准确的描述应说明索引来自纵向坐标 y。",
     "id": "s-02fa15bd25ba29"
   },
   {
     "english": "Calculate the stripe index from the vertical coordinate.",
-    "cn": "根据纵向坐标计算条纹索引。",
-    "lesson": "A04 · 周期条纹与频率",
+    "cn": "根据垂直坐标计算条纹索引。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
     "kind": "代码注释",
     "words": [
       {
@@ -2876,14 +2876,14 @@
         "cn": "坐标（单数）"
       }
     ],
-    "code": "const int stripeIndex = y / 16;",
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
     "note": "这句比 horizontal stripe index 更准确地说明了计算所使用的坐标。",
     "id": "s-735a455eae0f4c"
   },
   {
     "english": "Increase the spatial frequency by reducing the stripe size.",
-    "cn": "通过缩小条纹尺寸提高空间频率。",
-    "lesson": "A04 · 周期条纹与频率",
+    "cn": "通过减小条纹尺寸来提高空间频率。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
     "kind": "代码注释",
     "words": [
       {
@@ -2923,14 +2923,14 @@
         "cn": "尺寸；大小"
       }
     ],
-    "code": "const int stripeIndex = y / 8;",
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
     "note": "条纹高度为 8 像素，完整黑白周期为 16 像素。",
     "id": "s-2c9f9fc266df2b"
   },
   {
     "english": "Convert the remainder into a black or white pixel value.",
-    "cn": "将余数转换成黑色或白色的像素数值。",
-    "lesson": "A04 · 周期条纹与频率",
+    "cn": "将余数转换为黑色或白色的像素值。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
     "kind": "代码注释",
     "words": [
       {
@@ -2974,7 +2974,7 @@
         "cn": "值"
       }
     ],
-    "code": "const int color = remainder * 255;",
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
     "note": "利用 remainder 只能为 0 或 1，无需 if 分支。",
     "id": "s-3324650f9a0a5a"
   },
@@ -3324,7 +3324,7 @@
   {
     "english": "The black and white stripes repeat every 16 pixels.",
     "cn": "黑白条纹每隔 16 像素完成一个周期。",
-    "lesson": "A04 · 周期条纹与频率",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
     "kind": "学习例句",
     "words": [
       {
@@ -3360,8 +3360,609 @@
         "cn": "像素（复数）"
       }
     ],
-    "code": "const int stripeIndex = y / 8;",
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
     "note": "单条条纹 8 像素，黑白完整周期 16 像素。",
     "id": "s-119d7a0f5bcb40"
+  },
+  {
+    "english": "Calculate the position within a repeating 32-pixel band.",
+    "cn": "计算当前像素在重复的 32 像素色带内部的位置。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      },
+      {
+        "en": "within",
+        "cn": "在……内部"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "repeating",
+        "cn": "重复的"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（32-pixel 表示 32 像素的）"
+      },
+      {
+        "en": "band",
+        "cn": "色带"
+      }
+    ],
+    "code": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "note": "",
+    "id": "s-45833122778b24"
+  },
+  {
+    "english": "Convert the position into a grayscale value.",
+    "cn": "将位置转换为灰度值。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      },
+      {
+        "en": "into",
+        "cn": "转换为；进入"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "grayscale",
+        "cn": "灰度图；灰度的"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      }
+    ],
+    "code": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "note": "",
+    "id": "s-803407e11e21ea"
+  },
+  {
+    "english": "Find the position in a 32-pixel cycle.",
+    "cn": "找到当前像素在一个 32 像素周期中的位置。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Find",
+        "cn": "找到；查找"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      },
+      {
+        "en": "in",
+        "cn": "在……中"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（32-pixel 表示 32 像素的）"
+      },
+      {
+        "en": "cycle",
+        "cn": "周期"
+      }
+    ],
+    "code": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "note": "",
+    "id": "s-9e8ac6b23f8d14"
+  },
+  {
+    "english": "Reverse the brightness in the second half.",
+    "cn": "在后半个周期中让亮度反向变化。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Reverse",
+        "cn": "反转"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "brightness",
+        "cn": "亮度调节；亮度"
+      },
+      {
+        "en": "in",
+        "cn": "在……中"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "second",
+        "cn": "第二；秒"
+      },
+      {
+        "en": "half",
+        "cn": "一半；半个周期"
+      }
+    ],
+    "code": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "note": "",
+    "id": "s-89feb751f84133"
+  },
+  {
+    "english": "Convert the level into a grayscale value.",
+    "cn": "将亮度等级转换为灰度值。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "level",
+        "cn": "灰度等级"
+      },
+      {
+        "en": "into",
+        "cn": "转换为；进入"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "grayscale",
+        "cn": "灰度图；灰度的"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      }
+    ],
+    "code": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "note": "",
+    "id": "s-364db939700df1"
+  },
+  {
+    "english": "The stripe size is eight pixels.",
+    "cn": "条纹的尺寸为 8 像素。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "size",
+        "cn": "尺寸；大小"
+      },
+      {
+        "en": "is",
+        "cn": "是"
+      },
+      {
+        "en": "eight",
+        "cn": "八"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      }
+    ],
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "note": "",
+    "id": "s-897af4a2c47aac"
+  },
+  {
+    "english": "The period is twice the stripe size.",
+    "cn": "完整周期是单条条纹尺寸的两倍。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "period",
+        "cn": "周期"
+      },
+      {
+        "en": "is",
+        "cn": "是"
+      },
+      {
+        "en": "twice",
+        "cn": "两倍、两次"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "size",
+        "cn": "尺寸；大小"
+      }
+    ],
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "note": "单条条纹为 8 像素，黑白完整周期为 16 像素。",
+    "id": "s-0e638bc40d9e84"
+  },
+  {
+    "english": "Reducing the stripe size increases the spatial frequency.",
+    "cn": "减小条纹尺寸会提高空间频率。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Reducing",
+        "cn": "减小（进行时）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "stripe",
+        "cn": "条纹"
+      },
+      {
+        "en": "size",
+        "cn": "尺寸；大小"
+      },
+      {
+        "en": "increases",
+        "cn": "提高；增加（第三人称）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "spatial",
+        "cn": "空间的"
+      },
+      {
+        "en": "frequency",
+        "cn": "频率"
+      }
+    ],
+    "code": "const int stripeIndex = y / 8;\nconst int remainder = stripeIndex % 2;\nconst int color = remainder * 255;",
+    "note": "",
+    "id": "s-4e9e2d0125ec8b"
+  },
+  {
+    "english": "The quotient counts complete cycles.",
+    "cn": "商表示包含多少个完整周期。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "quotient",
+        "cn": "商"
+      },
+      {
+        "en": "counts",
+        "cn": "计数；表示数量（第三人称）"
+      },
+      {
+        "en": "complete",
+        "cn": "完整的"
+      },
+      {
+        "en": "cycles",
+        "cn": "周期（复数）"
+      }
+    ],
+    "code": "const int cycleIndex = y / 32;\nconst int position = y % 32;\nconst int color = position * 255 / 31;",
+    "note": "配套说明示例用 32 表示完整灰度周期，商统计已经完成的周期，余数给出周期内位置。",
+    "id": "s-3802ec9507549f"
+  },
+  {
+    "english": "The remainder gives the position within a cycle.",
+    "cn": "余数表示当前处于周期内部的哪个位置。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "remainder",
+        "cn": "余数"
+      },
+      {
+        "en": "gives",
+        "cn": "给出；表示（第三人称）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      },
+      {
+        "en": "within",
+        "cn": "在……内部"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "cycle",
+        "cn": "周期"
+      }
+    ],
+    "code": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "note": "",
+    "id": "s-e12036a7c42a93"
+  },
+  {
+    "english": "The grayscale value rises from black to white.",
+    "cn": "灰度值从黑色逐渐上升到白色。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "grayscale",
+        "cn": "灰度图；灰度的"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      },
+      {
+        "en": "rises",
+        "cn": "上升（第三人称）"
+      },
+      {
+        "en": "from",
+        "cn": "从"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      },
+      {
+        "en": "to",
+        "cn": "到；向"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      }
+    ],
+    "code": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "note": "",
+    "id": "s-91b5dbd7b0696b"
+  },
+  {
+    "english": "A sawtooth wave resets to black after reaching white.",
+    "cn": "锯齿波到达白色后会突然重置为黑色。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "A",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "sawtooth",
+        "cn": "锯齿状的"
+      },
+      {
+        "en": "wave",
+        "cn": "波"
+      },
+      {
+        "en": "resets",
+        "cn": "重置（第三人称）"
+      },
+      {
+        "en": "to",
+        "cn": "到；向"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      },
+      {
+        "en": "after",
+        "cn": "在……之后"
+      },
+      {
+        "en": "reaching",
+        "cn": "到达；达到（现在分词）"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      }
+    ],
+    "code": "const int position = y % 32;\nconst int color = position * 255 / 31;",
+    "note": "position 从 31 回到 0 时，color 从 255 回到 0。",
+    "id": "s-7abc7f4c73543c"
+  },
+  {
+    "english": "A triangle wave rises and then falls.",
+    "cn": "三角波先上升，然后下降。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "A",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "triangle",
+        "cn": "三角形的"
+      },
+      {
+        "en": "wave",
+        "cn": "波"
+      },
+      {
+        "en": "rises",
+        "cn": "上升（第三人称）"
+      },
+      {
+        "en": "and",
+        "cn": "和；并且"
+      },
+      {
+        "en": "then",
+        "cn": "然后"
+      },
+      {
+        "en": "falls",
+        "cn": "下降（第三人称）"
+      }
+    ],
+    "code": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "note": "此离散三角波在 position 为 15 和 16 时达到白色，在周期两端回到黑色。",
+    "id": "s-0599367d2347d1"
+  },
+  {
+    "english": "The second half decreases the brightness gradually.",
+    "cn": "后半个周期使亮度逐渐下降。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "second",
+        "cn": "第二；秒"
+      },
+      {
+        "en": "half",
+        "cn": "一半；半个周期"
+      },
+      {
+        "en": "decreases",
+        "cn": "降低；减少（第三人称）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "brightness",
+        "cn": "亮度调节；亮度"
+      },
+      {
+        "en": "gradually",
+        "cn": "逐渐地"
+      }
+    ],
+    "code": "const int position = y % 32;\n\nint level = position;\n\nif (position >= 16) {\n    level = 31 - position;\n}\n\nconst int color = level * 255 / 15;",
+    "note": "",
+    "id": "s-e6532e69751e12"
+  },
+  {
+    "english": "Each iteration creates a new local constant variable.",
+    "cn": "每次迭代都会创建一个新的局部常量变量。",
+    "lesson": "A04 · 周期条纹、锯齿波与三角波",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Each",
+        "cn": "每一个"
+      },
+      {
+        "en": "iteration",
+        "cn": "一次循环迭代"
+      },
+      {
+        "en": "creates",
+        "cn": "创建；生成"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "new",
+        "cn": "新的"
+      },
+      {
+        "en": "local",
+        "cn": "局部的"
+      },
+      {
+        "en": "constant",
+        "cn": "常量；不可修改的值"
+      },
+      {
+        "en": "variable",
+        "cn": "变量"
+      }
+    ],
+    "code": "for (int y = 0; y < 256; ++y) {\n    const int position = y % 32;\n    const int color = position * 255 / 31;\n}",
+    "note": "声明位于循环体内，每次迭代都会重新初始化这两个局部 const 变量。",
+    "id": "s-ae1c79597fac08"
   }
 ]
