@@ -3964,5 +3964,1288 @@
     "code": "for (int y = 0; y < 256; ++y) {\n    const int position = y % 32;\n    const int color = position * 255 / 31;\n}",
     "note": "声明位于循环体内，每次迭代都会重新初始化这两个局部 const 变量。",
     "id": "s-ae1c79597fac08"
+  },
+  {
+    "english": "Define the center coordinates of the image.",
+    "cn": "定义图像的中心坐标。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Define",
+        "cn": "定义"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "center",
+        "cn": "中心、圆心"
+      },
+      {
+        "en": "coordinates",
+        "cn": "坐标（复数）"
+      },
+      {
+        "en": "of",
+        "cn": "……的"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      }
+    ],
+    "code": "const int centerX = 128;\nconst int centerY = 128;",
+    "note": "配套示例采用 256×256 图像，左上角为原点，x 向右增加，y 向下增加。",
+    "id": "s-ba95bdbacff43e"
+  },
+  {
+    "english": "Calculate the offset from the image center.",
+    "cn": "计算相对于图像中心的偏移量。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "offset",
+        "cn": "偏移量"
+      },
+      {
+        "en": "from",
+        "cn": "从；相对于"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "center",
+        "cn": "中心、圆心"
+      }
+    ],
+    "code": "const int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "note": "",
+    "id": "s-71409a27539d02"
+  },
+  {
+    "english": "Define the horizontal and vertical offsets.",
+    "cn": "定义水平和垂直偏移量。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Define",
+        "cn": "定义"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "horizontal",
+        "cn": "水平的"
+      },
+      {
+        "en": "and",
+        "cn": "和；并且"
+      },
+      {
+        "en": "vertical",
+        "cn": "垂直的"
+      },
+      {
+        "en": "offsets",
+        "cn": "偏移量（复数）"
+      }
+    ],
+    "code": "const int dx = x - centerX;\nconst int dy = y - centerY;",
+    "note": "",
+    "id": "s-d76d7db9f9e69c"
+  },
+  {
+    "english": "Calculate the distance using the Pythagorean theorem.",
+    "cn": "使用勾股定理计算距离。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "distance",
+        "cn": "距离"
+      },
+      {
+        "en": "using",
+        "cn": "使用；通过"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "Pythagorean",
+        "cn": "毕达哥拉斯的"
+      },
+      {
+        "en": "theorem",
+        "cn": "定理"
+      }
+    ],
+    "code": "const int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "note": "double 是数据类型，std::sqrt() 是 <cmath> 提供的平方根函数，distance 是保存计算结果的变量名。",
+    "id": "s-cde4c5c81b7575"
+  },
+  {
+    "english": "Calculate the distance from the center.",
+    "cn": "计算到中心点的距离。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "distance",
+        "cn": "距离"
+      },
+      {
+        "en": "from",
+        "cn": "从；相对于"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "center",
+        "cn": "中心、圆心"
+      }
+    ],
+    "code": "const int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "note": "double 是数据类型，std::sqrt() 是 <cmath> 提供的平方根函数，distance 是保存计算结果的变量名。",
+    "id": "s-191335d94e98dc"
+  },
+  {
+    "english": "Calculate the distance from the image center.",
+    "cn": "计算到图像中心的距离。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "distance",
+        "cn": "距离"
+      },
+      {
+        "en": "from",
+        "cn": "从；相对于"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "center",
+        "cn": "中心、圆心"
+      }
+    ],
+    "code": "const int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "note": "double 是数据类型，std::sqrt() 是 <cmath> 提供的平方根函数，distance 是保存计算结果的变量名。",
+    "id": "s-57eb55de73bd1c"
+  },
+  {
+    "english": "Set the default color to black.",
+    "cn": "将默认颜色设置为黑色。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "default",
+        "cn": "默认的"
+      },
+      {
+        "en": "color",
+        "cn": "颜色；色彩"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      }
+    ],
+    "code": "int color = 0;",
+    "note": "",
+    "id": "s-f8ecc1304ff51f"
+  },
+  {
+    "english": "Make pixels inside the circle white.",
+    "cn": "将圆形内部的像素设置为白色。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Make",
+        "cn": "使；将……设置为"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      }
+    ],
+    "code": "int color = 0;\nif (distance <= radius) { color = 255; }",
+    "note": "",
+    "id": "s-34c99a1ed49bb9"
+  },
+  {
+    "english": "Convert the distance into a brightness value.",
+    "cn": "将距离转换成亮度数值。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "distance",
+        "cn": "距离"
+      },
+      {
+        "en": "into",
+        "cn": "转换成"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "brightness",
+        "cn": "亮度调节；亮度"
+      },
+      {
+        "en": "value",
+        "cn": "值"
+      }
+    ],
+    "code": "int color = 0;\nif (distance <= 64.0) {\n    const double brightness = (1.0 - distance / 64.0) * 255.0;\n    color = static_cast<int>(brightness);\n}",
+    "note": "圆内按半径 64 计算渐变，中心亮度为 255，边界亮度为 0，圆外保留默认黑色。",
+    "id": "s-f6a55034a05a68"
+  },
+  {
+    "english": "Convert the brightness to an integer.",
+    "cn": "将亮度转换成整数。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "brightness",
+        "cn": "亮度调节；亮度"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "an",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "integer",
+        "cn": "整数"
+      }
+    ],
+    "code": "const double brightness = (1.0 - distance / 64.0) * 255.0;\ncolor = static_cast<int>(brightness);",
+    "note": "该亮度公式用于 distance <= 64.0 的圆内。在可表示范围内，转为 int 会向零截断小数。",
+    "id": "s-8dddd9cc7d29e4"
+  },
+  {
+    "english": "Set the new center coordinates.",
+    "cn": "设置新的中心坐标。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "new",
+        "cn": "新的"
+      },
+      {
+        "en": "center",
+        "cn": "中心、圆心"
+      },
+      {
+        "en": "coordinates",
+        "cn": "坐标（复数）"
+      }
+    ],
+    "code": "const int centerX = 64;\nconst int centerY = 192;",
+    "note": "配套示例采用 256×256 图像，左上角为原点，x 向右增加，y 向下增加。此示例用 (64, 192) 作为新的圆心。",
+    "id": "s-d9e26e545aaa64"
+  },
+  {
+    "english": "Shift the circle to the lower-left area.",
+    "cn": "将圆形移动到左下方区域。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Shift",
+        "cn": "偏移；平移"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "lower-left",
+        "cn": "左下方的"
+      },
+      {
+        "en": "area",
+        "cn": "区域"
+      }
+    ],
+    "code": "const int centerX = 64;\nconst int centerY = 192;",
+    "note": "配套示例采用 256×256 图像，左上角为原点，x 向右增加，y 向下增加。此示例的圆心 (64, 192) 位于左下区域。",
+    "id": "s-f50704e8020314"
+  },
+  {
+    "english": "Define the centers of two circles.",
+    "cn": "定义两个圆的圆心。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Define",
+        "cn": "定义"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "centers",
+        "cn": "中心；圆心（复数）"
+      },
+      {
+        "en": "of",
+        "cn": "……的"
+      },
+      {
+        "en": "two",
+        "cn": "二；两个"
+      },
+      {
+        "en": "circles",
+        "cn": "圆形（复数）"
+      }
+    ],
+    "code": "const int centerX1 = 96;\nconst int centerY1 = 128;\nconst int centerX2 = 160;\nconst int centerY2 = 128;",
+    "note": "配套示例圆心为 (96, 128) 与 (160, 128)，两圆半径均取 64。",
+    "id": "s-9e4d6bb7fb7f4b"
+  },
+  {
+    "english": "Calculate the distance to the first circle center.",
+    "cn": "计算到第一个圆心的距离。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "distance",
+        "cn": "距离"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      },
+      {
+        "en": "center",
+        "cn": "中心、圆心"
+      }
+    ],
+    "code": "const int dx1 = x - centerX1;\nconst int dy1 = y - centerY1;\nconst double distance1 = std::sqrt(dx1 * dx1 + dy1 * dy1);",
+    "note": "配套示例圆心为 (96, 128) 与 (160, 128)，两圆半径均取 64。",
+    "id": "s-92ba6df595923a"
+  },
+  {
+    "english": "Calculate the distance to the second circle center.",
+    "cn": "计算到第二个圆心的距离。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "distance",
+        "cn": "距离"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "second",
+        "cn": "第二个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      },
+      {
+        "en": "center",
+        "cn": "中心、圆心"
+      }
+    ],
+    "code": "const int dx2 = x - centerX2;\nconst int dy2 = y - centerY2;\nconst double distance2 = std::sqrt(dx2 * dx2 + dy2 * dy2);",
+    "note": "配套示例圆心为 (96, 128) 与 (160, 128)，两圆半径均取 64。",
+    "id": "s-5c794523b1d047"
+  },
+  {
+    "english": "Set the pixel to white if it is inside either circle.",
+    "cn": "如果像素位于任意一个圆内，将其设置为白色。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      },
+      {
+        "en": "if",
+        "cn": "如果"
+      },
+      {
+        "en": "it",
+        "cn": "它（指像素）"
+      },
+      {
+        "en": "is",
+        "cn": "是；处于"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "either",
+        "cn": "任意一个（此处包含两者都成立）"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 || inside2) { color = 255; }",
+    "note": "这里的 either 包含同时位于两个圆内的像素。",
+    "id": "s-f1dc1e87b63e8d"
+  },
+  {
+    "english": "Otherwise, set it to black.",
+    "cn": "否则将其设置为黑色。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Otherwise",
+        "cn": "否则"
+      },
+      {
+        "en": "set",
+        "cn": "设置"
+      },
+      {
+        "en": "it",
+        "cn": "它（指像素）"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 || inside2) { color = 255; }\nelse { color = 0; }",
+    "note": "",
+    "id": "s-ed4a87de7af890"
+  },
+  {
+    "english": "Make pixels white only when they are inside both circles.",
+    "cn": "只有当像素同时位于两个圆内时，才将其设置为白色。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Make",
+        "cn": "使；将……设置为"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      },
+      {
+        "en": "white",
+        "cn": "白色；白色的"
+      },
+      {
+        "en": "only",
+        "cn": "只有；仅仅"
+      },
+      {
+        "en": "when",
+        "cn": "当……时候"
+      },
+      {
+        "en": "they",
+        "cn": "它们（指像素）"
+      },
+      {
+        "en": "are",
+        "cn": "是；处于（复数）"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "both",
+        "cn": "两者都"
+      },
+      {
+        "en": "circles",
+        "cn": "圆形（复数）"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && inside2) { color = 255; }",
+    "note": "",
+    "id": "s-95b7b831719a25"
+  },
+  {
+    "english": "Keep pixels inside the first circle but outside the second.",
+    "cn": "保留第一个圆内部、但位于第二个圆外部的像素。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Keep",
+        "cn": "保持；保留"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      },
+      {
+        "en": "but",
+        "cn": "但；但是"
+      },
+      {
+        "en": "outside",
+        "cn": "在……外部"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "second",
+        "cn": "第二个"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && !inside2) { color = 255; }",
+    "note": "",
+    "id": "s-35951a2b90e55a"
+  },
+  {
+    "english": "Check whether the pixel is inside each circle.",
+    "cn": "检查像素是否位于每个圆内。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Check",
+        "cn": "检查；核对"
+      },
+      {
+        "en": "whether",
+        "cn": "是否"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "is",
+        "cn": "是；处于"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "each",
+        "cn": "每个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;",
+    "note": "",
+    "id": "s-c68939a81802a3"
+  },
+  {
+    "english": "Keep pixels inside exactly one circle.",
+    "cn": "只保留恰好位于其中一个圆内的像素。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Keep",
+        "cn": "保持；保留"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "exactly",
+        "cn": "恰好"
+      },
+      {
+        "en": "one",
+        "cn": "一个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "note": "",
+    "id": "s-71b7525bbd18c7"
+  },
+  {
+    "english": "The pixel is inside the first circle.",
+    "cn": "这个像素位于第一个圆内。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "is",
+        "cn": "是；处于"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;",
+    "note": "",
+    "id": "s-f4709328db8f54"
+  },
+  {
+    "english": "The pixel is outside the second circle.",
+    "cn": "这个像素位于第二个圆外。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "is",
+        "cn": "是；处于"
+      },
+      {
+        "en": "outside",
+        "cn": "在……外部"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "second",
+        "cn": "第二个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      }
+    ],
+    "code": "const bool inside2 = distance2 <= radius;\nconst bool outside2 = !inside2;",
+    "note": "",
+    "id": "s-da58c045de2d79"
+  },
+  {
+    "english": "Both conditions are true.",
+    "cn": "两个条件都成立。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Both",
+        "cn": "两者都"
+      },
+      {
+        "en": "conditions",
+        "cn": "条件（复数）"
+      },
+      {
+        "en": "are",
+        "cn": "是；处于（复数）"
+      },
+      {
+        "en": "true",
+        "cn": "真的；布尔值 true"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;",
+    "note": "",
+    "id": "s-a5e35c19377672"
+  },
+  {
+    "english": "Only one condition is true.",
+    "cn": "只有一个条件成立。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Only",
+        "cn": "只有；仅仅"
+      },
+      {
+        "en": "one",
+        "cn": "一个"
+      },
+      {
+        "en": "condition",
+        "cn": "条件"
+      },
+      {
+        "en": "is",
+        "cn": "是；处于"
+      },
+      {
+        "en": "true",
+        "cn": "真的；布尔值 true"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nconst bool exactlyOne = (inside1 != inside2);",
+    "note": "",
+    "id": "s-c4f2d01f18f5e5"
+  },
+  {
+    "english": "The overlapping region becomes black.",
+    "cn": "重叠区域变成黑色。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "overlapping",
+        "cn": "重叠的"
+      },
+      {
+        "en": "region",
+        "cn": "区域"
+      },
+      {
+        "en": "becomes",
+        "cn": "变成（第三人称）"
+      },
+      {
+        "en": "black",
+        "cn": "黑色；黑色的"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "note": "这句描述 XOR。两个圆内判断同时为真时，异或条件为假，重叠像素保留默认黑色。",
+    "id": "s-9272f6980f0cb1"
+  },
+  {
+    "english": "The union keeps pixels inside either circle.",
+    "cn": "并集保留任意一个圆内部的像素。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "union",
+        "cn": "并集"
+      },
+      {
+        "en": "keeps",
+        "cn": "持续保持；keep 的第三人称单数"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "either",
+        "cn": "任意一个（此处包含两者都成立）"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 || inside2) { color = 255; }",
+    "note": "",
+    "id": "s-8cfef5cac09591"
+  },
+  {
+    "english": "The intersection keeps pixels inside both circles.",
+    "cn": "交集保留同时位于两个圆内的像素。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "intersection",
+        "cn": "交集"
+      },
+      {
+        "en": "keeps",
+        "cn": "持续保持；keep 的第三人称单数"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "both",
+        "cn": "两者都"
+      },
+      {
+        "en": "circles",
+        "cn": "圆形（复数）"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && inside2) { color = 255; }",
+    "note": "",
+    "id": "s-9c46a5ea7526bd"
+  },
+  {
+    "english": "The difference removes the second circle from the first.",
+    "cn": "差集从第一个圆中去掉第二个圆覆盖的区域。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "difference",
+        "cn": "差集"
+      },
+      {
+        "en": "removes",
+        "cn": "去掉；移除（第三人称）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "second",
+        "cn": "第二个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      },
+      {
+        "en": "from",
+        "cn": "从；相对于"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "first",
+        "cn": "第一个"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && !inside2) { color = 255; }",
+    "note": "差集的方向是第一个圆减去第二个圆。",
+    "id": "s-0895929e29910b"
+  },
+  {
+    "english": "XOR keeps pixels inside exactly one circle.",
+    "cn": "XOR 只保留恰好属于一个圆的像素。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "XOR",
+        "cn": "异或、对称差"
+      },
+      {
+        "en": "keeps",
+        "cn": "持续保持；keep 的第三人称单数"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      },
+      {
+        "en": "inside",
+        "cn": "在……内部"
+      },
+      {
+        "en": "exactly",
+        "cn": "恰好"
+      },
+      {
+        "en": "one",
+        "cn": "一个"
+      },
+      {
+        "en": "circle",
+        "cn": "圆形"
+      }
+    ],
+    "code": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "note": "",
+    "id": "s-d8677971b55952"
+  },
+  {
+    "english": "Integer division happens before the result is stored.",
+    "cn": "整数除法先完成，然后保存结果。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Integer",
+        "cn": "整数"
+      },
+      {
+        "en": "division",
+        "cn": "除法"
+      },
+      {
+        "en": "happens",
+        "cn": "发生；进行（第三人称）"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "result",
+        "cn": "结果"
+      },
+      {
+        "en": "is",
+        "cn": "是；处于"
+      },
+      {
+        "en": "stored",
+        "cn": "被保存"
+      }
+    ],
+    "code": "const double a = 7 / 2;",
+    "note": "两个操作数 7 和 2 都是 int。整数除法先得到 3，再转换为 double 保存，a 为 3.0。",
+    "id": "s-9d9bde0666f5f8"
+  },
+  {
+    "english": "Convert one operand to double before division.",
+    "cn": "在除法之前将一个操作数转换成 double 类型。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "one",
+        "cn": "一个"
+      },
+      {
+        "en": "operand",
+        "cn": "操作数"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "double",
+        "cn": "double 数据类型"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "division",
+        "cn": "除法"
+      }
+    ],
+    "code": "const double c = static_cast<double>(7) / 2;",
+    "note": "先将一个操作数转换为 double 后进行浮点除法，c 为 3.5。",
+    "id": "s-4461461c3b278a"
+  },
+  {
+    "english": "A double variable can store a floating-point result.",
+    "cn": "double 变量可以保存浮点计算结果。",
+    "lesson": "A05 · 距离、圆形与布尔遮罩",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "A",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "double",
+        "cn": "double 数据类型"
+      },
+      {
+        "en": "variable",
+        "cn": "变量"
+      },
+      {
+        "en": "can",
+        "cn": "可以；能够"
+      },
+      {
+        "en": "store",
+        "cn": "存储；保存"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "floating-point",
+        "cn": "浮点的"
+      },
+      {
+        "en": "result",
+        "cn": "结果"
+      }
+    ],
+    "code": "const double b = 7.0 / 2;\nconst double c = static_cast<double>(7) / 2;",
+    "note": "b 和 c 均为 3.5。double 是数据类型，变量 a、b、c 保存结果，操作数类型决定这里的除法规则。",
+    "id": "s-60888561cb69ff"
   }
 ]

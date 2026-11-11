@@ -6347,5 +6347,369 @@
     "meaning": "局部的。循环体内部声明的变量属于该局部作用域。",
     "example": "Each iteration creates a new local constant variable.\nfor (int y = 0; y < 256; ++y) {\n    const int position = y % 32;\n    const int color = position * 255 / 31;\n}",
     "category": "C++ / 变量"
+  },
+  {
+    "term": "center",
+    "cn": "中心、圆心",
+    "meaning": "中心或圆心。centerX 和 centerY 给出圆心的横纵坐标。",
+    "example": "Define the center coordinates of the image.\nconst int centerX = 128;\nconst int centerY = 128;",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "offset",
+    "cn": "偏移量",
+    "meaning": "相对于参考位置的偏移量。这里 dx 与 dy 表示像素相对于圆心的横纵偏移。",
+    "example": "Calculate the offset from the image center.\nconst int dx = x - centerX;\nconst int dy = y - centerY;",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "positive",
+    "cn": "正的、正数",
+    "meaning": "正的或正数。按本课图像坐标约定，dx 为正表示像素位于圆心右侧。",
+    "example": "const int dx = x - centerX;\nconst int dy = y - centerY;",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "negative",
+    "cn": "负的、负数",
+    "meaning": "负的或负数。按本课图像坐标约定，dx 为负表示像素位于圆心左侧。",
+    "example": "const int dx = x - centerX;\nconst int dy = y - centerY;",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "distance",
+    "cn": "距离",
+    "meaning": "距离。double 是数据类型，std::sqrt() 是 <cmath> 提供的平方根函数，distance 是保存计算结果的变量名。",
+    "example": "Calculate the distance from the center.\nconst int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "radius",
+    "cn": "半径",
+    "meaning": "半径，圆心到圆边缘的距离。distance <= radius 包含圆的内部及边界。",
+    "example": "Make pixels inside the circle white.\nint color = 0;\nif (distance <= radius) { color = 255; }",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "circle",
+    "cn": "圆形",
+    "meaning": "圆形。本课用像素到圆心的距离是否小于等于半径来生成圆形遮罩。",
+    "example": "Make pixels inside the circle white.\nint color = 0;\nif (distance <= radius) { color = 255; }",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "circles",
+    "cn": "圆形（复数）",
+    "meaning": "circle 的复数形式，表示多个圆。",
+    "example": "Define the centers of two circles.\nconst int centerX1 = 96;\nconst int centerY1 = 128;\nconst int centerX2 = 160;\nconst int centerY2 = 128;",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "circular",
+    "cn": "圆形的",
+    "meaning": "圆形的，形容圆形区域或圆形遮罩。",
+    "example": "int color = 0;\nif (distance <= radius) { color = 255; }",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "radial",
+    "cn": "径向的",
+    "meaning": "径向的。本课的径向渐变只由像素到圆心的距离决定。公式在半径 64 内使用。",
+    "example": "Convert the distance into a brightness value.\nint color = 0;\nif (distance <= 64.0) {\n    const double brightness = (1.0 - distance / 64.0) * 255.0;\n    color = static_cast<int>(brightness);\n}",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "ratio",
+    "cn": "比例",
+    "meaning": "比例。圆内的 distance / 64.0 把距离映射到 0 到 1 的范围。",
+    "example": "Convert the distance into a brightness value.\nint color = 0;\nif (distance <= 64.0) {\n    const double brightness = (1.0 - distance / 64.0) * 255.0;\n    color = static_cast<int>(brightness);\n}",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "translation",
+    "cn": "平移",
+    "meaning": "几何平移。改变圆心坐标会改变圆的位置。配套示例采用 256×256 图像，左上角为原点，x 向右增加，y 向下增加。",
+    "example": "Shift the circle to the lower-left area.\nconst int centerX = 64;\nconst int centerY = 192;",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "move",
+    "cn": "移动",
+    "meaning": "移动。本课通过改变圆心坐标移动圆形。",
+    "example": "Shift the circle to the lower-left area.\nconst int centerX = 64;\nconst int centerY = 192;",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "moving",
+    "cn": "正在移动的",
+    "meaning": "move 的现在分词，表示正在移动的。这里用于描述圆心或形状的位置变化。",
+    "example": "const int centerX = 64;\nconst int centerY = 192;",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "overlap",
+    "cn": "重叠",
+    "meaning": "重叠。两个圆共同覆盖的区域满足 inside1 和 inside2 同时为真。",
+    "example": "The overlapping region becomes black.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && inside2) { color = 255; }",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "overlapping",
+    "cn": "重叠的",
+    "meaning": "重叠的。XOR 遮罩会把同时属于两个圆的重叠区域设为黑色。",
+    "example": "The overlapping region becomes black.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "region",
+    "cn": "区域",
+    "meaning": "区域，指图像中满足某些条件的一组像素。",
+    "example": "The overlapping region becomes black.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && inside2) { color = 255; }",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "shape",
+    "cn": "形状",
+    "meaning": "形状。用圆形距离判断与布尔条件可构造不同的二维形状。",
+    "example": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "category": "图像 / 坐标"
+  },
+  {
+    "term": "squared",
+    "cn": "平方后的",
+    "meaning": "平方后的。dx * dx + dy * dy 是到圆心的距离平方。",
+    "example": "Calculate the distance using the Pythagorean theorem.\nconst int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "square root",
+    "cn": "平方根",
+    "meaning": "平方根。本课对横纵偏移的平方和开平方，得到欧氏距离。",
+    "example": "Calculate the distance using the Pythagorean theorem.\nconst int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "sqrt",
+    "cn": "Square Root 的缩写，平方根函数",
+    "meaning": "Square Root 的缩写。C++ 的 std::sqrt(...) 通过 <cmath> 提供平方根计算。double 是数据类型，std::sqrt() 是 <cmath> 提供的平方根函数，distance 是保存计算结果的变量名。",
+    "example": "Calculate the distance using the Pythagorean theorem.\nconst int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "Pythagorean",
+    "cn": "毕达哥拉斯的",
+    "meaning": "毕达哥拉斯的。Pythagorean theorem 指勾股定理。",
+    "example": "Calculate the distance using the Pythagorean theorem.\nconst int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "theorem",
+    "cn": "定理",
+    "meaning": "定理。本课使用勾股定理将横纵偏移转换为距离。",
+    "example": "Calculate the distance using the Pythagorean theorem.\nconst int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "Pythagorean theorem",
+    "cn": "勾股定理",
+    "meaning": "勾股定理。直角三角形两条直角边平方和等于斜边平方。",
+    "example": "Calculate the distance using the Pythagorean theorem.\nconst int dx = x - centerX;\nconst int dy = y - centerY;\nconst double distance = std::sqrt(dx * dx + dy * dy);",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "operand",
+    "cn": "操作数",
+    "meaning": "操作数。除法左右两侧的输入是操作数，操作数的类型决定这里采用整数除法还是浮点除法。",
+    "example": "Convert one operand to double before division.\nconst double c = static_cast<double>(7) / 2;",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "floating-point division",
+    "cn": "浮点数除法",
+    "meaning": "浮点数除法。7.0 是 double，7.0 / 2 的结果为 3.5。",
+    "example": "A double variable can store a floating-point result.\nconst double b = 7.0 / 2;",
+    "category": "C++ / 数学"
+  },
+  {
+    "term": "bool",
+    "cn": "布尔类型",
+    "meaning": "C++ 的布尔数据类型，用于保存 true 或 false。本课的比较表达式得到圆内判断结果。",
+    "example": "Check whether the pixel is inside each circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "single precision",
+    "cn": "单精度",
+    "meaning": "单精度，通常对应 float。常见实现使用 32 位并提供约 6～7 位十进制有效精度。配套类型示例用 f 后缀表示 float 字面量。",
+    "example": "const float ratio = 0.5f;",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "double precision",
+    "cn": "双精度",
+    "meaning": "双精度，通常对应 double。常见实现使用 64 位并提供约 15～16 位十进制有效精度。",
+    "example": "A double variable can store a floating-point result.\nconst double c = static_cast<double>(7) / 2;",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "fractional part",
+    "cn": "小数部分",
+    "meaning": "小数部分。3.5 的小数部分是 0.5。这里把浮点亮度转为 int 时，在可表示范围内向零截断。",
+    "example": "Convert the brightness to an integer.\nint color = 0;\nif (distance <= 64.0) {\n    const double brightness = (1.0 - distance / 64.0) * 255.0;\n    color = static_cast<int>(brightness);\n}",
+    "category": "C++ / 类型"
+  },
+  {
+    "term": "logical OR",
+    "cn": "逻辑或",
+    "meaning": "逻辑或。只要 inside1 与 inside2 中至少一个为真，inside1 || inside2 就为真。",
+    "example": "The union keeps pixels inside either circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 || inside2) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "logical NOT",
+    "cn": "逻辑非",
+    "meaning": "逻辑非。!inside2 表示第二个圆内判断为假，即像素在第二个圆外。",
+    "example": "Keep pixels inside the first circle but outside the second.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && !inside2) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "union",
+    "cn": "并集",
+    "meaning": "并集。保留位于任意一个圆内的像素，也包含两圆重叠区域。",
+    "example": "The union keeps pixels inside either circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 || inside2) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "intersection",
+    "cn": "交集",
+    "meaning": "交集。只保留同时位于两个圆内的像素。",
+    "example": "The intersection keeps pixels inside both circles.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && inside2) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "symmetric difference",
+    "cn": "对称差",
+    "meaning": "对称差。保留恰好属于一个圆的像素，两圆的重叠部分为黑色。",
+    "example": "XOR keeps pixels inside exactly one circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "XOR",
+    "cn": "异或、对称差",
+    "meaning": "异或。只有 inside1 与 inside2 的真假不同，XOR 条件才成立。",
+    "example": "XOR keeps pixels inside exactly one circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "exclusive OR",
+    "cn": "排他或",
+    "meaning": "排他或，即异或，表示两个条件中恰好一个成立。",
+    "example": "XOR keeps pixels inside exactly one circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "inside",
+    "cn": "在……内部",
+    "meaning": "在内部。本课用 distance <= radius 表示像素位于圆内或圆边界上。",
+    "example": "Make pixels inside the circle white.\nint color = 0;\nif (distance <= radius) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "outside",
+    "cn": "在……外部",
+    "meaning": "在外部。!inside2 表示像素在第二个圆外。",
+    "example": "The pixel is outside the second circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && !inside2) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "either",
+    "cn": "两者中的任意一个",
+    "meaning": "两者中的任意一个。并集条件中的 either circle 包含同时位于两个圆内的情形。",
+    "example": "Set the pixel to white if it is inside either circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 || inside2) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "neither",
+    "cn": "两者都不",
+    "meaning": "两者都不。配套布尔示例中，!inside1 && !inside2 表示像素在两个圆外。",
+    "example": "const bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nconst bool neither = !inside1 && !inside2;",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "exactly",
+    "cn": "恰好、准确地",
+    "meaning": "恰好或准确地。exactly one circle 表示只属于一个圆。",
+    "example": "Keep pixels inside exactly one circle.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "otherwise",
+    "cn": "否则",
+    "meaning": "否则，用于描述前述条件不成立时执行的处理。",
+    "example": "Otherwise, set it to black.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 || inside2) { color = 255; }\nelse { color = 0; }",
+    "category": "C++ / 图形学"
+  },
+  {
+    "term": "they",
+    "cn": "他们；她们；它们",
+    "meaning": "他们、她们或它们。在本课句子中指前面提到的像素。",
+    "example": "Make pixels white only when they are inside both circles.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && inside2) { color = 255; }",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "area",
+    "cn": "区域",
+    "meaning": "区域或范围。lower-left area 指图像的左下区域。配套示例采用 256×256 图像，左上角为原点，x 向右增加，y 向下增加。",
+    "example": "Shift the circle to the lower-left area.\nconst int centerX = 64;\nconst int centerY = 192;",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "offsets",
+    "cn": "偏移量（复数）",
+    "meaning": "offset 的复数，表示多个偏移量。本课包含横向 dx 和纵向 dy。",
+    "example": "Define the horizontal and vertical offsets.\nconst int dx = x - centerX;\nconst int dy = y - centerY;",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "lower-left",
+    "cn": "左下方的",
+    "meaning": "左下方的。配套示例采用 256×256 图像，左上角为原点，x 向右增加，y 向下增加。圆心 (64, 192) 位于这个图像的左下区域。",
+    "example": "Shift the circle to the lower-left area.\nconst int centerX = 64;\nconst int centerY = 192;",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "centers",
+    "cn": "中心；圆心（复数）",
+    "meaning": "center 的复数，表示多个中心或圆心。",
+    "example": "Define the centers of two circles.\nconst int centerX1 = 96;\nconst int centerY1 = 128;\nconst int centerX2 = 160;\nconst int centerY2 = 128;",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "conditions",
+    "cn": "条件（复数）",
+    "meaning": "condition 的复数，表示多个条件。本课的两个圆内判断可同时成立。",
+    "example": "Both conditions are true.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "becomes",
+    "cn": "变成（第三人称）",
+    "meaning": "become 的第三人称单数形式，表示变成。本课在 XOR 情形中把重叠区域变为黑色。",
+    "example": "The overlapping region becomes black.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif ((inside1 && !inside2) || (!inside1 && inside2)) { color = 255; }",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "removes",
+    "cn": "去掉；移除（第三人称）",
+    "meaning": "remove 的第三人称单数形式，表示去掉或移除。差集去掉第一个圆中同时属于第二个圆的区域。",
+    "example": "The difference removes the second circle from the first.\nconst bool inside1 = distance1 <= radius;\nconst bool inside2 = distance2 <= radius;\nint color = 0;\nif (inside1 && !inside2) { color = 255; }",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "happens",
+    "cn": "发生；进行（第三人称）",
+    "meaning": "happen 的第三人称单数形式，表示发生。7 / 2 先进行整数除法，再把结果存入 double 变量。",
+    "example": "Integer division happens before the result is stored.\nconst double a = 7 / 2;",
+    "category": "英语 / 注释逐词"
   }
 ]
