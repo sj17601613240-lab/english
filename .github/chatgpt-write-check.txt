@@ -1,0 +1,3 @@
+ChatGPT GitHub connector write access verification.
+Branch: test/chatgpt-write-20261111
+No production files changed.
