@@ -5247,5 +5247,1520 @@
     "code": "const double b = 7.0 / 2;\nconst double c = static_cast<double>(7) / 2;",
     "note": "b 和 c 均为 3.5。double 是数据类型，变量 a、b、c 保存结果，操作数类型决定这里的除法规则。",
     "id": "s-60888561cb69ff"
+  },
+  {
+    "id": "s-0ea95389d19199",
+    "english": "Calculate the ball position for each frame.",
+    "cn": "计算每一帧小球的位置。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "ball",
+        "cn": "小球"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      },
+      {
+        "en": "for",
+        "cn": "for循环关键字"
+      },
+      {
+        "en": "each",
+        "cn": "每个"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      }
+    ],
+    "code": "const double time = static_cast<double>(frame) / fps;",
+    "note": ""
+  },
+  {
+    "id": "s-1181a8a868208d",
+    "english": "Define the image size and ball properties.",
+    "cn": "定义图像大小和小球属性。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Define",
+        "cn": "定义"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "size",
+        "cn": "尺寸；大小"
+      },
+      {
+        "en": "and",
+        "cn": "和；并且"
+      },
+      {
+        "en": "ball",
+        "cn": "小球"
+      },
+      {
+        "en": "properties",
+        "cn": "属性（复数）"
+      }
+    ],
+    "code": "const int width = 256; const int radius = 16;",
+    "note": ""
+  },
+  {
+    "id": "s-3ee8c355ca40ac",
+    "english": "Create a unique file name for each frame.",
+    "cn": "为每一帧创建不同的文件名。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Create",
+        "cn": "创建"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "unique",
+        "cn": "唯一的；不重复的"
+      },
+      {
+        "en": "file",
+        "cn": "文件"
+      },
+      {
+        "en": "name",
+        "cn": "名称"
+      },
+      {
+        "en": "for",
+        "cn": "for循环关键字"
+      },
+      {
+        "en": "each",
+        "cn": "每个"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      }
+    ],
+    "code": "const std::string filename = \"frame_\" + std::to_string(frame) + \".ppm\";",
+    "note": ""
+  },
+  {
+    "id": "s-cf45153e2a5a97",
+    "english": "Draw the ball at its current position.",
+    "cn": "在小球当前的位置绘制小球。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "代码注释",
+    "words": [
+      {
+        "en": "Draw",
+        "cn": "绘制；画"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "ball",
+        "cn": "小球"
+      },
+      {
+        "en": "at",
+        "cn": "在；位于"
+      },
+      {
+        "en": "its",
+        "cn": "它的"
+      },
+      {
+        "en": "current",
+        "cn": "当前的"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      }
+    ],
+    "code": "if (dx * dx + dy * dy <= radius * radius) { color = 255; }",
+    "note": ""
+  },
+  {
+    "id": "s-321154a0030759",
+    "english": "Convert the frame index to double before division.",
+    "cn": "在除法前将帧索引转成 double。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      },
+      {
+        "en": "index",
+        "cn": "索引；编号"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "double",
+        "cn": "double 数据类型"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "division",
+        "cn": "除法"
+      }
+    ],
+    "code": "const double time = static_cast<double>(frame) / fps;",
+    "note": ""
+  },
+  {
+    "id": "s-8324ab851f8f0f",
+    "english": "The frame rate is different from the ball speed.",
+    "cn": "帧率不同于小球运动速度。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      },
+      {
+        "en": "rate",
+        "cn": "速率；帧率"
+      },
+      {
+        "en": "is",
+        "cn": "是；处于"
+      },
+      {
+        "en": "different",
+        "cn": "不同的"
+      },
+      {
+        "en": "from",
+        "cn": "从；相对于"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "ball",
+        "cn": "小球"
+      },
+      {
+        "en": "speed",
+        "cn": "速度；速率"
+      }
+    ],
+    "code": "const int fps = 10; const double speed = 60.0;",
+    "note": ""
+  },
+  {
+    "id": "s-93dfda42535fd2",
+    "english": "The ball moves six pixels between adjacent frames.",
+    "cn": "小球在相邻帧之间移动六个像素。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "ball",
+        "cn": "小球"
+      },
+      {
+        "en": "moves",
+        "cn": "移动（第三人称）"
+      },
+      {
+        "en": "six",
+        "cn": "六"
+      },
+      {
+        "en": "pixels",
+        "cn": "像素（复数）"
+      },
+      {
+        "en": "between",
+        "cn": "在……之间"
+      },
+      {
+        "en": "adjacent",
+        "cn": "相邻的"
+      },
+      {
+        "en": "frames",
+        "cn": "视频帧（复数）"
+      }
+    ],
+    "code": "const double ballX = 40.0 + speed * time;",
+    "note": ""
+  },
+  {
+    "id": "s-635f99be24dec8",
+    "english": "Each frame is a separate image.",
+    "cn": "每一帧是独立的一张图像。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Each",
+        "cn": "每个"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      },
+      {
+        "en": "is",
+        "cn": "是；处于"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "separate",
+        "cn": "独立的"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      }
+    ],
+    "code": "std::ofstream image(filename);",
+    "note": ""
+  },
+  {
+    "id": "s-d4842bce904b2f",
+    "english": "Convert the frame number to a string.",
+    "cn": "把帧编号转换为字符串。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Convert",
+        "cn": "转换"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      },
+      {
+        "en": "number",
+        "cn": "数字；编号"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "string",
+        "cn": "字符串"
+      }
+    ],
+    "code": "std::to_string(frame)",
+    "note": ""
+  },
+  {
+    "id": "s-8f0947546d31d0",
+    "english": "Open a new output file for each frame.",
+    "cn": "为每一帧打开新输出文件。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Open",
+        "cn": "打开"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "new",
+        "cn": "新的"
+      },
+      {
+        "en": "output",
+        "cn": "输出"
+      },
+      {
+        "en": "file",
+        "cn": "文件"
+      },
+      {
+        "en": "for",
+        "cn": "for循环关键字"
+      },
+      {
+        "en": "each",
+        "cn": "每个"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      }
+    ],
+    "code": "std::ofstream image(filename);",
+    "note": ""
+  },
+  {
+    "id": "s-b90d567524c304",
+    "english": "Write the PPM header before the pixel data.",
+    "cn": "先写 PPM 文件头再写像素数据。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Write",
+        "cn": "写入"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "PPM",
+        "cn": "Portable Pixmap图像格式"
+      },
+      {
+        "en": "header",
+        "cn": "文件头"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "data",
+        "cn": "数据"
+      }
+    ],
+    "code": "image << \"P3\\n\" << width << \" \" << height << \"\\n255\\n\";",
+    "note": ""
+  },
+  {
+    "id": "s-4c1bda0655b6ac",
+    "english": "Use the squared distance to draw the moving ball.",
+    "cn": "用平方距离绘制运动的小球。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Use",
+        "cn": "使用；用途"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "squared",
+        "cn": "平方后的"
+      },
+      {
+        "en": "distance",
+        "cn": "距离"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "draw",
+        "cn": "绘制；画"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "moving",
+        "cn": "正在移动的"
+      },
+      {
+        "en": "ball",
+        "cn": "小球"
+      }
+    ],
+    "code": "if (dx * dx + dy * dy <= radius * radius) { color = 255; }",
+    "note": ""
+  },
+  {
+    "id": "s-24894d45b8576f",
+    "english": "Ten frames at ten FPS make one second of video.",
+    "cn": "十帧以十 FPS 播放形成一秒的视频。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Ten",
+        "cn": "十"
+      },
+      {
+        "en": "frames",
+        "cn": "视频帧（复数）"
+      },
+      {
+        "en": "at",
+        "cn": "在；位于"
+      },
+      {
+        "en": "ten",
+        "cn": "十"
+      },
+      {
+        "en": "FPS",
+        "cn": "每秒帧数"
+      },
+      {
+        "en": "make",
+        "cn": "使；将……设置为"
+      },
+      {
+        "en": "one",
+        "cn": "一个"
+      },
+      {
+        "en": "second",
+        "cn": "第二个"
+      },
+      {
+        "en": "of",
+        "cn": "……的"
+      },
+      {
+        "en": "video",
+        "cn": "视频"
+      }
+    ],
+    "code": "const int fps = 10;",
+    "note": ""
+  },
+  {
+    "id": "s-0605f0ac3d140c",
+    "english": "The filename needs a dot before the PPM extension.",
+    "cn": "文件名中 PPM 扩展名前要有一个点。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "filename",
+        "cn": "文件名"
+      },
+      {
+        "en": "needs",
+        "cn": "需要（第三人称）"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "dot",
+        "cn": "点积；点号"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "PPM",
+        "cn": "Portable Pixmap图像格式"
+      },
+      {
+        "en": "extension",
+        "cn": "扩展名"
+      }
+    ],
+    "code": "\"frame_\" + std::to_string(frame) + \".ppm\"",
+    "note": ""
+  },
+  {
+    "id": "s-97e79f8da6f8fe",
+    "english": "Use a wildcard to list matching frame files.",
+    "cn": "使用通配符列出匹配的帧文件。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Use",
+        "cn": "使用；用途"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "wildcard",
+        "cn": "通配符"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "list",
+        "cn": "列出"
+      },
+      {
+        "en": "matching",
+        "cn": "符合匹配规则的"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      },
+      {
+        "en": "files",
+        "cn": "文件（复数）"
+      }
+    ],
+    "code": "ls frame_*.ppm",
+    "note": ""
+  },
+  {
+    "id": "s-efeee4f3408a81",
+    "english": "Count the matching files with the wc command.",
+    "cn": "使用 wc 命令计数匹配的帧文件。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Count",
+        "cn": "统计；计数"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "matching",
+        "cn": "符合匹配规则的"
+      },
+      {
+        "en": "files",
+        "cn": "文件（复数）"
+      },
+      {
+        "en": "with",
+        "cn": "用；与……一起"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "wc",
+        "cn": "文本统计工具"
+      },
+      {
+        "en": "command",
+        "cn": "命令"
+      }
+    ],
+    "code": "ls frame_*.ppm | wc -l",
+    "note": ""
+  },
+  {
+    "id": "s-a99e6c15c12b2d",
+    "english": "The lowercase letter l counts lines, not the number one.",
+    "cn": "小写字母 l 用来计算行数，不是数字 1。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "lowercase",
+        "cn": "小写的"
+      },
+      {
+        "en": "letter",
+        "cn": "字母"
+      },
+      {
+        "en": "l",
+        "cn": "小写字母 L"
+      },
+      {
+        "en": "counts",
+        "cn": "计数；表示数量（第三人称）"
+      },
+      {
+        "en": "lines",
+        "cn": "多行；线条（复数）"
+      },
+      {
+        "en": "not",
+        "cn": "不；否定"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "number",
+        "cn": "数字；编号"
+      },
+      {
+        "en": "one",
+        "cn": "一个"
+      }
+    ],
+    "code": "wc -l",
+    "note": ""
+  },
+  {
+    "id": "s-fecb04b9661b26",
+    "english": "No such file or directory.",
+    "cn": "没有这样的文件或目录。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "编译报错",
+    "words": [
+      {
+        "en": "No",
+        "cn": "不；没有"
+      },
+      {
+        "en": "such",
+        "cn": "这样的"
+      },
+      {
+        "en": "file",
+        "cn": "文件"
+      },
+      {
+        "en": "or",
+        "cn": "或；或者"
+      },
+      {
+        "en": "directory",
+        "cn": "目录；文件夹"
+      }
+    ],
+    "code": "ls -lh frame_0.ppm",
+    "note": ""
+  },
+  {
+    "id": "s-2268ee177b5562",
+    "english": "FFmpeg reads the numbered frames in order.",
+    "cn": "FFmpeg 按编号顺序读取图像帧。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "FFmpeg",
+        "cn": "开源多媒体处理工具"
+      },
+      {
+        "en": "reads",
+        "cn": "读取（第三人称）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "numbered",
+        "cn": "带编号的"
+      },
+      {
+        "en": "frames",
+        "cn": "视频帧（复数）"
+      },
+      {
+        "en": "in",
+        "cn": "在……中"
+      },
+      {
+        "en": "order",
+        "cn": "顺序"
+      }
+    ],
+    "code": "ffmpeg -framerate 10 -i frame_%d.ppm -c:v libx264 -pix_fmt yuv420p ball_animation.mp4",
+    "note": ""
+  },
+  {
+    "id": "s-0f0c31b4d4251a",
+    "english": "Set the input frame rate to ten frames per second.",
+    "cn": "将输入帧率设为每秒十帧。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "input",
+        "cn": "输入"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      },
+      {
+        "en": "rate",
+        "cn": "速率；帧率"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "ten",
+        "cn": "十"
+      },
+      {
+        "en": "frames",
+        "cn": "视频帧（复数）"
+      },
+      {
+        "en": "per",
+        "cn": "每；每个"
+      },
+      {
+        "en": "second",
+        "cn": "第二个"
+      }
+    ],
+    "code": "-framerate 10",
+    "note": ""
+  },
+  {
+    "id": "s-816a4065b351e6",
+    "english": "Encode the image sequence using the H.264 codec.",
+    "cn": "用 H.264 编码图像序列。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Encode",
+        "cn": "编码"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "image",
+        "cn": "图像；变量名"
+      },
+      {
+        "en": "sequence",
+        "cn": "序列"
+      },
+      {
+        "en": "using",
+        "cn": "使用；通过"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "H.264",
+        "cn": "H.264/AVC 视频编码标准"
+      },
+      {
+        "en": "codec",
+        "cn": "编解码器"
+      }
+    ],
+    "code": "-c:v libx264",
+    "note": ""
+  },
+  {
+    "id": "s-960484bf0ec7d4",
+    "english": "Set the output pixel format to yuv420p.",
+    "cn": "把输出像素格式设为 yuv420p。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Set",
+        "cn": "设置"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "output",
+        "cn": "输出"
+      },
+      {
+        "en": "pixel",
+        "cn": "像素（单数）"
+      },
+      {
+        "en": "format",
+        "cn": "格式"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "yuv420p",
+        "cn": "YUV 4:2:0 平面像素格式"
+      }
+    ],
+    "code": "-pix_fmt yuv420p",
+    "note": ""
+  },
+  {
+    "id": "s-5d1816f648303b",
+    "english": "Save the encoded video in an MP4 container.",
+    "cn": "把已编码视频保存到 MP4 容器中。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Save",
+        "cn": "保存"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "encoded",
+        "cn": "已编码的"
+      },
+      {
+        "en": "video",
+        "cn": "视频"
+      },
+      {
+        "en": "in",
+        "cn": "在……中"
+      },
+      {
+        "en": "an",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "MP4",
+        "cn": "MP4 媒体容器"
+      },
+      {
+        "en": "container",
+        "cn": "容器；封装格式"
+      }
+    ],
+    "code": "ball_animation.mp4",
+    "note": ""
+  },
+  {
+    "id": "s-bbf2157f90e948",
+    "english": "The video has a duration of one second.",
+    "cn": "视频时长为一秒。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "video",
+        "cn": "视频"
+      },
+      {
+        "en": "has",
+        "cn": "有；have 的第三人称单数"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "duration",
+        "cn": "时长"
+      },
+      {
+        "en": "of",
+        "cn": "……的"
+      },
+      {
+        "en": "one",
+        "cn": "一个"
+      },
+      {
+        "en": "second",
+        "cn": "第二个"
+      }
+    ],
+    "code": "ffprobe -v error -show_entries format=duration ball_animation.mp4",
+    "note": ""
+  },
+  {
+    "id": "s-31e180db0039fe",
+    "english": "The encoder compresses video frames.",
+    "cn": "编码器对视频帧进行压缩。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "encoder",
+        "cn": "编码器"
+      },
+      {
+        "en": "compresses",
+        "cn": "压缩（第三人称）"
+      },
+      {
+        "en": "video",
+        "cn": "视频"
+      },
+      {
+        "en": "frames",
+        "cn": "视频帧（复数）"
+      }
+    ],
+    "code": "-c:v libx264",
+    "note": ""
+  },
+  {
+    "id": "s-98c503da281895",
+    "english": "The media player opens the encoded MP4 file.",
+    "cn": "播放器打开已编码的 MP4 文件。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "media",
+        "cn": "媒体"
+      },
+      {
+        "en": "player",
+        "cn": "播放器"
+      },
+      {
+        "en": "opens",
+        "cn": "打开（第三人称）"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "encoded",
+        "cn": "已编码的"
+      },
+      {
+        "en": "MP4",
+        "cn": "MP4 媒体容器"
+      },
+      {
+        "en": "file",
+        "cn": "文件"
+      }
+    ],
+    "code": "mpv ball_animation.mp4",
+    "note": ""
+  },
+  {
+    "id": "s-6c1b7ce27f567e",
+    "english": "Unrecognized option 'frame'.",
+    "cn": "无法识别 frame 这个选项。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "编译报错",
+    "words": [
+      {
+        "en": "Unrecognized",
+        "cn": "无法识别的"
+      },
+      {
+        "en": "option",
+        "cn": "选项"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      }
+    ],
+    "code": "ffmpeg -frame 10 -i frame_%d.ppm",
+    "note": ""
+  },
+  {
+    "id": "s-7eda57adc6f9f0",
+    "english": "Error splitting the argument list: Option not found.",
+    "cn": "解析参数列表时出错：找不到选项。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "编译报错",
+    "words": [
+      {
+        "en": "Error",
+        "cn": "错误"
+      },
+      {
+        "en": "splitting",
+        "cn": "拆分；解析"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "argument",
+        "cn": "实参；命令参数"
+      },
+      {
+        "en": "list",
+        "cn": "列出"
+      },
+      {
+        "en": "Option",
+        "cn": "选项"
+      },
+      {
+        "en": "not",
+        "cn": "不；否定"
+      },
+      {
+        "en": "found",
+        "cn": "找到的；find 的过去式"
+      }
+    ],
+    "code": "ffmpeg -frame 10 -i frame_%d.ppm",
+    "note": ""
+  },
+  {
+    "id": "s-fa3ef5ac7f75e6",
+    "english": "Failed to find default application for content type 'video/mp4'.",
+    "cn": "无法找到用于 video/mp4 的默认应用程序。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "编译报错",
+    "words": [
+      {
+        "en": "Failed",
+        "cn": "失败；未能"
+      },
+      {
+        "en": "to",
+        "cn": "到；为"
+      },
+      {
+        "en": "find",
+        "cn": "找到；查找"
+      },
+      {
+        "en": "default",
+        "cn": "默认的"
+      },
+      {
+        "en": "application",
+        "cn": "应用程序"
+      },
+      {
+        "en": "for",
+        "cn": "for循环关键字"
+      },
+      {
+        "en": "content",
+        "cn": "内容"
+      },
+      {
+        "en": "type",
+        "cn": "类型"
+      },
+      {
+        "en": "video",
+        "cn": "视频"
+      },
+      {
+        "en": "mp4",
+        "cn": "MP4 媒体容器"
+      }
+    ],
+    "code": "xdg-open ball_animation.mp4",
+    "note": ""
+  },
+  {
+    "id": "s-80706622ea560a",
+    "english": "The frame rate controls playback timing.",
+    "cn": "帧率控制播放时间间隔。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "frame",
+        "cn": "视频帧"
+      },
+      {
+        "en": "rate",
+        "cn": "速率；帧率"
+      },
+      {
+        "en": "controls",
+        "cn": "控制（第三人称）"
+      },
+      {
+        "en": "playback",
+        "cn": "播放"
+      },
+      {
+        "en": "timing",
+        "cn": "时间节奏"
+      }
+    ],
+    "code": "-framerate 10",
+    "note": ""
+  },
+  {
+    "id": "s-d64b58c2cd8c4e",
+    "english": "A falling ball accelerates downward.",
+    "cn": "下落的小球向下加速。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "A",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "falling",
+        "cn": "正在下降的"
+      },
+      {
+        "en": "ball",
+        "cn": "小球"
+      },
+      {
+        "en": "accelerates",
+        "cn": "加速（第三人称）"
+      },
+      {
+        "en": "downward",
+        "cn": "向下"
+      }
+    ],
+    "code": "const double gravity = 80.0;",
+    "note": ""
+  },
+  {
+    "id": "s-9c0f65e87f79e1",
+    "english": "An authenticator app generates one-time codes.",
+    "cn": "身份验证器应用产生一次性验证码。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "An",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "authenticator",
+        "cn": "身份验证器"
+      },
+      {
+        "en": "app",
+        "cn": "应用"
+      },
+      {
+        "en": "generates",
+        "cn": "生成（第三人称）"
+      },
+      {
+        "en": "one-time",
+        "cn": "一次性的"
+      },
+      {
+        "en": "codes",
+        "cn": "验证码（复数）"
+      }
+    ],
+    "code": "Google Authenticator",
+    "note": ""
+  },
+  {
+    "id": "s-495b5f9698bbd8",
+    "english": "Scan the QR code with an authenticator app.",
+    "cn": "用身份验证器应用扫描二维码。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Scan",
+        "cn": "扫描"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "QR",
+        "cn": "二维码"
+      },
+      {
+        "en": "code",
+        "cn": "代码"
+      },
+      {
+        "en": "with",
+        "cn": "用；与……一起"
+      },
+      {
+        "en": "an",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "authenticator",
+        "cn": "身份验证器"
+      },
+      {
+        "en": "app",
+        "cn": "应用"
+      }
+    ],
+    "code": "Scan QR code",
+    "note": ""
+  },
+  {
+    "id": "s-4dff0af04e0c1f",
+    "english": "Enter two consecutive verification codes.",
+    "cn": "输入两个连续生成的验证码。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Enter",
+        "cn": "输入"
+      },
+      {
+        "en": "two",
+        "cn": "二；两个"
+      },
+      {
+        "en": "consecutive",
+        "cn": "连续的；接连的"
+      },
+      {
+        "en": "verification",
+        "cn": "验证"
+      },
+      {
+        "en": "codes",
+        "cn": "验证码（复数）"
+      }
+    ],
+    "code": "First code / Second code",
+    "note": ""
+  },
+  {
+    "id": "s-94bb9c95e3881c",
+    "english": "The project may pause after a period of inactivity.",
+    "cn": "项目可能因一段时间不活跃而暂停。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "The",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "project",
+        "cn": "项目"
+      },
+      {
+        "en": "may",
+        "cn": "可能；可以"
+      },
+      {
+        "en": "pause",
+        "cn": "暂停"
+      },
+      {
+        "en": "after",
+        "cn": "在……之后"
+      },
+      {
+        "en": "a",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "period",
+        "cn": "周期"
+      },
+      {
+        "en": "of",
+        "cn": "……的"
+      },
+      {
+        "en": "inactivity",
+        "cn": "闲置；活动不足"
+      }
+    ],
+    "code": "Supabase Project status",
+    "note": ""
+  },
+  {
+    "id": "s-99406dca3e7231",
+    "english": "A paused project keeps its saved data.",
+    "cn": "暂停的项目仍然保留已保存的数据。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "A",
+        "cn": "一个（不定冠词）"
+      },
+      {
+        "en": "paused",
+        "cn": "已暂停的"
+      },
+      {
+        "en": "project",
+        "cn": "项目"
+      },
+      {
+        "en": "keeps",
+        "cn": "持续保持；keep 的第三人称单数"
+      },
+      {
+        "en": "its",
+        "cn": "它的"
+      },
+      {
+        "en": "saved",
+        "cn": "已经保存的"
+      },
+      {
+        "en": "data",
+        "cn": "数据"
+      }
+    ],
+    "code": "Supabase Resume project",
+    "note": ""
+  },
+  {
+    "id": "s-4e82e71f9a311d",
+    "english": "Resume the project before syncing personal notes.",
+    "cn": "同步个人笔记前先恢复项目。",
+    "lesson": "D01 · C++ 动画与 FFmpeg",
+    "kind": "学习例句",
+    "words": [
+      {
+        "en": "Resume",
+        "cn": "恢复运行"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "project",
+        "cn": "项目"
+      },
+      {
+        "en": "before",
+        "cn": "在……之前"
+      },
+      {
+        "en": "syncing",
+        "cn": "同步中"
+      },
+      {
+        "en": "personal",
+        "cn": "个人的"
+      },
+      {
+        "en": "notes",
+        "cn": "笔记（复数）"
+      }
+    ],
+    "code": "Supabase Resume project",
+    "note": ""
   }
 ]
