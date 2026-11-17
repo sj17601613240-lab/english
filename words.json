@@ -6711,5 +6711,558 @@
     "meaning": "happen 的第三人称单数形式，表示发生。7 / 2 先进行整数除法，再把结果存入 double 变量。",
     "example": "Integer division happens before the result is stored.\nconst double a = 7 / 2;",
     "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "animation",
+    "cn": "动画",
+    "meaning": "随时间依次播放不同图像形成运动",
+    "example": "The animation has ten frames.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "animate",
+    "cn": "制作动画；使动起来",
+    "meaning": "让物体的位置随时间改变",
+    "example": "Animate the ball by changing its position.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "ball",
+    "cn": "小球",
+    "meaning": "本轮 C++ 动画中绘制的白色小球",
+    "example": "Draw the ball at its current position.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "properties",
+    "cn": "属性（复数）",
+    "meaning": "property 的复数；指尺寸、半径等参数",
+    "example": "Define the image size and ball properties.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "speed",
+    "cn": "速度；速率",
+    "meaning": "小球每秒移动多少像素，和 FPS 不是一回事",
+    "example": "const double speed = 60.0;",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "time",
+    "cn": "时间",
+    "meaning": "frame / fps 得到的当前帧时间（秒）",
+    "example": "const double time = static_cast<double>(frame) / fps;",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "initial",
+    "cn": "初始的",
+    "meaning": "动画开始时的状态",
+    "example": "The initial position is x = 40.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "elapsed",
+    "cn": "已经过去的",
+    "meaning": "elapsed time 指经过的时间",
+    "example": "The position depends on elapsed time.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "duration",
+    "cn": "时长",
+    "meaning": "视频播放总时间；10帧在10FPS时持续1秒",
+    "example": "Ten frames at ten FPS make one second of video.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "playback",
+    "cn": "播放",
+    "meaning": "按照帧率依次显示帧",
+    "example": "The frame rate controls playback timing.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "sequence",
+    "cn": "序列",
+    "meaning": "连续、依顺序排列的内容",
+    "example": "The frames form a sequence.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "image sequence",
+    "cn": "图像序列",
+    "meaning": "按序号排列的一组静态图像",
+    "example": "ffmpeg -framerate 10 -i frame_%d.ppm output.mp4",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "unique",
+    "cn": "唯一的；不重复的",
+    "meaning": "每帧需要不同文件名以防覆盖",
+    "example": "Create a unique file name for each frame.",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "frames per second",
+    "cn": "每秒帧数",
+    "meaning": "FPS 的全称",
+    "example": "Frames Per Second",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "adjacent",
+    "cn": "相邻的",
+    "meaning": "形容紧挨着的两帧",
+    "example": "adjacent frames",
+    "category": "视频 / 动画"
+  },
+  {
+    "term": "gravity",
+    "cn": "重力；重力加速度",
+    "meaning": "小球下落时改变竖直速度的参数",
+    "example": "const double gravity = 80.0;",
+    "category": "游戏 / 物理"
+  },
+  {
+    "term": "acceleration",
+    "cn": "加速度",
+    "meaning": "速度随时间的变化率",
+    "example": "y = 40.0 + 0.5 * gravity * time * time;",
+    "category": "游戏 / 物理"
+  },
+  {
+    "term": "velocity",
+    "cn": "速度（有方向）",
+    "meaning": "区别于只表示快慢的 speed",
+    "example": "Vertical velocity changes under gravity.",
+    "category": "游戏 / 物理"
+  },
+  {
+    "term": "free fall",
+    "cn": "自由落体",
+    "meaning": "受重力影响的下落运动",
+    "example": "Free fall increases downward speed.",
+    "category": "游戏 / 物理"
+  },
+  {
+    "term": "bounce",
+    "cn": "弹跳；反弹",
+    "meaning": "碰撞后改变运动方向",
+    "example": "The ball will bounce after hitting the ground.",
+    "category": "游戏 / 物理"
+  },
+  {
+    "term": "std::to_string",
+    "cn": "将数值转换为字符串的函数",
+    "meaning": "把数字帧号变为文件名中的文本数字",
+    "example": "std::to_string(frame)",
+    "category": "C++ / 字符串"
+  },
+  {
+    "term": "to_string",
+    "cn": "转换为字符串",
+    "meaning": "std::to_string 的函数名",
+    "example": "std::to_string(9)",
+    "category": "C++ / 字符串"
+  },
+  {
+    "term": "std::ofstream",
+    "cn": "输出文件流类型",
+    "meaning": "创建或打开文件以写入 PPM 数据",
+    "example": "std::ofstream image(filename);",
+    "category": "C++ / 字符串"
+  },
+  {
+    "term": "string",
+    "cn": "字符串",
+    "meaning": "保存文本内容的数据类型",
+    "example": "std::string filename = \"frame_0.ppm\";",
+    "category": "C++ / 字符串"
+  },
+  {
+    "term": "filename",
+    "cn": "文件名",
+    "meaning": "当前帧对应的输出文件名",
+    "example": "const std::string filename = \"frame_\" + std::to_string(frame) + \".ppm\";",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "file extension",
+    "cn": "文件扩展名",
+    "meaning": "例如 .ppm 或 .mp4",
+    "example": "The filename needs a dot before the PPM extension.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "extension",
+    "cn": "扩展名",
+    "meaning": "文件名最后表示类型的后缀",
+    "example": "The file extension is .ppm.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "wildcard",
+    "cn": "通配符",
+    "meaning": "如 *，匹配多个帧文件",
+    "example": "ls frame_*.ppm",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "frame_*.ppm",
+    "cn": "Shell 文件匹配模式",
+    "meaning": "列出所有匹配 frame_*.ppm 的文件",
+    "example": "ls frame_*.ppm | wc -l",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "frame_%d.ppm",
+    "cn": "FFmpeg 编号序列模式",
+    "meaning": "%d 表示连续整数帧号",
+    "example": "ffmpeg -framerate 10 -i frame_%d.ppm",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "wc -l",
+    "cn": "统计行数的终端命令",
+    "meaning": "-l 是小写字母 L，不是数字 1",
+    "example": "ls frame_*.ppm | wc -l",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "wc",
+    "cn": "文本统计工具",
+    "meaning": "统计行、词或字节数量",
+    "example": "wc -l",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "argument list",
+    "cn": "参数列表",
+    "meaning": "命令行中的参数及选项的集合",
+    "example": "Error splitting the argument list: Option not found.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "splitting",
+    "cn": "拆分；解析",
+    "meaning": "报错中指解析命令参数列表",
+    "example": "Error splitting the argument list.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "failed",
+    "cn": "失败；未能",
+    "meaning": "常见于命令行错误提示",
+    "example": "Failed to find default application.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "not found",
+    "cn": "未找到",
+    "meaning": "指定资源或选项不存在",
+    "example": "Option not found.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "access",
+    "cn": "访问",
+    "meaning": "访问文件或文件夹",
+    "example": "ls: cannot access 'frame_0.ppm'",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "default application",
+    "cn": "默认应用程序",
+    "meaning": "文件关联的默认打开程序",
+    "example": "Failed to find default application for content type 'video/mp4'.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "application",
+    "cn": "应用程序",
+    "meaning": "如 mpv 视频播放器",
+    "example": "The system needs a video application.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "content type",
+    "cn": "内容类型",
+    "meaning": "如 video/mp4 这样的 MIME 类型",
+    "example": "content type 'video/mp4'",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "exists",
+    "cn": "存在（第三人称）",
+    "meaning": "说明文件已经生成",
+    "example": "The MP4 file exists.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "matching",
+    "cn": "符合匹配规则的",
+    "meaning": "例如通过通配符选中的文件",
+    "example": "Count the matching files.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "in order",
+    "cn": "按顺序",
+    "meaning": "依照编号或时间顺序",
+    "example": "Read the frames in order.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "lowercase",
+    "cn": "小写的",
+    "meaning": "l 是字母 L 的小写形式",
+    "example": "The lowercase letter l is not the number one.",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "l",
+    "cn": "小写字母 L",
+    "meaning": "wc -l 中应使用字母 l 而非数字 1",
+    "example": "wc -l",
+    "category": "Linux / 终端"
+  },
+  {
+    "term": "H.264",
+    "cn": "H.264/AVC 视频编码标准",
+    "meaning": "视频压缩标准，区别于 MP4 容器",
+    "example": "-c:v libx264",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "AVC",
+    "cn": "高级视频编码",
+    "meaning": "Advanced Video Coding，为 H.264 的别称",
+    "example": "H.264 / AVC",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "MP4",
+    "cn": "MP4 媒体容器",
+    "meaning": "用于封装视频流的文件格式",
+    "example": "ball_animation.mp4",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "libx264",
+    "cn": "H.264 软件编码器",
+    "meaning": "FFmpeg 调用 x264 进行 H.264 压缩",
+    "example": "-c:v libx264",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "yuv420p",
+    "cn": "YUV 4:2:0 平面像素格式",
+    "meaning": "用于兼容性较好的视频播放",
+    "example": "-pix_fmt yuv420p",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "pixel format",
+    "cn": "像素格式",
+    "meaning": "像素通道的排列与采样表示方式",
+    "example": "-pix_fmt yuv420p",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "container",
+    "cn": "容器；封装格式",
+    "meaning": "MP4 是容器，H.264 是视频编码",
+    "example": "Save the encoded video in an MP4 container.",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "encoding",
+    "cn": "编码过程",
+    "meaning": "将原始帧压缩写成视频流",
+    "example": "FFmpeg performs H.264 encoding.",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "encoded",
+    "cn": "已编码的",
+    "meaning": "编码器处理过的视频",
+    "example": "Save the encoded video in an MP4 container.",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "decoding",
+    "cn": "解码",
+    "meaning": "从压缩码流恢复图像帧",
+    "example": "The decoder performs decoding.",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "compress",
+    "cn": "压缩",
+    "meaning": "减少视频数据占用空间",
+    "example": "The encoder compresses video frames.",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "input frame rate",
+    "cn": "输入图像序列帧率",
+    "meaning": "FFmpeg 将输入图片按每秒多少帧读取",
+    "example": "-framerate 10",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "-framerate",
+    "cn": "FFmpeg 输入帧率选项",
+    "meaning": "输入序列按每秒10帧处理",
+    "example": "ffmpeg -framerate 10 -i frame_%d.ppm",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "-c:v",
+    "cn": "视频编码器选项",
+    "meaning": "指定编码器，如 libx264",
+    "example": "-c:v libx264",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "-pix_fmt",
+    "cn": "像素格式选项",
+    "meaning": "指定输出像素格式",
+    "example": "-pix_fmt yuv420p",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "-i",
+    "cn": "输入源选项",
+    "meaning": "指定视频或图像序列输入",
+    "example": "-i frame_%d.ppm",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "ffprobe",
+    "cn": "媒体信息检查工具",
+    "meaning": "查看编码、帧率、分辨率及视频时长",
+    "example": "ffprobe -v error -show_entries format=duration ball_animation.mp4",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "mpv",
+    "cn": "开源媒体播放器",
+    "meaning": "用于播放本次生成的 MP4 文件",
+    "example": "mpv --loop-file=inf ball_animation.mp4",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "player",
+    "cn": "播放器",
+    "meaning": "播放视频和音频的应用程序",
+    "example": "The media player opens the encoded MP4 file.",
+    "category": "视频 / 编解码"
+  },
+  {
+    "term": "inactivity",
+    "cn": "闲置；活动不足",
+    "meaning": "免费数据库低活动时可能触发暂停",
+    "example": "The project may pause after a period of inactivity.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "inactive",
+    "cn": "闲置的；不活跃的",
+    "meaning": "指缺少足够活动的数据库项目",
+    "example": "The project is inactive.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "pause",
+    "cn": "暂停",
+    "meaning": "临时停止运行，并非删除个人数据",
+    "example": "The free project may pause.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "paused",
+    "cn": "已暂停的",
+    "meaning": "数据库暂停时个人同步暂不可用",
+    "example": "A paused project keeps its saved data.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "resume",
+    "cn": "恢复运行",
+    "meaning": "重新启动暂停的项目",
+    "example": "Resume the project before syncing personal notes.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "project status",
+    "cn": "项目状态",
+    "meaning": "例如 Healthy 或 Paused",
+    "example": "Check the project status.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "health",
+    "cn": "健康状态",
+    "meaning": "服务是否正常运行的状态",
+    "example": "Check Supabase project health.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "dashboard",
+    "cn": "控制台",
+    "meaning": "查看云数据库状态的管理网页",
+    "example": "Open the project dashboard.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "syncing",
+    "cn": "同步中",
+    "meaning": "将个人词汇或笔记与云端同步",
+    "example": "Resume the project before syncing personal notes.",
+    "category": "云端 / Supabase"
+  },
+  {
+    "term": "authenticator",
+    "cn": "身份验证器",
+    "meaning": "产生动态登录验证码的应用",
+    "example": "An authenticator app generates one-time codes.",
+    "category": "云端 / 身份验证"
+  },
+  {
+    "term": "authenticator app",
+    "cn": "身份验证器应用",
+    "meaning": "用于扫描 MFA 二维码",
+    "example": "Scan the QR code with an authenticator app.",
+    "category": "云端 / 身份验证"
+  },
+  {
+    "term": "QR code",
+    "cn": "二维码",
+    "meaning": "身份验证时可扫描的编码图案",
+    "example": "Scan the QR code.",
+    "category": "云端 / 身份验证"
+  },
+  {
+    "term": "verification code",
+    "cn": "验证码",
+    "meaning": "用于验证登录的动态代码",
+    "example": "Enter two consecutive verification codes.",
+    "category": "云端 / 身份验证"
+  },
+  {
+    "term": "consecutive",
+    "cn": "连续的；接连的",
+    "meaning": "指相邻两次变化的验证码",
+    "example": "Enter two consecutive verification codes.",
+    "category": "云端 / 身份验证"
+  },
+  {
+    "term": "one-time",
+    "cn": "一次性的",
+    "meaning": "one-time code 指一次性验证码",
+    "example": "An authenticator app generates one-time codes.",
+    "category": "云端 / 身份验证"
   }
 ]
