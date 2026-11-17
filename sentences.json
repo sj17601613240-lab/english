@@ -6762,5 +6762,75 @@
     ],
     "code": "Supabase Resume project",
     "note": ""
+  },
+  {
+    "id": "s-a6a8f78bb12e57",
+    "english": "Define the initial position and gravity.",
+    "cn": "定义初始位置和重力加速度。",
+    "kind": "代码注释",
+    "code": "const double ballX = 128.0;\nconst double startY = 40;\nconst double gravity = 80.0;",
+    "lesson": "D01 · C++ 重力下落动画",
+    "words": [
+      {
+        "en": "Define",
+        "cn": "定义"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "initial",
+        "cn": "初始的"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      },
+      {
+        "en": "and",
+        "cn": "和"
+      },
+      {
+        "en": "gravity",
+        "cn": "重力；重力加速度"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": "s-129822d5b37c2c",
+    "english": "Calculate the vertical position under gravity.",
+    "cn": "计算重力作用下的竖直位置。",
+    "kind": "代码注释",
+    "code": "const double ballY = startY + 0.5 * gravity * time * time;",
+    "lesson": "D01 · C++ 重力下落动画",
+    "words": [
+      {
+        "en": "Calculate",
+        "cn": "计算"
+      },
+      {
+        "en": "the",
+        "cn": "这个；该（定冠词）"
+      },
+      {
+        "en": "vertical",
+        "cn": "垂直的"
+      },
+      {
+        "en": "position",
+        "cn": "位置"
+      },
+      {
+        "en": "under",
+        "cn": "在……作用下；在……之下"
+      },
+      {
+        "en": "gravity",
+        "cn": "重力；重力加速度"
+      }
+    ],
+    "note": ""
   }
 ]
