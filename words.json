@@ -7264,5 +7264,194 @@
     "meaning": "one-time code 指一次性验证码",
     "example": "An authenticator app generates one-time codes.",
     "category": "云端 / 身份验证"
+  },
+  {
+    "term": "rate",
+    "cn": "速率；帧率",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“rate”表示“速率；帧率”。与原始句子一起学习其上下文和词形。",
+    "example": "The frame rate is different from the ball speed.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "different",
+    "cn": "不同的",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“different”表示“不同的”。与原始句子一起学习其上下文和词形。",
+    "example": "The frame rate is different from the ball speed.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "moves",
+    "cn": "移动（第三人称）",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“moves”表示“移动（第三人称）”。与原始句子一起学习其上下文和词形。",
+    "example": "The ball moves six pixels between adjacent frames.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "six",
+    "cn": "六",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“six”表示“六”。与原始句子一起学习其上下文和词形。",
+    "example": "The ball moves six pixels between adjacent frames.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "separate",
+    "cn": "独立的",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“separate”表示“独立的”。与原始句子一起学习其上下文和词形。",
+    "example": "Each frame is a separate image.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "header",
+    "cn": "文件头",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“header”表示“文件头”。与原始句子一起学习其上下文和词形。",
+    "example": "Write the PPM header before the pixel data.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "ten",
+    "cn": "十",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“Ten”表示“十”。与原始句子一起学习其上下文和词形。",
+    "example": "Ten frames at ten FPS make one second of video.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "count",
+    "cn": "统计；计数",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“Count”表示“统计；计数”。与原始句子一起学习其上下文和词形。",
+    "example": "Count the matching files with the wc command.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "letter",
+    "cn": "字母",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“letter”表示“字母”。与原始句子一起学习其上下文和词形。",
+    "example": "The lowercase letter l counts lines, not the number one.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "such",
+    "cn": "这样的",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“such”表示“这样的”。与原始句子一起学习其上下文和词形。",
+    "example": "No such file or directory.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "reads",
+    "cn": "读取（第三人称）",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“reads”表示“读取（第三人称）”。与原始句子一起学习其上下文和词形。",
+    "example": "FFmpeg reads the numbered frames in order.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "order",
+    "cn": "顺序",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“order”表示“顺序”。与原始句子一起学习其上下文和词形。",
+    "example": "FFmpeg reads the numbered frames in order.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "compresses",
+    "cn": "压缩（第三人称）",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“compresses”表示“压缩（第三人称）”。与原始句子一起学习其上下文和词形。",
+    "example": "The encoder compresses video frames.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "media",
+    "cn": "媒体",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“media”表示“媒体”。与原始句子一起学习其上下文和词形。",
+    "example": "The media player opens the encoded MP4 file.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "opens",
+    "cn": "打开（第三人称）",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“opens”表示“打开（第三人称）”。与原始句子一起学习其上下文和词形。",
+    "example": "The media player opens the encoded MP4 file.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "content",
+    "cn": "内容",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“content”表示“内容”。与原始句子一起学习其上下文和词形。",
+    "example": "Failed to find default application for content type 'video/mp4'.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "controls",
+    "cn": "控制（第三人称）",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“controls”表示“控制（第三人称）”。与原始句子一起学习其上下文和词形。",
+    "example": "The frame rate controls playback timing.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "timing",
+    "cn": "时间节奏",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“timing”表示“时间节奏”。与原始句子一起学习其上下文和词形。",
+    "example": "The frame rate controls playback timing.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "accelerates",
+    "cn": "加速（第三人称）",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“accelerates”表示“加速（第三人称）”。与原始句子一起学习其上下文和词形。",
+    "example": "A falling ball accelerates downward.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "downward",
+    "cn": "向下",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“downward”表示“向下”。与原始句子一起学习其上下文和词形。",
+    "example": "A falling ball accelerates downward.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "app",
+    "cn": "应用",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“app”表示“应用”。与原始句子一起学习其上下文和词形。",
+    "example": "An authenticator app generates one-time codes.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "generates",
+    "cn": "生成（第三人称）",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“generates”表示“生成（第三人称）”。与原始句子一起学习其上下文和词形。",
+    "example": "An authenticator app generates one-time codes.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "codes",
+    "cn": "验证码（复数）",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“codes”表示“验证码（复数）”。与原始句子一起学习其上下文和词形。",
+    "example": "An authenticator app generates one-time codes.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "scan",
+    "cn": "扫描",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“Scan”表示“扫描”。与原始句子一起学习其上下文和词形。",
+    "example": "Scan the QR code with an authenticator app.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "qr",
+    "cn": "二维码",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“QR”表示“二维码”。与原始句子一起学习其上下文和词形。",
+    "example": "Scan the QR code with an authenticator app.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "enter",
+    "cn": "输入",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“Enter”表示“输入”。与原始句子一起学习其上下文和词形。",
+    "example": "Enter two consecutive verification codes.",
+    "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "verification",
+    "cn": "验证",
+    "meaning": "本轮 C++ / FFmpeg 学习中，“verification”表示“验证”。与原始句子一起学习其上下文和词形。",
+    "example": "Enter two consecutive verification codes.",
+    "category": "英语 / 注释逐词"
   }
 ]
