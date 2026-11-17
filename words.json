@@ -7453,5 +7453,61 @@
     "meaning": "本轮 C++ / FFmpeg 学习中，“verification”表示“验证”。与原始句子一起学习其上下文和词形。",
     "example": "Enter two consecutive verification codes.",
     "category": "英语 / 注释逐词"
+  },
+  {
+    "term": "ballX",
+    "cn": "小球圆心的横向坐标 X",
+    "meaning": "ball（球）+ X（横坐标）。这是程序员自定义的变量名，不是 C++ 内置函数。本次自由落体设为 128.0，表示小球在水平方向不移动。",
+    "example": "const double ballX = 128.0;",
+    "category": "C++ / 变量命名"
+  },
+  {
+    "term": "ballY",
+    "cn": "小球当前帧的纵向坐标 Y",
+    "meaning": "ball（球）+ Y（纵坐标）。这个变量在每一帧根据初始位置、重力加速度和时间重新计算；在当前图像坐标系中，Y 越大代表越靠下。",
+    "example": "const double ballY = startY + 0.5 * gravity * time * time;",
+    "category": "C++ / 变量命名"
+  },
+  {
+    "term": "startY",
+    "cn": "小球初始的纵向坐标 Y",
+    "meaning": "start（起点；开始）+ Y（纵坐标）。表示初始圆心高度，这里直接设为 40，而不是调用函数计算出来。",
+    "example": "const double startY = 40;",
+    "category": "C++ / 变量命名"
+  },
+  {
+    "term": "start",
+    "cn": "开始；起点；起始",
+    "meaning": "可以作动词或名词。在变量 startY 中，start 表示运动刚开始时的坐标。",
+    "example": "const double startY = 40;",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "under",
+    "cn": "在……作用下；在……之下",
+    "meaning": "在注释 under gravity 中表示“在重力作用下”，不是一个 C++ 运算符。",
+    "example": "// Calculate the vertical position under gravity.",
+    "category": "英语 / 常用"
+  },
+  {
+    "term": "initial position",
+    "cn": "初始位置",
+    "meaning": "initial（初始的）+ position（位置）。动画开始时物体的坐标，常与时间变化后的 current position 区分。",
+    "example": "// Define the initial position and gravity.",
+    "category": "图形学 / 动画"
+  },
+  {
+    "term": "gravit",
+    "cn": "拼写错误：正确写法是 gravity（重力）",
+    "meaning": "gravit 不是标准的英语词形。截图中的变量使用 gravity，意思是重力；本次程序具体用作重力加速度（80 像素/秒²）。",
+    "example": "const double gravity = 80.0;",
+    "category": "拼写纠错"
+  },
+  {
+    "term": "std::cout",
+    "cn": "C++ 标准输出流对象",
+    "meaning": "标准输出流对象，将文字或变量值写到终端；不是变量名的固定写法，而是 C++ 标准库中的对象。",
+    "example": "std::cout << \"Frame:\" << frame << \" X:\" << ballX << '\\n';",
+    "category": "C++ / I-O"
   }
 ]
